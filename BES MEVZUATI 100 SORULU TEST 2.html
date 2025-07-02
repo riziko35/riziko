@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çoktan Seçmeli Sorular - 2</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Çoktan Seçmeli Sorular - Dosya 2</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> Bireysel emeklilik mevzuatı ile ilgili ilan ve reklam ilkeleri hakkındaki aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Getiri taahhüdünde bulunulduğunda cari faiz oranları aşılamaz.`)">Kişileri yanlış yönlendirebilecek, emeklilik ve yatırım tercihlerini olumsuz etkileyebilecek içerikte ifadeler kullanılamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Getiri taahhüdünde bulunulduğunda cari faiz oranları aşılamaz.`)">Emeklilik planlarında yer almayan ve promosyon niteliği taşıyan hediye, ilave getiri gibi taahhütlerde bulunulamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Getiri taahhüdünde bulunulduğunda cari faiz oranları aşılamaz.`)">Getiri taahhüdünde bulunulduğunda cari faiz oranları aşılamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Getiri taahhüdünde bulunulduğunda cari faiz oranları aşılamaz.`)">Ölçeklerde farklılık yaratmak suretiyle yanıltıcı grafik ve benzeri mahiyetteki şekiller kullanılamaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> Emeklilik sözleşmesinin hangi nedenle sonlandırılması durumunda devlet katkısı hesabındaki tutara hak kazanılmaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cayma`)">Emeklilik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cayma`)">Vefat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cayma`)">Maluliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cayma`)">Cayma</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> Devlet katkılarının yatırıma yönlendirildiği fondan yapılacak toplam kesinti tutarı en fazla ne kadar olabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük yüzbinde 1`)">Günlük yüzbinde 1</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük yüzbinde 1`)">Günlük yüzbinde 6,25</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük yüzbinde 1`)">Günlük yüzbinde 2</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük yüzbinde 1`)">Günlük yüzbinde 5,25</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Emeklilik yatırım fonu birim pay değerinin yanlış hesaplanması halinde emeklilik şirketinin sorumluluğu nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.`)">Emeklilik şirketi zararın emeklilik yatırım fonu hesaplarından tazmini için tedbir alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.`)">Emeklilik şirketleri katılımcının muhtemel zararları için bir fon oluşturmak zorundadırlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.`)">Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi bundan doğan zararı tazmin etmekle yükümlüdür.`)">Katılımcının zararı emeklilik şirketi ile portföy yönetim şirketi tarafından müştereken ödenir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> Aşağıdaki fonlardan hangisi için belirlenmiş azami günlük fon toplam gider kesintisi diğerlerinden farklıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karma Fon`)">Borçlanma Araçları Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karma Fon`)">Endeks Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karma Fon`)">Standart Fon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karma Fon`)">Karma Fon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Aşağıdakilerden hangisi 4632 sayılı Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu'nun kapsamındadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının emeklilik yatırım fonlarında toplanması ve değerlendirilmesi`)">Yatırım araçlarının ihraç ve alım satım koşulları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının emeklilik yatırım fonlarında toplanması ve değerlendirilmesi`)">Sigorta şirketlerinin çalışma esasları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının emeklilik yatırım fonlarında toplanması ve değerlendirilmesi`)">Katkı paylarının emeklilik yatırım fonlarında toplanması ve değerlendirilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının emeklilik yatırım fonlarında toplanması ve değerlendirilmesi`)">Portföy yönetim şirketlerinin kuruluş esasları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> Emeklilik yatırım fonu paylarının katılımcının bireysel emeklilik hesabına aktarılmasında temel husus nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcının hesabına aktarılması için fon paylarının temsil ettiği değerin tam olarak nakden ödenmesi şarttır.`)">Fon payları günde bir kez katılımcı hesabına aktarılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcının hesabına aktarılması için fon paylarının temsil ettiği değerin tam olarak nakden ödenmesi şarttır.`)">Fon paylarının katılımcı hesabına aktarılması talimatının sabah saat 10.00'a kadar verilmesi gereklidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcının hesabına aktarılması için fon paylarının temsil ettiği değerin tam olarak nakden ödenmesi şarttır.`)">Paylar satın alma talimatını izleyen günden sonraki gün hesabına aktarılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcının hesabına aktarılması için fon paylarının temsil ettiği değerin tam olarak nakden ödenmesi şarttır.`)">Katılımcının hesabına aktarılması için fon paylarının temsil ettiği değerin tam olarak nakden ödenmesi şarttır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> Aşağıdaki durumlardan hangisi giriş aidatının ertelenmiş bölümünün tahsil edilebileceği durumlardan biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin 5. yılı dolmadan önce başka şirkete aktarımı`)">Emeklilik hakkının kullanılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin 5. yılı dolmadan önce başka şirkete aktarımı`)">Maluliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin 5. yılı dolmadan önce başka şirkete aktarımı`)">Sözleşmenin 5. yılı dolmadan önce başka şirkete aktarımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin 5. yılı dolmadan önce başka şirkete aktarımı`)">Şirketin tasfiyesi nedeniyle sistemden çıkış</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Bireysel emeklilik sisteminde emeklilik yatırım fonlarını kurmakla yetkili kurum aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Portföy Yönetim Şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Emeklilik Şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Banka</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">İstanbul Takas ve Saklama Bankası A.Ş.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> Teklifin reddi halinde şirketin ödemeleri iade yükümlülüğünü kaç gün içinde yerine getirmesi gerekmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü içinde`)">7 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü içinde`)">10 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü içinde`)">2 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü içinde`)">5 iş günü içinde</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> Aşağıda yer alan fonlardan hangisinin azami günlük fon toplam gider kesintisi oranı yüz binde 5,25 olamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kıymetli Madenler Fonu`)">Kıymetli Madenler Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kıymetli Madenler Fonu`)">Standart Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kıymetli Madenler Fonu`)">Borçlanma Araçları Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kıymetli Madenler Fonu`)">Endeks Fonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> Katkı payı ödemeye ara verilmesi durumunda, ara verilen dönemin emekliliğe hak kazanmaya etkisi nasıldır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınır.`)">Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınmaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınır.`)">Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınır.`)">Ara verilen dönem, ilgili döneme karşılık gelen, işlem tarihindeki katkı payı tutarının ödenmesi kaydıyla sistemde geçirilen süre hesabında dikkate alınır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ara verilen dönem, sistemde geçirilen süre hesabında dikkate alınır.`)">Ara verilen dönem, ilgili döneme karşılık gelen, ara verilen döneme ilişkin katkı payı tutarının ödenmesi kaydıyla sistemde geçirilen süre hesabında dikkate alınır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> Aşağıdakilerden hangisi Bireysel Emeklilik Tasarruf ve Yatırım Sistemi Kanunu'nun hedeflerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevcut kamu sosyal güvenlik sistemine alternatif oluşturması`)">Kamunun uzun vadeli borçlanma olanağını olumlu etkilemesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevcut kamu sosyal güvenlik sistemine alternatif oluşturması`)">Mevcut kamu sosyal güvenlik sistemine alternatif oluşturması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevcut kamu sosyal güvenlik sistemine alternatif oluşturması`)">İstihdamın arttırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevcut kamu sosyal güvenlik sistemine alternatif oluşturması`)">Ulusal tasarruf eğilimini artırması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> Emeklilik yatırım fonu portföyünde yer alan yabancı para cinsinden varlıkların değerlemesi nasıl yapılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz alış kuru ile çarpılması suretiyle`)">Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz satış kuru ile çarpılması suretiyle</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz alış kuru ile çarpılması suretiyle`)">Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz alış kuru ile çarpılması suretiyle</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz alış kuru ile çarpılması suretiyle`)">Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen efektif satış kuru ile çarpılması suretiyle</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen döviz alış kuru ile çarpılması suretiyle`)">Türkiye Cumhuriyet Merkez Bankası tarafından ilgili yabancı para için belirlenen efektif alış kuru ile çarpılması suretiyle</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Katılımcının bireysel emeklilik sistemine giriş tarihi ile ilgili aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Otomatik katılım kapsamında emeklilik şirketi ile işverenin düzenlediği emeklilik sözleşmeleri hariç, yürürlükteki sözleşmeleri arasından en eski tarihli sözleşme dikkate alınarak belirlenir.`)">Otomatik katılım kapsamında emeklilik şirketi ile işverenin düzenlediği emeklilik sözleşmeleri hariç, yürürlükteki sözleşmeleri arasından en eski tarihli sözleşme dikkate alınarak belirlenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Otomatik katılım kapsamında emeklilik şirketi ile işverenin düzenlediği emeklilik sözleşmeleri hariç, yürürlükteki sözleşmeleri arasından en eski tarihli sözleşme dikkate alınarak belirlenir.`)">Sonlanmış olsa bile en eski sözleşmesi dikkate alınır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Otomatik katılım kapsamında emeklilik şirketi ile işverenin düzenlediği emeklilik sözleşmeleri hariç, yürürlükteki sözleşmeleri arasından en eski tarihli sözleşme dikkate alınarak belirlenir.`)">Yürürlükteki sözleşmeleri arasından en yeni tarihli sözleşme dikkate alınarak belirlenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Otomatik katılım kapsamında emeklilik şirketi ile işverenin düzenlediği emeklilik sözleşmeleri hariç, yürürlükteki sözleşmeleri arasından en eski tarihli sözleşme dikkate alınarak belirlenir.`)">Yürürlükte olmasına rağmen ödemeye ara verdiği sözleşmeleri dikkate alınmaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Aşağıdakilerden hangisi olağanüstü durumlarda fon değerleme esaslarının tespiti konusunda karar alabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon Kurulu`)">Hazine ve Maliye Bakanlığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon Kurulu`)">Borsa İstanbul</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon Kurulu`)">Fon Kurulu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon Kurulu`)">Emeklilik Gözetim Merkezi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Emeklilik şirketi tarafından düzenli olarak katılımcıya hesap bildirimi cetveli ne zaman gönderilmelidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesap dönemlerini takip eden 10 iş günü içinde`)">Hesap dönemlerini takip eden 10 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesap dönemlerini takip eden 10 iş günü içinde`)">Her ayın ilk 5 günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesap dönemlerini takip eden 10 iş günü içinde`)">Yürürlük tarihinden itibaren her 5 yılda bir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesap dönemlerini takip eden 10 iş günü içinde`)">Hesap dönemlerini takip eden 5 iş günü içinde</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Katılımcıya sunulan fonların katılımcının toplam fon portföyü içindeki oransal dağılımına ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım oranları`)">Fon dağılım oranları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım oranları`)">Emeklilik planı fon yapısı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım oranları`)">Emeklilik planı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım oranları`)">Fon dağıtım yapısı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Aşağıdakilerden hangisi emekliliğe hak kazanan katılımcının, yapabileceği tercihler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikimini bağlı olduğu sosyal güvenlik kurumuna aktarabilir.`)">Birikiminin tamamını alabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikimini bağlı olduğu sosyal güvenlik kurumuna aktarabilir.`)">Birikimini kısmen alabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikimini bağlı olduğu sosyal güvenlik kurumuna aktarabilir.`)">Birikimini bağlı olduğu sosyal güvenlik kurumuna aktarabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikimini bağlı olduğu sosyal güvenlik kurumuna aktarabilir.`)">Yıllık gelir sigortası yaptırabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> Emeklilik şirketi faaliyet ruhsatına ilişkin verilen izin hangi koşullarda kendiliğinden geçersiz olur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin fon kurmak üzere başvurusunun Sermaye Piyasası Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde`)">Şirketin fon kurmak üzere başvurusunun Hazine ve Maliye Bakanlığına zamanında yapılmaması veya başvurusunun reddedilmesi halinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin fon kurmak üzere başvurusunun Sermaye Piyasası Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde`)">Şirketin fon kurmak üzere başvurusunun Bireysel Emeklilik Danışma Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin fon kurmak üzere başvurusunun Sermaye Piyasası Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde`)">Şirketin fon kurmak üzere başvurusunun Sermaye Piyasası Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin fon kurmak üzere başvurusunun Sermaye Piyasası Kuruluna zamanında yapılmaması veya başvurusunun reddedilmesi halinde`)">Şirketin fon kurmak üzere başvurusunun Takasbanka zamanında yapılmaması veya başvurusunun reddedilmesi halinde</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> Emeklilik yatırım fonlarının birleştirilmesiyle ilgili olarak aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon, diğer bir emeklilik şirketinin fonu ile birleştirilebilir.`)">Fonların birleştirilmesinde Sermaye Piyasası Kurulunun yatırım fonlarına ilişkin düzenlemelerine uyulur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon, diğer bir emeklilik şirketinin fonu ile birleştirilebilir.`)">Fon, ancak aynı emeklilik şirketinin başka bir fonu ile birleştirilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon, diğer bir emeklilik şirketinin fonu ile birleştirilebilir.`)">Fon, diğer bir emeklilik şirketinin fonu ile birleştirilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon, diğer bir emeklilik şirketinin fonu ile birleştirilebilir.`)">Aynı şirkete ait fonlar, şirketin talebi üzerine birleştirilebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> Otomatik katılım kapsamında fon dağılım değişikliği hakkı ile ilgili aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım değişikliği hakkı çalışana aittir.`)">Fon dağılım değişikliği hakkı çalışana aittir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım değişikliği hakkı çalışana aittir.`)">Fon dağılım değişikliği hakkı işverene aittir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım değişikliği hakkı çalışana aittir.`)">Yılda azami dört kez fon dağılımını değiştirebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon dağılım değişikliği hakkı çalışana aittir.`)">Fon dağılım değişikliği hakkı yoktur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> Bireysel emeklilik sözleşmesine yapılan aşağıdaki ödeme türlerinden hangisi irat olarak kabul edilmez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı tarafından ödenen katkı payları`)">Yönetim gider kesintisi iadesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı tarafından ödenen katkı payları`)">Bonus ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı tarafından ödenen katkı payları`)">Gecikme cezaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı tarafından ödenen katkı payları`)">Katılımcı tarafından ödenen katkı payları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Aşağıdakilerden hangisi birim pay değerlerinin hesaplanmayabileceği olağanüstü durumlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinin iflası`)">Savaş</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinin iflası`)">Doğal afetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinin iflası`)">Ekonomik kriz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinin iflası`)">Emeklilik şirketinin iflası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> Borçlanma araçları fonundan yapılabilecek azami yıllık fon toplam gider kesintisi oranı ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzde 1,91`)">Yüzde 1,91</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzde 1,91`)">Yüzde 3,65</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzde 1,91`)">Yüzde 2,28</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzde 1,91`)">Yüzde 1,09</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> Emeklilik yatırım fonu iç kontrol sisteminin oluşturma yükümlülüğü hangi kurumun sorumluluğundadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran emeklilik şirketi`)">Sermaye Piyasası Kurulu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran emeklilik şirketi`)">Fonu kuran emeklilik şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran emeklilik şirketi`)">Portföy yönetim şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran emeklilik şirketi`)">Emeklilik Gözetim Merkezi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Emeklilik planı değişiklik talebi, talebin şirkete ulaşmasını müteakip kaç gün içinde yapılmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `10 iş günü`)">2 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `10 iş günü`)">10 iş günü</div>
+    <div class="secenek" onclick="kontrolEt(this, `10 iş günü`)">2 iş günü</div>
+    <div class="secenek" onclick="kontrolEt(this, `10 iş günü`)">5 iş günü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Emeklilik Yatırım Fonu__________. İlgili boşluğa aşağıdaki ifadelerden hangisinin gelmesi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının işletilmesi amacıyla kurulur.`)">Emeklilik şirketinin malvarlığıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının işletilmesi amacıyla kurulur.`)">Katkı paylarının işletilmesi amacıyla kurulur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının işletilmesi amacıyla kurulur.`)">Taraflar arası bir sözleşmedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı paylarının işletilmesi amacıyla kurulur.`)">Portföy yönetim şirketleri tarafından kurulur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Aşağıda yer alan maddelerden hangisi portföy yönetim şirketinin sorumlulukları arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonu portföyünü, mevzuat, fon içtüzüğü, emeklilik sözleşmesi, izahname, portföy yönetim sözleşmesi hükümlerine göre yönetmek`)">Emeklilik yatırım fonlarını kurmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonu portföyünü, mevzuat, fon içtüzüğü, emeklilik sözleşmesi, izahname, portföy yönetim sözleşmesi hükümlerine göre yönetmek`)">Katkı payını tahsil etmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonu portföyünü, mevzuat, fon içtüzüğü, emeklilik sözleşmesi, izahname, portföy yönetim sözleşmesi hükümlerine göre yönetmek`)">Emeklilik yatırım fonu portföyünü, mevzuat, fon içtüzüğü, emeklilik sözleşmesi, izahname, portföy yönetim sözleşmesi hükümlerine göre yönetmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonu portföyünü, mevzuat, fon içtüzüğü, emeklilik sözleşmesi, izahname, portföy yönetim sözleşmesi hükümlerine göre yönetmek`)">Emeklilik yatırım fonlarını katılımcı adına saklamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> Bireysel emeklilik sözleşmesi için cayma hakkı ile ilgili aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip iki ay içinde kullanılmalıdır.`)">Sözleşme yürürlüğe girmeden önce kullanılmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip iki ay içinde kullanılmalıdır.`)">Teklif formunun imzalandığı veya teklifin onaylandığı tarihten sonra 10 gün içinde kullanılmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip iki ay içinde kullanılmalıdır.`)">Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip bir ay içinde kullanılmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip iki ay içinde kullanılmalıdır.`)">Teklif formunun imzalanmasını veya teklifin onaylanmasını müteakip iki ay içinde kullanılmalıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> Emeklilik planlarına ilişkin uygulama esasları hakkındaki aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planları Emeklilik Gözetim Merkezince işletilen elektronik plan tanımlama sisteminde kayda alınır.`)">Hazine ve Maliye Bakanlığının yedi iş günü içinde planı onaylaması veya reddetmesi gerekir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planları Emeklilik Gözetim Merkezince işletilen elektronik plan tanımlama sisteminde kayda alınır.`)">Emeklilik planları Emeklilik Gözetim Merkezince işletilen elektronik plan tanımlama sisteminde kayda alınır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planları Emeklilik Gözetim Merkezince işletilen elektronik plan tanımlama sisteminde kayda alınır.`)">Sermaye Piyasası Kurulunun onayına tabidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planları Emeklilik Gözetim Merkezince işletilen elektronik plan tanımlama sisteminde kayda alınır.`)">Önce Hazine ve Maliye Bakanlığının onayı alınır, daha sonra bilgi için Sermaye Piyasası Kuruluna gönderilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Aşağıdakilerden hangisi emeklilik şirketi kuruluş izni ve başvurusu için gerekli belgelerdendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş planı ve sistem tasarımı ile yapılabilirlik raporu`)">İş planı ve sistem tasarımı ile yapılabilirlik raporu</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş planı ve sistem tasarımı ile yapılabilirlik raporu`)">İlan ve reklamlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş planı ve sistem tasarımı ile yapılabilirlik raporu`)">Hayat sigortası tarifeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş planı ve sistem tasarımı ile yapılabilirlik raporu`)">Emeklilik planları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> Aşağıdakilerden hangisi katılımcının fon birikimini takip edebileceği kanallardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel Emeklilik Danışma Kurulu internet sitesi`)">Hesap bildirim cetveli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel Emeklilik Danışma Kurulu internet sitesi`)">Internet sitesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel Emeklilik Danışma Kurulu internet sitesi`)">Müşteri hizmetleri birimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel Emeklilik Danışma Kurulu internet sitesi`)">Bireysel Emeklilik Danışma Kurulu internet sitesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> Emeklilik yatırım fonu portföyünün yönetiminde kaç portföy yöneticisi ile sözleşme yapılabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla portföy yöneticisiyle sözleşme yapılabilir.`)">Sadece bir portföy yöneticisiyle sözleşme yapılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla portföy yöneticisiyle sözleşme yapılabilir.`)">Birden fazla portföy yöneticisiyle sözleşme yapılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla portföy yöneticisiyle sözleşme yapılabilir.`)">Yurtiçinde bir, yurtdışında birden fazla portföy yöneticisiyle sözleşme yapılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla portföy yöneticisiyle sözleşme yapılabilir.`)">Yurtiçinde bir, yurtdışında ise en fazla iki portföy yöneticisiyle sözleşme yapılabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> Emeklilik şirketlerinin kurmaya zorunlu oldukları üç fonun başlangıç tutarı ne kadar olmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her bir fon için, şirketin ödenmiş sermayesinin en az 1/20'si kadar olmalıdır.`)">Her bir fon için, şirketin ödenmiş sermayesinin en az 1/20'si kadar olmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her bir fon için, şirketin ödenmiş sermayesinin en az 1/20'si kadar olmalıdır.`)">Her bir fon için, şirketin ödenmiş sermayesinin 1/10'u kadar olmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her bir fon için, şirketin ödenmiş sermayesinin en az 1/20'si kadar olmalıdır.`)">Her bir fon için, şirketin ödenmiş sermayesinin en az 1/15'i kadar olmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her bir fon için, şirketin ödenmiş sermayesinin en az 1/20'si kadar olmalıdır.`)">Her bir fon için, şirketin ödenmiş sermayesinin 1/8'i kadar olmalıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Aşağıdakilerden hangisi emeklilik yatırım fonu portföyünün yönetim esaslarından biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin, kurallara uygun hareket etmemeleri halinde, emeklilik şirketi, Hazine ve Maliye Bakanlığı tarafından uygun görülen, başka portföy yöneticileri ile hizmet sözleşmesi imzalayabilir.`)">Emeklilik yatırım fonu portföyü, portföy yöneticileri tarafından ilgili mevzuatta belirtilen portföy sınırlamalarına göre yönetilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin, kurallara uygun hareket etmemeleri halinde, emeklilik şirketi, Hazine ve Maliye Bakanlığı tarafından uygun görülen, başka portföy yöneticileri ile hizmet sözleşmesi imzalayabilir.`)">Emeklilik şirketleri, portföy yönetimi için, portföy yöneticileri ile mevzuata göre "portföy yönetim sözleşmesi" imzalamalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin, kurallara uygun hareket etmemeleri halinde, emeklilik şirketi, Hazine ve Maliye Bakanlığı tarafından uygun görülen, başka portföy yöneticileri ile hizmet sözleşmesi imzalayabilir.`)">Fon portföyü birden fazla portföy yöneticisi tarafından yönetilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin, kurallara uygun hareket etmemeleri halinde, emeklilik şirketi, Hazine ve Maliye Bakanlığı tarafından uygun görülen, başka portföy yöneticileri ile hizmet sözleşmesi imzalayabilir.`)">Portföy yöneticilerinin, kurallara uygun hareket etmemeleri halinde, emeklilik şirketi, Hazine ve Maliye Bakanlığı tarafından uygun görülen, başka portföy yöneticileri ile hizmet sözleşmesi imzalayabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Emeklilik sözleşmesi devam ederken katılımcı vefat ederse aşağıdakilerden hangisi gerçekleşir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikim ve varsa devlet katkısı hesabındaki tutar katılımcının kanuni mirasçılarına veya lehdarlarına ödenir.`)">Hazine ve Maliye Bakanlığı, katılımcının birikimini diğer katılımcılara dağıtmak üzere alır ve varsa devlet katkısı hesabındaki tutar Hazineye gelir kaydedilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikim ve varsa devlet katkısı hesabındaki tutar katılımcının kanuni mirasçılarına veya lehdarlarına ödenir.`)">Takasbank, katılımcının birikimini diğer katılımcılara dağıtmak üzere alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikim ve varsa devlet katkısı hesabındaki tutar katılımcının kanuni mirasçılarına veya lehdarlarına ödenir.`)">Birikim ve vefat tazminatı katılımcının lehdarlarına veya kanuni mirasçılarına ödenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birikim ve varsa devlet katkısı hesabındaki tutar katılımcının kanuni mirasçılarına veya lehdarlarına ödenir.`)">Birikim ve varsa devlet katkısı hesabındaki tutar katılımcının kanuni mirasçılarına veya lehdarlarına ödenir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Aşağıdakilerden hangisi emeklilik şirketinin uyması gereken yükümlülüklerden birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her yıl reel getiri sağlamak`)">Fonun yaptığı iş ve eylemlerin mevzuata uygun olmasını sağlamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her yıl reel getiri sağlamak`)">Her yıl reel getiri sağlamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her yıl reel getiri sağlamak`)">Katılımcıya ve fon portföyüne ilişkin bilgilerin saklama hesaplarına yansıyabilmesi için gerekli bilgileri saklayıcıya zamanında ve doğru şekilde iletmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her yıl reel getiri sağlamak`)">Fonun, kanun, mevzuat ve fon içtüzüğünde yer alan sınırlar dâhilinde yönetilmesini sağlamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Katılımcının katkı payı ödemeye ara vermesine ilişkin aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstediği zaman ara verebilir.`)">Sisteme giriş tarihinden itibaren 5 yılını doldurduktan sonra ara verebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstediği zaman ara verebilir.`)">Emekliliğe hak kazanana kadar ara veremez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstediği zaman ara verebilir.`)">İstediği zaman ara verebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstediği zaman ara verebilir.`)">Şirket tarafından uygun görülmesi halinde ara verebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Başka bir şirkete aktarım talebi aşağıdakilerden hangisi tarafından hiçbir şekilde yapılamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lehdar`)">Katılımcı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lehdar`)">İşveren</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lehdar`)">Lehdar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lehdar`)">Sponsor</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> Aşağıdakilerden hangisi emeklilik şirketinin kurduğu fonlarla ilgili sorumluluklarındandır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun yaptığı iş ve işlemlerin mevzuata uygun olmasını sağlamak`)">Fon portföyüne, fon içtüzüğü sınırlamalarına uygun yatırım araçları almak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun yaptığı iş ve işlemlerin mevzuata uygun olmasını sağlamak`)">Fon portföyündeki varlıkları saklamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun yaptığı iş ve işlemlerin mevzuata uygun olmasını sağlamak`)">Genel fon yönetim stratejisine ve kararlarına göre fon portföyünü yönetmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun yaptığı iş ve işlemlerin mevzuata uygun olmasını sağlamak`)">Fonun yaptığı iş ve işlemlerin mevzuata uygun olmasını sağlamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> Aşağıdaki kesintilerden hangisi katılımcının birikiminden indirim yolu ile tahsil edilemez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Peşin giriş aidatı`)">1 yıldan fazla ödemeye ara verme durumunda tahsil edilebilecek sabit giderler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Peşin giriş aidatı`)">Birikimin aktarımı durumunda giriş aidatının ertelenmiş kısmı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Peşin giriş aidatı`)">Yönetim gider kesintisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Peşin giriş aidatı`)">Peşin giriş aidatı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Katılımcı hesaplarına aktarılan fonların doğruluğundan aşağıdakilerden hangisi sorumludur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Emeklilik Gözetim Merkezi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Takasbank</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Emeklilik Şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Şirketi`)">Sermaye Piyasası Kurulu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdakilerden hangisi otomatik katılım kapsamında işverenin yükümlülüklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `En az çalışanın ödediği katkı payı tutarı kadar, otomatik katılım kapsamındaki sözleşmesine çalışan ad ve hesabına katkı payı ödemek`)">En az çalışanın ödediği katkı payı tutarı kadar, otomatik katılım kapsamındaki sözleşmesine çalışan ad ve hesabına katkı payı ödemek</div>
+    <div class="secenek" onclick="kontrolEt(this, `En az çalışanın ödediği katkı payı tutarı kadar, otomatik katılım kapsamındaki sözleşmesine çalışan ad ve hesabına katkı payı ödemek`)">Emeklilik şirketini seçmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `En az çalışanın ödediği katkı payı tutarı kadar, otomatik katılım kapsamındaki sözleşmesine çalışan ad ve hesabına katkı payı ödemek`)">Çalışanın faiz içeren/faiz içermeyen fon tercihini almak</div>
+    <div class="secenek" onclick="kontrolEt(this, `En az çalışanın ödediği katkı payı tutarı kadar, otomatik katılım kapsamındaki sözleşmesine çalışan ad ve hesabına katkı payı ödemek`)">Çalışan katkı payının çalışanın ücretinden keserek emeklilik şirketine aktarmak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Hisse senedi fonundan yapılabilecek azami günlük fon toplam gider kesintisi oranı kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzbinde 6,25`)">Yüzbinde 5,25</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzbinde 6,25`)">Yüzbinde 6,25</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzbinde 6,25`)">Yüzbinde 3</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yüzbinde 6,25`)">Yüzbinde 3,5</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Emeklilik yatırım fonu portföyünün saklanmasına ilişkin sözleşmenin tarafları kimlerdir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi ile saklayıcı kuruluş`)">Portföy yönetim şirketi ile saklayıcı kuruluş</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi ile saklayıcı kuruluş`)">Emeklilik şirketi ile portföy yönetim şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi ile saklayıcı kuruluş`)">Emeklilik şirketi ile saklayıcı kuruluş</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi ile saklayıcı kuruluş`)">Portföy yönetim şirketi, emeklilik şirketi, saklayıcı kuruluş</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Emeklilik şirketinin yılsonu mali tablolarının denetimini aşağıdakilerden hangisi yapar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bağımsız denetim kuruluşları`)">Emeklilik Gözetim Merkezi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bağımsız denetim kuruluşları`)">Sermaye Piyasası Kurulu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bağımsız denetim kuruluşları`)">Takasbank</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bağımsız denetim kuruluşları`)">Bağımsız denetim kuruluşları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Aşağıdakilerden hangisi otomatik katılım kapsamında yapılabilecek kesintilerden biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gider kesintisi`)">Giriş aidatı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gider kesintisi`)">Fon işletim gider kesintisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gider kesintisi`)">Yönetim gider kesintisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gider kesintisi`)">Ara verme durumunda yapılacak kesintiler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> Emeklilik yatırım fonu portföyünden ödünç verme işlemleri hakkında hangisi söylenebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün en fazla %50'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.`)">Fon portföyünden hiçbir şekilde ödünç verilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün en fazla %50'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.`)">Fon portföyünün tümü ödünç verilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün en fazla %50'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.`)">Fon portföyünün en fazla %50'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün en fazla %50'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.`)">Fon portföyünün en fazla %20'si tutarındaki para ve sermaye piyasası araçları ödünç verilebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> Aşağıda belirtilen belgelerden hangisi işveren grup emeklilik sözleşmelerine özgüdür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sertifikası`)">İşveren grup emeklilik sertifikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sertifikası`)">Emeklilik sözleşmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sertifikası`)">Giriş bilgi formu</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sertifikası`)">Teklif formu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Aşağıdakilerden hangisi bireysel emeklilik sisteminin özelliklerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı payının şirkete intikalini takip eden ilk iş gününden itibaren kar payı uygulaması başlaması zorunludur.`)">Katkı payının şirkete intikalini takip eden ilk iş gününden itibaren kar payı uygulaması başlaması zorunludur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı payının şirkete intikalini takip eden ilk iş gününden itibaren kar payı uygulaması başlaması zorunludur.`)">Emeklilik yatırım fonları için getiri garantisi verilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı payının şirkete intikalini takip eden ilk iş gününden itibaren kar payı uygulaması başlaması zorunludur.`)">Katılımcı, birikimlerinin değerlendireceği fonları seçme ve değiştirme hakkına sahiptir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katkı payının şirkete intikalini takip eden ilk iş gününden itibaren kar payı uygulaması başlaması zorunludur.`)">Katılımcılar şirketler arası aktarım hakkına sahiptir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> Emeklilik sözleşmesinin uygulama biçimini belirleyen teknik esaslara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planı`)">Emeklilik sözleşmesi metni</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planı`)">Emeklilik planı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planı`)">Giriş bilgi formu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik planı`)">Tanıtım kılavuzu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Emeklilik şirketlerinin sermayesine ilişkin aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip tüzel kişilere ait olması gerekir.`)">Şirket sermayesinin 10 milyon liradan az olmaması gerekir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip tüzel kişilere ait olması gerekir.`)">Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip en az 3 gerçek kişiye ait olması gerekir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip tüzel kişilere ait olması gerekir.`)">Şirket sermayesinin en az %51'inin en az 5 ortak arasında eşit olarak paylaşılmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip tüzel kişilere ait olması gerekir.`)">Şirket sermayesinin en az %51'inin mali piyasalar konusunda yeterli bilgi ve tecrübeye sahip tüzel kişilere ait olması gerekir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Aşağıdakilerden hangisi fon saklayıcısı olarak Takasbank'ın görevlerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinden alacaklı olanlara karşı fonlar için yediemin görevini yürütme`)">Fon varlıklarının saklanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinden alacaklı olanlara karşı fonlar için yediemin görevini yürütme`)">Emeklilik şirketinden alacaklı olanlara karşı fonlar için yediemin görevini yürütme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinden alacaklı olanlara karşı fonlar için yediemin görevini yürütme`)">Portföy değeri ve birim pay değerinin kontrolü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketinden alacaklı olanlara karşı fonlar için yediemin görevini yürütme`)">Fon hesabından yapılacak ödeme ve virman işlemlerinin kontrolü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> Bireysel emeklilik yatırım fon türleri arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon`)">Hisse senedi fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon`)">Standart fon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon`)">Fon sepeti fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon`)">Özel fon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Otomatik katılım kapsamında ödemeye ara verme hakkı kim tarafından kullanılabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışan`)">İşveren</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışan`)">Çalışan</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışan`)">Katılımcı ad ve namına katkı payı ödeyen kişi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışan`)">Sponsor</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Aşağıdaki ödeme tiplerinden hangisi devlet katkısı hesaplamasında dikkate alınmaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme ceza ödemeleri`)">Düzenli katkı payı ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme ceza ödemeleri`)">Ek katkı payı ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme ceza ödemeleri`)">Gecikme ceza ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme ceza ödemeleri`)">Başlangıç katkı payı ödemeleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Aşağıdakilerden hangisi emeklilik şirketinin yönetiminde aranan özelliklerdendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Genel müdür yardımcısının en az 7 yıllık mesleki deneyim süresine sahip olması`)">Yönetim kurulunun, genel müdür dahil 7 kişiden az olmaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Genel müdür yardımcısının en az 7 yıllık mesleki deneyim süresine sahip olması`)">Genel müdür yardımcılarının en az lise düzeyinde eğitim görmüş olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Genel müdür yardımcısının en az 7 yıllık mesleki deneyim süresine sahip olması`)">Genel müdürün en az 7 yıllık mesleki deneyim süresine sahip olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Genel müdür yardımcısının en az 7 yıllık mesleki deneyim süresine sahip olması`)">Genel müdür yardımcısının en az 7 yıllık mesleki deneyim süresine sahip olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Emeklilik yatırım fonları günlük raporlarının içeriğinde hangi bilgiler yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon birim pay değerlerinin günlük olarak hesaplanması yer alır.`)">Fon birim pay değerlerinin günlük olarak hesaplanması yer alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon birim pay değerlerinin günlük olarak hesaplanması yer alır.`)">Fon Kurulu üyelerinin ve kurucunun bilgileri yer alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon birim pay değerlerinin günlük olarak hesaplanması yer alır.`)">Fon içtüzüğüne ilişkin bilgiler yer alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon birim pay değerlerinin günlük olarak hesaplanması yer alır.`)">Fon paylarının alım satım saatlerini ilişkin bilgiler yer alır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> Bireysel emeklilik sisteminde vergilenen gelir unsuru aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Ücret geliri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Serbest meslek iradı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Menkul sermaye iradı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Kurum kazancı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> Aşağıda belirtilen hangi harcama emeklilik yatırım fonu malvarlığından yapılamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım danışmanlığı hizmeti alınan şirket çalışanlarının maaşları`)">Alınan kredilerin faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım danışmanlığı hizmeti alınan şirket çalışanlarının maaşları`)">Portföydeki varlıkların saklanması hizmetleri için ödenen ücretler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım danışmanlığı hizmeti alınan şirket çalışanlarının maaşları`)">Portföye alımlarda ve portföyden satımlarda ödenen komisyonlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım danışmanlığı hizmeti alınan şirket çalışanlarının maaşları`)">Yatırım danışmanlığı hizmeti alınan şirket çalışanlarının maaşları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Aşağıdakilerden hangisi fonun iç kontrol sisteminin amaçları arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket satış performansının ortaya çıkarılması`)">Finansal ve idari konularda güvenilir bilgi akışının sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket satış performansının ortaya çıkarılması`)">Bilginin zamanında elde edilebilirliğinin sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket satış performansının ortaya çıkarılması`)">Fonun faaliyetlerinin mevzuata uygunluğunun sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket satış performansının ortaya çıkarılması`)">Şirket satış performansının ortaya çıkarılması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Katılımcının emeklilik planını bir yılda azami kaç kez değiştirme hakkı vardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `4`)">6</div>
+    <div class="secenek" onclick="kontrolEt(this, `4`)">4</div>
+    <div class="secenek" onclick="kontrolEt(this, `4`)">8</div>
+    <div class="secenek" onclick="kontrolEt(this, `4`)">12</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Tamamlayıcı eğitim programıyla ilgili olarak aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lisans alma tarihinden itibaren iki yıl içerisinde, takip eden yıllarda her yıl alınması gerekmektedir.`)">Tamamlayıcı eğitim aracıların mesleki bilgilerinin güncel kalmasını sağlayacak, katılımı isteğe bağlı bir eğitim programıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lisans alma tarihinden itibaren iki yıl içerisinde, takip eden yıllarda her yıl alınması gerekmektedir.`)">Tamamlayıcı eğitim sınavda başarılı olan aracılara emeklilik şirketi tarafından verilen şirket ürünlerini tanıtan bir eğitimdir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lisans alma tarihinden itibaren iki yıl içerisinde, takip eden yıllarda her yıl alınması gerekmektedir.`)">Lisans alma tarihinden itibaren iki yıl içerisinde, takip eden yıllarda her yıl alınması gerekmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lisans alma tarihinden itibaren iki yıl içerisinde, takip eden yıllarda her yıl alınması gerekmektedir.`)">Sınavdan önce tamamlanması gereken ve sınava hazırlık niteliğinde bir eğitim programıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Emeklilik yatırım fonu içtüzüğü hakkında aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tüm emeklilik yatırım fonları için ortak bir içtüzük onaylatır.`)">Emeklilik yatırım fonu kurabilmek için fon içtüzüğü tescil edilmelidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tüm emeklilik yatırım fonları için ortak bir içtüzük onaylatır.`)">Fon kurucusunu, yöneticisini, sermayesini, hangi yatırım araçları ile değerlendirileceğini ve özelliklerini anlatır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tüm emeklilik yatırım fonları için ortak bir içtüzük onaylatır.`)">Emeklilik şirketi tüm emeklilik yatırım fonları için ortak bir içtüzük onaylatır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tüm emeklilik yatırım fonları için ortak bir içtüzük onaylatır.`)">Fon portföyünün inançlı mülkiyet esasına göre saklanmasını temin eder.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> Emeklilik yatırım fonu ile ilgili olarak aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon malvarlığı her şekilde teminat olarak gösterilebilir.`)">Fon malvarlığı rehnedilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon malvarlığı her şekilde teminat olarak gösterilebilir.`)">Fon malvarlığı haczettirilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon malvarlığı her şekilde teminat olarak gösterilebilir.`)">Fon malvarlığı iflas masasına dahil edilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon malvarlığı her şekilde teminat olarak gösterilebilir.`)">Fon malvarlığı her şekilde teminat olarak gösterilebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> Aşağıdakilerden hangisi emeklilik yatırım fonunun özelliklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği vardır.`)">Süresiz olarak kurulur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği vardır.`)">Bir emeklilik sözleşmesi çerçevesinde alınabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği vardır.`)">Tüzel kişiliği vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği vardır.`)">Sermaye piyasası kurumu niteliğindedir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Emeklilik yatırım fonu portföyüne ilişkin sınırlamalardan hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `En fazla %25'i mevduat/katılma hesaplarında değerlendirilebilir.`)">En fazla %25'i mevduat/katılma hesaplarında değerlendirilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `En fazla %25'i mevduat/katılma hesaplarında değerlendirilebilir.`)">En fazla %15'i yatırım fonu katılma paylarına yatırılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `En fazla %25'i mevduat/katılma hesaplarında değerlendirilebilir.`)">En fazla %30'u Takasbank para piyasası ve yurt içi organize para piyasası işlemlerinde değerlendirilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `En fazla %25'i mevduat/katılma hesaplarında değerlendirilebilir.`)">En fazla %35'i bir topluluğun para ve sermaye piyasası araçlarına yatırabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> Hangisi bireysel emeklilik sistemi ile ilgili yönetmeliklerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta ve Reasürans Şirketleri Aracıları Hakkında Yönetmelik`)">Emeklilik Şirketleri Kuruluş ve Çalışma Esasları Hakkında Yönetmelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta ve Reasürans Şirketleri Aracıları Hakkında Yönetmelik`)">Bireysel Emeklilik Sistemi Hakkında Yönetmelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta ve Reasürans Şirketleri Aracıları Hakkında Yönetmelik`)">Bireysel Emeklilik Aracıları Hakkında Yönetmelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta ve Reasürans Şirketleri Aracıları Hakkında Yönetmelik`)">Sigorta ve Reasürans Şirketleri Aracıları Hakkında Yönetmelik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> Aşağıdakilerden hangisi fona ilişkin zorunlu giderlerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gideri`)">Tescil ve ilan giderleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gideri`)">Saklama hizmeti giderleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gideri`)">Bağımsız denetim giderleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon işletim gideri`)">Fon işletim gideri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> Emeklilik yatırım fonu kuruluş işlemleri ne zaman tamamlanmış sayılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon içtüzüğünün ticaret siciline tescili ile`)">Kuruluş başvuru formunun teslimi ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon içtüzüğünün ticaret siciline tescili ile`)">Sermaye Piyasası Kurulunca verilen kuruluş izin yazısı ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon içtüzüğünün ticaret siciline tescili ile`)">Fon içtüzüğünün ticaret siciline tescili ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon içtüzüğünün ticaret siciline tescili ile`)">Fon içtüzüğünün notere onaylattırılması ile</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> Aşağıdaki şıklardan hangisi bireysel emeklilik sistemi için doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik sistemi, sosyal güvenlik sisteminin tamamlayıcısıdır.`)">Bireysel emeklilik sistemine giren katılımcının sosyal güvenlik sorunu kalmamıştır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik sistemi, sosyal güvenlik sisteminin tamamlayıcısıdır.`)">Bireysel emeklilik sistemi, sosyal güvenlik sisteminin tamamlayıcısıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik sistemi, sosyal güvenlik sisteminin tamamlayıcısıdır.`)">Bireysel emeklilik sisteminden emekli olmak için 10 yıl sistemde kalmak yeterlidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik sistemi, sosyal güvenlik sisteminin tamamlayıcısıdır.`)">Bireysel emeklilik sistemi zorunludur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> Yönetim gider kesintisi ile ilgili aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödenen katkı payları ile katılımcının birikimi üzerinden alınabilir.`)">Ödenen katkı payları üzerinden azami %2 oranında alınabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödenen katkı payları ile katılımcının birikimi üzerinden alınabilir.`)">Sadece ödenen katkı payları üzerinden alınabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödenen katkı payları ile katılımcının birikimi üzerinden alınabilir.`)">Sadece katılımcının birikimi üzerinden alınabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödenen katkı payları ile katılımcının birikimi üzerinden alınabilir.`)">Ödenen katkı payları ile katılımcının birikimi üzerinden alınabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> Emeklilik sözleşmesi ile ilgili aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her katılımcı sadece bir emeklilik sözleşmesi yapabilir.`)">Katılımcı, istediği emeklilik şirketiyle sözleşme yapabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her katılımcı sadece bir emeklilik sözleşmesi yapabilir.`)">Katılımcı, aynı emeklilik şirketiyle birden fazla sözleşme yapabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her katılımcı sadece bir emeklilik sözleşmesi yapabilir.`)">Katılımcı, farklı emeklilik şirketlerinden birden fazla emeklilik sözleşmesi alabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her katılımcı sadece bir emeklilik sözleşmesi yapabilir.`)">Her katılımcı sadece bir emeklilik sözleşmesi yapabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Katkı paylarından kesilecek aracı komisyonu oranları ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilikte aracı komisyonu olarak adlandırılan bir kesinti yoktur.`)">1. yıl %45, 2. yıl %20, 3. yıl %15</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilikte aracı komisyonu olarak adlandırılan bir kesinti yoktur.`)">Toplamı %80'i geçmemek üzere yıllara yayılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilikte aracı komisyonu olarak adlandırılan bir kesinti yoktur.`)">Her yıl %8</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilikte aracı komisyonu olarak adlandırılan bir kesinti yoktur.`)">Bireysel emeklilikte aracı komisyonu olarak adlandırılan bir kesinti yoktur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Aktarım hakkı hakkındaki aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesindeki birikimin bir bölümü ya da tamamı aktarıma konu edilebilir.`)">Aktarımla düzenlenen bir sözleşmenin tekrar aktarıma konu olabilmesi için şirkette en az 1 yıl kalması gerekmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesindeki birikimin bir bölümü ya da tamamı aktarıma konu edilebilir.`)">Aktarımla düzenlenenler hariç, bir sözleşme kapsamındaki birikimin ve devlet katkısı hesabındaki tutarların aktarıma konu olabilmesi için yürürlük tarihinden itibaren en az 2 yıl süreyle şirkette kalması gerekmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesindeki birikimin bir bölümü ya da tamamı aktarıma konu edilebilir.`)">Emeklilik sözleşmesindeki birikimin bir bölümü ya da tamamı aktarıma konu edilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesindeki birikimin bir bölümü ya da tamamı aktarıma konu edilebilir.`)">Aktarım talebi, ilgisine göre katılımcı, sponsor veya işveren tarafından yapılabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Emeklilik şirketlerinde yönetim kurulu en az kaç kişiden oluşur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `5`)">3</div>
+    <div class="secenek" onclick="kontrolEt(this, `5`)">5</div>
+    <div class="secenek" onclick="kontrolEt(this, `5`)">10</div>
+    <div class="secenek" onclick="kontrolEt(this, `5`)">4</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> Düzensiz ödemeye ilişkin aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vadesi 01.01.2016 ve sonrası olan katkı payı ödemelerine ilişkin olarak vadesinde ödenmeyen katkı payının ödeme tarihini müteakip üç ay içinde, ilgili hesaba emeklilik sözleşmesinde belirlenen vadeye ait katkı payı ödemesinin yapılmaması durumunda, ilgili sözleşme çerçevesinde düzensiz ödeme yapıldığı kabul edilir.`)">Vadesi 01.01.2016 ve sonrası olan katkı payı ödemelerine ilişkin olarak vadesinde ödenmeyen katkı payının ödeme tarihini müteakip üç ay içinde, ilgili hesaba emeklilik sözleşmesinde belirlenen vadeye ait katkı payı ödemesinin yapılmaması durumunda, ilgili sözleşme çerçevesinde düzensiz ödeme yapıldığı kabul edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vadesi 01.01.2016 ve sonrası olan katkı payı ödemelerine ilişkin olarak vadesinde ödenmeyen katkı payının ödeme tarihini müteakip üç ay içinde, ilgili hesaba emeklilik sözleşmesinde belirlenen vadeye ait katkı payı ödemesinin yapılmaması durumunda, ilgili sözleşme çerçevesinde düzensiz ödeme yapıldığı kabul edilir.`)">Düzensiz ödeme kapsamına giren sözleşmeler için katılımcılara, düzensiz ödeme statüsünün başladığı tarihi müteakip on iş günü içerisinde bilgi verilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vadesi 01.01.2016 ve sonrası olan katkı payı ödemelerine ilişkin olarak vadesinde ödenmeyen katkı payının ödeme tarihini müteakip üç ay içinde, ilgili hesaba emeklilik sözleşmesinde belirlenen vadeye ait katkı payı ödemesinin yapılmaması durumunda, ilgili sözleşme çerçevesinde düzensiz ödeme yapıldığı kabul edilir.`)">Düzensiz ödeme kapsamına giren sözleşmeler için katılımcılara yapılacak bilgilendirme, katılımcının sadece tanımlı posta adresine yapılmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vadesi 01.01.2016 ve sonrası olan katkı payı ödemelerine ilişkin olarak vadesinde ödenmeyen katkı payının ödeme tarihini müteakip üç ay içinde, ilgili hesaba emeklilik sözleşmesinde belirlenen vadeye ait katkı payı ödemesinin yapılmaması durumunda, ilgili sözleşme çerçevesinde düzensiz ödeme yapıldığı kabul edilir.`)">Düzensiz ödeme statüsünden çikmak için, düzensiz ödemede kalinan her ay için ödeme tarihindeki brüt asgari ücretin aylik tutarinin %8,5 i kadar ödeme yapilmalidir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> Aşağıdakilerden hangisi devlet katkısı hesabında dikkate alınır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ek katkı payı ödemeleri`)">Ek fayda kapsamında yapılan ödemeler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ek katkı payı ödemeleri`)">Başka şirketten aktarımla gelen tutarlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ek katkı payı ödemeleri`)">Ek katkı payı ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ek katkı payı ödemeleri`)">İşveren grup emeklilik sözleşmesinden hak kazanılarak transfer yoluyla aktarılan tutarlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Emeklilik yatırım fonları kazançları hangi vergiden istisnadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurumlar Vergisi`)">Kurumlar Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurumlar Vergisi`)">Gelir Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurumlar Vergisi`)">Özel İşlem Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurumlar Vergisi`)">Kaynak Kullanımını Destekleme Fonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> Katılımcı isterse emekli olmadan önce sistemden çıkabilir mi?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Evet, katılımcı ne zaman isterse sistemden çıkabilir.`)">Evet, katılımcı ne zaman isterse sistemden çıkabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Evet, katılımcı ne zaman isterse sistemden çıkabilir.`)">Hayır, 10 yıl süre ile katkı payı ödemiş olması gerekmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Evet, katılımcı ne zaman isterse sistemden çıkabilir.`)">Hayır, katılımcının 56 yaşını doldurmuş olması ve en az 10 yıl sistemde kalması gerekmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Evet, katılımcı ne zaman isterse sistemden çıkabilir.`)">Hayır, sisteme giriş tarihinden itibaren en az 10 yıl sistemde bulunması gerekmektedir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> Aşağıdakilerden hangisi emeklilik yatırım fonu türü değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi fon`)">Katılım fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi fon`)">Borçlanma araçları fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi fon`)">Kıymetli madenler fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi fon`)">A Tipi fon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Emeklilik yatırım fon portföyü başlangıçta nasıl oluşturulur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran şirket tarafından tahsis edilen avans ile`)">Katılımcılardan gelen katkılarla</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran şirket tarafından tahsis edilen avans ile`)">Hazine ve Maliye Bakanlığının açtığı krediyle</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran şirket tarafından tahsis edilen avans ile`)">Fonu kuran şirket tarafından tahsis edilen avans ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonu kuran şirket tarafından tahsis edilen avans ile`)">Portföy yönetim şirketi tarafından tahsis edilen avans ile</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Emeklilik yatırım fonunun birim pay değeri nasıl hesaplanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.`)">Fon varlıkları toplamının, toplam pay sayısına bölünmesiyle elde edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.`)">Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.`)">Bileşik faiz oranı kullanılarak tahakkuk eden faizin, önceki pay değerine eklenmesi suretiyle elde edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon net varlık değerinin, dolaşımdaki pay sayısına bölünmesiyle elde edilir.`)">Fon net varlık değerinin, toplam pay sayısına bölünmesiyle elde edilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Emeklilik şirketlerinin kazançları nasıl vergilendirilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilemede özel bir durumları olmayıp diğer şirketler gibi vergilendirilirler.`)">Kazançları kurumlar vergisinden istisna edilmiştir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilemede özel bir durumları olmayıp diğer şirketler gibi vergilendirilirler.`)">Kazançları gelir vergisinden istisna edilmiştir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilemede özel bir durumları olmayıp diğer şirketler gibi vergilendirilirler.`)">Vergilemede özel bir durumları olmayıp diğer şirketler gibi vergilendirilirler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilemede özel bir durumları olmayıp diğer şirketler gibi vergilendirilirler.`)">Beş yıl süreyle kazançları kurumlar vergisinden muaftır, gelir vergisi stopajı öderler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Emeklilik yatırım fonları ne kadar süre için kurulurlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süresiz`)">15 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süresiz`)">20 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süresiz`)">Süresiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süresiz`)">25 yıl</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Aşağıdakilerden hangisi saklayıcının görevlerindendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün Sermaye Piyasası Kurulunca belirlenen esaslar çerçevesinde yönetilmesinin kontrolü`)">Fon portföyünün Sermaye Piyasası Kurulunca belirlenen esaslar çerçevesinde yönetilmesinin kontrolü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün Sermaye Piyasası Kurulunca belirlenen esaslar çerçevesinde yönetilmesinin kontrolü`)">Fonun muhasebe, belge ve kayıt sisteminin düzenli bir şekilde tutulması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün Sermaye Piyasası Kurulunca belirlenen esaslar çerçevesinde yönetilmesinin kontrolü`)">Kamuoyu aydınlatma belgelerinin mevzuata uygun şekilde hazırlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon portföyünün Sermaye Piyasası Kurulunca belirlenen esaslar çerçevesinde yönetilmesinin kontrolü`)">Fon ile ilgili mali tablo ve raporların hazırlanması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> Emeklilik planı aşağıdakilerden hangisini kapsamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değeri`)">Fon toplam gider kesintisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değeri`)">Giriş aidatı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değeri`)">Yönetim gider kesintisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değeri`)">Portföy değeri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> Emeklilik şirketi hisse senetleri ne tür olmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nama yazılı`)">Hamiline yazılı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nama yazılı`)">Nama yazılı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nama yazılı`)">Adi hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nama yazılı`)">İmtiyazlı hisse senedi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> Emeklilik yatırım fonlarını kimler satın alabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcıları`)">Herkes</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcıları`)">Medeni hakları kullanma ehliyetini haiz herkes</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcıları`)">Emeklilik sözleşmesi katılımcıları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcıları`)">Yıllık gelir sigortası yapanlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> Emeklilik sözleşmesi ne zaman yürürlüğe girer?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tarafından reddedilmediği takdirde, varsa blokaj süresinin tamamlanmasını müteakip katkı payı olarak yapılan ilk ödemenin şirket hesaplarına nakden intikal ettiği tarihte`)">Emeklilik şirketi tarafından reddedilmediği takdirde teklif formunun imzalandığı tarihi takip eden 30. günde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tarafından reddedilmediği takdirde, varsa blokaj süresinin tamamlanmasını müteakip katkı payı olarak yapılan ilk ödemenin şirket hesaplarına nakden intikal ettiği tarihte`)">Teklif formunun imzalandığı tarihte</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tarafından reddedilmediği takdirde, varsa blokaj süresinin tamamlanmasını müteakip katkı payı olarak yapılan ilk ödemenin şirket hesaplarına nakden intikal ettiği tarihte`)">Emeklilik şirketi tarafından reddedilmediği takdirde, varsa blokaj süresinin tamamlanmasını müteakip katkı payı olarak yapılan ilk ödemenin şirket hesaplarına nakden intikal ettiği tarihte</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketi tarafından reddedilmediği takdirde, varsa blokaj süresinin tamamlanmasını müteakip katkı payı olarak yapılan ilk ödemenin şirket hesaplarına nakden intikal ettiği tarihte`)">Emeklilik şirketi tarafından reddedilmediği takdirde teklif formunun imzalandığı tarihi takip eden 10. günde</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Portföy yöneticisi aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış ve Sermaye Piyasası Kurulunca uygun görülen portföy yönetim şirketi`)">Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış, emeklilik şirketlerinin fon yönetimi bölümü çalışanları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış ve Sermaye Piyasası Kurulunca uygun görülen portföy yönetim şirketi`)">Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış ve Sermaye Piyasası Kurulunca uygun görülen portföy yönetim şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış ve Sermaye Piyasası Kurulunca uygun görülen portföy yönetim şirketi`)">Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış, Takasbank çalışanları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye Piyasası Kurulundan portföy yöneticiliği yetki belgesi almış ve Sermaye Piyasası Kurulunca uygun görülen portföy yönetim şirketi`)">Emeklilik şirketlerinin onayı ile Borsa İstanbul çalışanları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> Katılımcı kimleri lehdar olarak seçebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı lehdar veya lehdarlarını kendisi belirler ve sözleşmeye yazdırır. Lehdarın belirlenmemesi halinde katılımcının kanuni varisleri hak sahibidir.`)">Sigorta olmadığından lehdar seçimi yoktur. Katılımcının vefatı halinde birikimleri emeklilik şirketine kalır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı lehdar veya lehdarlarını kendisi belirler ve sözleşmeye yazdırır. Lehdarın belirlenmemesi halinde katılımcının kanuni varisleri hak sahibidir.`)">Katılımcının patronu otomatik olarak lehdar olur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı lehdar veya lehdarlarını kendisi belirler ve sözleşmeye yazdırır. Lehdarın belirlenmemesi halinde katılımcının kanuni varisleri hak sahibidir.`)">Katılımcının eşi lehdar olarak alınır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılımcı lehdar veya lehdarlarını kendisi belirler ve sözleşmeye yazdırır. Lehdarın belirlenmemesi halinde katılımcının kanuni varisleri hak sahibidir.`)">Katılımcı lehdar veya lehdarlarını kendisi belirler ve sözleşmeye yazdırır. Lehdarın belirlenmemesi halinde katılımcının kanuni varisleri hak sahibidir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcı tercihi doğrultusunda kalıcı veri saklayıcısı ile veya matbu halde gönderilir.`)">Cayma halinde yatırım gelirleri diğer sözleşmeler dağıtılır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcı tercihi doğrultusunda kalıcı veri saklayıcısı ile veya matbu halde gönderilir.`)">Emeklilik sözleşmesi katılımcı tercihi doğrultusunda kalıcı veri saklayıcısı ile veya matbu halde gönderilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcı tercihi doğrultusunda kalıcı veri saklayıcısı ile veya matbu halde gönderilir.`)">Yürürlüğe giren bir sözleşmeden caymak mümkün değildir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik sözleşmesi katılımcı tercihi doğrultusunda kalıcı veri saklayıcısı ile veya matbu halde gönderilir.`)">Cayma talebi, mutlaka yazılı yapılmalıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> Aşağıdaki ifadelerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu işveren tarafından imzalanır.`)">İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu işveren tarafından imzalanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu işveren tarafından imzalanır.`)">İşveren grup emeklilik sözleşmesinde, teklif formu işveren tarafından, giriş bilgi formu katılımcı tarafından imzalanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu işveren tarafından imzalanır.`)">İşveren grup emeklilik sözleşmesinde, teklif formu katılımcı, giriş bilgi formu işveren tarafından imzalanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu işveren tarafından imzalanır.`)">İşveren grup emeklilik sözleşmesinde, teklif formu ve giriş bilgi formu katılımcı tarafından imzalanır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> Fon Kurulu en az kaç kişiden oluşur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `3 kişi`)">2 kişi</div>
+    <div class="secenek" onclick="kontrolEt(this, `3 kişi`)">4 kişi</div>
+    <div class="secenek" onclick="kontrolEt(this, `3 kişi`)">2 üye, 2 denetçi toplam 4 kişi</div>
+    <div class="secenek" onclick="kontrolEt(this, `3 kişi`)">3 kişi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> Aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketleri pay sahipleri hiçbir şekilde pay devri yapamazlar.`)">Emeklilik şirketi, bir başka emeklilik şirketi ile birleşebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketleri pay sahipleri hiçbir şekilde pay devri yapamazlar.`)">Emeklilik şirketi, bir başka emeklilik şirketine devrolabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketleri pay sahipleri hiçbir şekilde pay devri yapamazlar.`)">Emeklilik şirketi, ana sözleşmesinde değişiklik talebinde bulunabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik şirketleri pay sahipleri hiçbir şekilde pay devri yapamazlar.`)">Emeklilik şirketleri pay sahipleri hiçbir şekilde pay devri yapamazlar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> Aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sosyal güvenlik sistemi zorunlu, bireysel emeklilik sistemi gönüllü katılıma dayanır.`)">Kamu sosyal güvenlik sistemi zorunlu, bireysel emeklilik sistemi gönüllü katılıma dayanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sosyal güvenlik sistemi zorunlu, bireysel emeklilik sistemi gönüllü katılıma dayanır.`)">Kamu sosyal güvenlik sisteminde geçirilmiş olan süre, ödenen primler ve kazanılan haklar bireysel emeklilik sistemine devredilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sosyal güvenlik sistemi zorunlu, bireysel emeklilik sistemi gönüllü katılıma dayanır.`)">Bireysel emeklilik sistemi, kamu sosyal güvenlik sisteminin üyelerine sunmuş olduğu hastanelerden yararlanma, ilaç bedellerinin ödenmesi gibi sağlık hizmetleri vermektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sosyal güvenlik sistemi zorunlu, bireysel emeklilik sistemi gönüllü katılıma dayanır.`)">Kamu sosyal güvenlik sistemi yerine bireysel emeklilik hesaplarına katkı payı ödenebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> A ülkesinde tarımda çalışanların katılabildiği belirli fayda esaslı bir mesleki emeklilik fonunun yöneticisi yıl sonu hesaplarını kontrol ettiğinde sistemin varlıklarının yükümlülüklerinin üzerinde olduğunu görmüştür. Buna göre aşağıdakilerden hangisi söylenemez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesine ihtiyaç duyulabilir.`)">Fonun portföy yöneticileri başarılıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesine ihtiyaç duyulabilir.`)">Yıl sonunda yüksek prim miktarı elde edilmiştir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesine ihtiyaç duyulabilir.`)">Emeklilik yaşının yükseltilmesine ihtiyaç duyulabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesine ihtiyaç duyulabilir.`)">Prim ödeme süresinin azaltılması gerekebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>

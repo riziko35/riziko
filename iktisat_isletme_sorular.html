@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>İktisat ve İşletme Soruları</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>İktisat ve İşletme - Çoktan Seçmeli Sorular</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> Bir ülkenin diğer ülkeler ile gerçekleştirdiği her türlü uluslararası ekonomik işlemin yer aldığı tabloya ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dış Ticaret Dengesi`)">Dış Ticaret Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dış Ticaret Dengesi`)">Cari İşlemler Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dış Ticaret Dengesi`)">Ödemeler Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dış Ticaret Dengesi`)">Sermaye Hareketleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> İnsan ihtiyaçlarını karşılamak için kullanılan kıt kaynakların idaresi aşağıdaki kavramlardan hangisinin tanımıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İktisat`)">İktisat</div>
+    <div class="secenek" onclick="kontrolEt(this, `İktisat`)">Kaynak</div>
+    <div class="secenek" onclick="kontrolEt(this, `İktisat`)">Tasarruf</div>
+    <div class="secenek" onclick="kontrolEt(this, `İktisat`)">İkame</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> Aşağıdakilerden hangisi gelişmekte olan ekonomilerde, ekonomik krizlerin ortaya çıkış nedenlerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özerk Merkez Bankası`)">Yanlış uygulanan para ve kur politikaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özerk Merkez Bankası`)">Kronikleşen yapısal sorunlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özerk Merkez Bankası`)">Özerk Merkez Bankası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özerk Merkez Bankası`)">Dış ticaret açığının hızla büyümesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Bireyin, toplumun ortalama refah düzeyinin altında bir gelire sahip olma durumu aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nispi yoksulluk`)">Mutlak yoksulluk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nispi yoksulluk`)">Nispi yoksulluk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nispi yoksulluk`)">Ekstrem yoksulluk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nispi yoksulluk`)">Sermaye sığlaşması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> Aşağıdakilerden hangileri üretim faktörlerindendir?  I. Emek, II. Girişimci, III. Sermaye, IV. Talep, V. Arz</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve V</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">IV, V</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Bir şeyi elde edebilmek için, başka bir şeyden vazgeçmek zorunluluğunu, aşağıdakilerden hangisi tanımlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alternatif maliyet`)">Alternatif maliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alternatif maliyet`)">Ekstra maliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alternatif maliyet`)">Alternatif kazanç</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alternatif maliyet`)">Ekstra gider</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> Bir ekonomide enflasyonist etki, aşağıdakilerden hangi maliye politikası uygulanarak minimize edilebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Daraltıcı maliye politikası`)">Genişletici maliye politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Daraltıcı maliye politikası`)">Vergileri azaltıcı ve kamu harcamalarını artırıcı maliye politikaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Daraltıcı maliye politikası`)">Daraltıcı maliye politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Daraltıcı maliye politikası`)">Devletin müdahale etmediği maliye politikası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> Aşağıdakilerden hangisi ölümcül hastalıkların tedavisinde kullanılan ilaçların talep fiyat esnekliğidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik değeri sıfır`)">Esneklik 1’den büyük</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik değeri sıfır`)">Esneklik 1’den küçük</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik değeri sıfır`)">Esneklik değeri sıfır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik değeri sıfır`)">Esneklik değeri sonsuz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Aşağıdakilerden hangisi, piyasa türü ne olursa olsun, bir firmanın kar maksimizasyonu koşullarındandır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firmanın marjinal maliyetinin firmanın marjinal gelirine eşit olması`)">Firmanın marjinal gelirinin firmanın ortalama maliyetine eşit olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firmanın marjinal maliyetinin firmanın marjinal gelirine eşit olması`)">Firmanın ortalama gelirinin firmanın ortalama maliyetine eşit olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firmanın marjinal maliyetinin firmanın marjinal gelirine eşit olması`)">Firmanın marjinal maliyet eğrisinin azalan bir eğri olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firmanın marjinal maliyetinin firmanın marjinal gelirine eşit olması`)">Firmanın marjinal maliyetinin firmanın marjinal gelirine eşit olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> Fiyat artışlarının eksiye düşmesi ve enflasyonun düşürülme süreci sırasıyla aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon-Dezenflasyon`)">Deflasyon-Dezenflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon-Dezenflasyon`)">Enflasyon-Devalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon-Dezenflasyon`)">Stagflasyon-Revalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon-Dezenflasyon`)">Deflasyon-Revalüasyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> Aşağıdaki faktörlerden hangisi maliyet kökenli enflasyonist baskı yaratan faktörlerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli faizlerin düşmesi`)">Yerli paranın aşırı düzeyde değer kaybetmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli faizlerin düşmesi`)">Kamu sektörünün ürettiği sınai girdi fiyatlarına yüksek oranlı zam yapılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli faizlerin düşmesi`)">Global düzeyde petrol fiyatının yükselmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli faizlerin düşmesi`)">Kısa vadeli faizlerin düşmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> Aşağıdakilerden hangisi tüketicinin tükettiği mallardan birinin fiyatının düşmesinin sonucu değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketicinin reel gelirinin azalması`)">Fiyatı düşen malın tüketiminin artması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketicinin reel gelirinin azalması`)">Tüketicinin reel gelirinin azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketicinin reel gelirinin azalması`)">Tüketici dengesinin değişmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketicinin reel gelirinin azalması`)">Tüketicinin bütçe doğrusunun değişmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> Gelirdeki bir birimlik nispi değişmenin talep miktarında meydana getireceği nispi değişmeye ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talebin gelir esnekliği`)">Arzın fiyat esnekliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talebin gelir esnekliği`)">Fiyat esnekliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talebin gelir esnekliği`)">Talebin gelir esnekliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talebin gelir esnekliği`)">Birim esneklik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> Aşağıdakilerden hangisi emek piyasasında dengenin değişmesine neden olan faktörlerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zevk ve tercihlerin değişmesi`)">Teknolojik gelişme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zevk ve tercihlerin değişmesi`)">Zevk ve tercihlerin değişmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zevk ve tercihlerin değişmesi`)">Ücret düzeyinin değişmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zevk ve tercihlerin değişmesi`)">Nüfus artışı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Devletin vergiler, kamu harcamaları ve borçlanma yoluyla ekonomiye müdahale etmesine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Maliye politikası`)">Gelirler politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Maliye politikası`)">Büyüme politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Maliye politikası`)">Para politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Maliye politikası`)">Maliye politikası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Aşağıdakilerden hangisi Stagflasyonun yaşandığı bir ekonomi için geçerli durumlardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik ile enflasyon ters yönlü olarak hareket etmektedir.`)">Ekonomik durgunluk sözkonusudur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik ile enflasyon ters yönlü olarak hareket etmektedir.`)">İşsizlik oranı yüksektir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik ile enflasyon ters yönlü olarak hareket etmektedir.`)">Enflasyon oranı yüksek seviyede seyretmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik ile enflasyon ters yönlü olarak hareket etmektedir.`)">İşsizlik ile enflasyon ters yönlü olarak hareket etmektedir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Paranın hangi fonksiyonu mal ve hizmetlerin el değiştirmesi sürecini kolaylaştırır ve hızlandırır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değişim aracı olma`)">Değişim aracı olma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değişim aracı olma`)">İktisat politikası aracı olma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değişim aracı olma`)">Finansal yeniliklere olanak tanıma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değişim aracı olma`)">Hesap birimi olma</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Aşağıdaki şıklardan hangisi petrol fiyatının önemli ölçüde artmasının sonuçlarından biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Uluslararası ticaret hacmini arttırır.`)">Petrol tüketen ülkelerden üreten ülkelere önemli ölçüde kaynak transfer gerçekleşmesi global düzeyde gelir dağılımını bozar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Uluslararası ticaret hacmini arttırır.`)">Uluslararası ticaret hacmini arttırır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Uluslararası ticaret hacmini arttırır.`)">Global düzeyde diğer mallara yönelik talebi azaltır, işsizliği arttırır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Uluslararası ticaret hacmini arttırır.`)">Maliyet enflasyonu ortaya çıkar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Devletin ve dış ticaretin olmadığı bir ekonomide toplam talep hangi faktör tarafından belirlenir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim ve yatırım harcamaları`)">İstihdam düzeyi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim ve yatırım harcamaları`)">Tasarruf düzeyi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim ve yatırım harcamaları`)">Tüketim ve yatırım harcamaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim ve yatırım harcamaları`)">Gelir</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> İkamenin mümkün olmaması için aşağıdakilerden hangi durumun esneklik için geçerli olması gerekir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik=0`)">Esneklik>1</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik=0`)">Esneklik=1</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik=0`)">Esneklik<1</div>
+    <div class="secenek" onclick="kontrolEt(this, `Esneklik=0`)">Esneklik=0</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> Aşağıdakilerden hangisi milli geliri oluşturan unsurlardandır?  I. Rant II. Faiz III. Arz IV. Kar</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II, IV`)">I, II, III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II, IV`)">I, II, IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II, IV`)">II, III, IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II, IV`)">III, IV</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> Makro ekonomide sağlanmak istenilen temel hedefler arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Marjinal fayda`)">Tam istihdamın sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Marjinal fayda`)">Marjinal fayda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Marjinal fayda`)">Enflasyonun düşürülmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Marjinal fayda`)">Ekonomik büyüme</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> Aşağıdakilerden hangisi tüketici düzeyinde fiyat oluşumunda etkili olan unsurlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim veya ithalat maliyeti`)">Malın sağladığı fayda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim veya ithalat maliyeti`)">Malın temin edilebilirlik düzeyi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim veya ithalat maliyeti`)">Malın kalitesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim veya ithalat maliyeti`)">Üretim veya ithalat maliyeti</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Ulusal para biriminin, diğer paralar ve altına serbestçe dönüştürülebilmesine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konvertibilite`)">Revalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konvertibilite`)">Deflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konvertibilite`)">Konvertibilite</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konvertibilite`)">Stagflasyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> Tüketicinin belli koşullarda en yüksek faydayı sağladığı durum aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Tüketim eğilimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Tüketici dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Piyasa dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Arz talep dengesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> Aşağıdakilerden hangisi üretici düzeyinde fiyat oluşumuna etki eden faktörlerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Malın üretimi veya ithalatı esnasında katlanılan maliyetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Firma karı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Dolaylı vergiler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Tüketici tercihleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Tüketicinin bir malı razı olduğu fiyattan daha düşük fiyata satın almasına ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici rantı`)">Tüketici rantı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici rantı`)">Üretici rantı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici rantı`)">Tasarruf</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici rantı`)">Kar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Enflasyon ile işsizliğin bir arada görüldüğü ekonomik bunalım aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Stagflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Depresyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Stagnasyon (Durgunluk)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Resesyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Aşağıdakilerden hangisi özel sektör imalat sanayinin enflasyonist eğilimlerini gösterir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çekirdek enflasyon`)">Yurt İçi Üretici Fiyat Endeksi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çekirdek enflasyon`)">Tüketici Fiyat Endeksi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çekirdek enflasyon`)">Çekirdek enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çekirdek enflasyon`)">Talep enflasyonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> Aşağıdaki şıklardan hangisi işsizliğin artmasına sebep olan faktörlerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomi genelinde rekabet gücünün artması`)">İç talepte ciddi bir daralma yaşanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomi genelinde rekabet gücünün artması`)">Global düzeyde yaşanan durgunluğun dış satım imkanlarını sınırlaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomi genelinde rekabet gücünün artması`)">Ekonomi genelinde rekabet gücünün artması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomi genelinde rekabet gücünün artması`)">Kamu harcamalarının imkansızlık nedeniyle hatırı sayılır ölçüde daralması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> TCMB’nın Interbank Para Piyasasına para vermesi TL faizi ve döviz kurunu nasıl etkiler?</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, döviz kuru artar.`)">TL faizi artar, döviz kuru artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, döviz kuru artar.`)">TL faizi düşer, döviz kuru artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, döviz kuru artar.`)">TL faizi artar, döviz kuru düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, döviz kuru artar.`)">TL faizi düşer, döviz kuru değişmez.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Aşağıdakilerden hangisi ülkemizde uygulanan İstikrar Programının amaçlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi indirimi sağlamak.`)">Kamu borç stoğunu azaltmak.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi indirimi sağlamak.`)">Sürdürülebilir büyümeyi sağlamak.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi indirimi sağlamak.`)">Sürdürülebilir istihdam artışını sağlamak.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi indirimi sağlamak.`)">Vergi indirimi sağlamak.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> Çok satıcının olduğu ve ürünlerin farklılaştığı piyasa türü aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Monopollü rekabet`)">Monopol</div>
+    <div class="secenek" onclick="kontrolEt(this, `Monopollü rekabet`)">Oligopol</div>
+    <div class="secenek" onclick="kontrolEt(this, `Monopollü rekabet`)">Monopollü rekabet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Monopollü rekabet`)">Duopson</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> Aşağıdakilerden hangisi kayıt dışı ekonominin doğuşuna neden olan olaylardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşverenlerin, istihdam ettikleri kişilerin düzenli kayıtlarını tutmaları`)">Bazı faaliyetlerin çeşitli kanunlarla yasaklanmış olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşverenlerin, istihdam ettikleri kişilerin düzenli kayıtlarını tutmaları`)">Ödeyecekleri vergiyi azaltmak için bir kısım mükellefin eksik ya da yanlış belge kullanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşverenlerin, istihdam ettikleri kişilerin düzenli kayıtlarını tutmaları`)">İşverenlerin, istihdam ettikleri kişilerin düzenli kayıtlarını tutmaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşverenlerin, istihdam ettikleri kişilerin düzenli kayıtlarını tutmaları`)">Kişilerin devletçe sağlanan işsizlik ödeneği gibi bazı imkanları kaybetmemek için üretim sürecine katkılarını gizlemeleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> Aşağıdaki kararlardan hangisi maliye politikası kapsamında alınan önlemlerden biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devletin kurumlar vergisi oranını %50’den %25’e düşürmesi`)">Merkez Bankasının döviz kurunu sabitlemesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devletin kurumlar vergisi oranını %50’den %25’e düşürmesi`)">Devletin kurumlar vergisi oranını %50’den %25’e düşürmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devletin kurumlar vergisi oranını %50’den %25’e düşürmesi`)">Devlet tarafından piyasa faizlerine müdahale edilerek tasarrufçunun enflasyona karşı korunması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devletin kurumlar vergisi oranını %50’den %25’e düşürmesi`)">Devletin sorunlu bankalara el koyarak mevduat toplamalarını yasaklaması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Kamu Kesimi Borçlanma Gereği (KKBG) aşağıdaki seçeneklerden hangisi ile ifade edilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplam Kamu Açığı ile ifade edilir.`)">Genel ve Katma Bütçeli İdarelerin Finansman Açığı ile ifade edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplam Kamu Açığı ile ifade edilir.`)">Toplam Kamu Açığı ile ifade edilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplam Kamu Açığı ile ifade edilir.`)">Konsolide Bütçe Açığı, KİT Finansman Açığı ve Yerel Yönetimlerin Finansman Açıkları toplamıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplam Kamu Açığı ile ifade edilir.`)">İşletmeci Kamu Kuruluşlarının Finansman Açıklarının GSYİH'ye oranı olarak ifade edilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Sermaye ile işgücü arasında ikame olmaması sonucu, ikame esnekliği hangi değeri alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `0`)">0</div>
+    <div class="secenek" onclick="kontrolEt(this, `0`)">1,5</div>
+    <div class="secenek" onclick="kontrolEt(this, `0`)">1</div>
+    <div class="secenek" onclick="kontrolEt(this, `0`)">0,5</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Aşağıdakilerden hangisi ithalatı ve ihracatı belirleyen faktörler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruflar`)">Hem yerli ülkenin hem de yabancı ülkelerin gelir düzeyleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruflar`)">Döviz kurları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruflar`)">Ticari kısıtlamalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruflar`)">Tasarruflar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Bir ülkede fiyatlar genel seviyesinin sürekli ve düzenli olarak azalmasına ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Revalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Deflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Resesyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Aşağıdakilerden hangisi Kamu Kesimi Açıklarını oluşturan unsurlardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stok değişmeleri`)">Stok değişmeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stok değişmeleri`)">KİT’ler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stok değişmeleri`)">Sosyal Güvenlik Kuruluşları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stok değişmeleri`)">Belediyeler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> Bir firmanın üretim miktarı 0 olsa bile katlanmak zorunda olduğu maliyete ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sabit maliyet`)">Zorunlu maliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sabit maliyet`)">Sabit maliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sabit maliyet`)">Eş maliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sabit maliyet`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> Bir malın, hem ikame hem de tamamlayıcı malının fiyatı arttığında, mala olan talep,</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi mümkündür`)">Artar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi mümkündür`)">Azalır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi mümkündür`)">Değişmez</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi mümkündür`)">Hepsi mümkündür</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Yurt İçi Üretici Fiyat Endeksi'nde aşağıdakilerden hangisinin ağırlığı en fazladır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İmalat`)">Su temini</div>
+    <div class="secenek" onclick="kontrolEt(this, `İmalat`)">Elektrik, gaz üretimi ve dağıtımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İmalat`)">Madencilik ve taşocakçılığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İmalat`)">İmalat</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdakilerden hangisi kapitalist ekonomi düzeninin özellikleri içinde yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim malları kişilere değil topluma aittir.`)">Kişiler iktisadi karar ve davranışlarında serbesttir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim malları kişilere değil topluma aittir.`)">Kişiler üretim ve tüketim malları üzerinde mülkiyet hakkına sahiptir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim malları kişilere değil topluma aittir.`)">Kaynakların nasıl kullanılacağı firma kararlarınca belirlenmektedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim malları kişilere değil topluma aittir.`)">Üretim malları kişilere değil topluma aittir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Kısa vadeli bir devlet borcunun uzun vadeli borçla değiştirilmesine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konsolidasyon`)">Bütçe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konsolidasyon`)">Finansman</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konsolidasyon`)">Konsolidasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Konsolidasyon`)">Virman</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Mali piyasaların ekonomideki faydaları arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarrufların vadesinin kısalması`)">Gelir ve refah artışına katkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarrufların vadesinin kısalması`)">Tasarrufların vadesinin kısalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarrufların vadesinin kısalması`)">Risk ayarlamaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarrufların vadesinin kısalması`)">Büyük ölçekli firmaların kurulması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Marjinal fayda ile ihtiyacın şiddeti arasındaki ilişki aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğru orantılı bir ilişki vardır.`)">Sınırlı bir ilişki vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğru orantılı bir ilişki vardır.`)">Ters orantılı bir ilişki vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğru orantılı bir ilişki vardır.`)">Doğru orantılı bir ilişki vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğru orantılı bir ilişki vardır.`)">Hiçbir ilişki yoktur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Bir malın fiyatı arttıkça ondan daha az satın alınmak istenmesi ne ile açıklanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep Yasası`)">Marjinal ikame haddi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep Yasası`)">Talep Yasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep Yasası`)">Gelir Yasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep Yasası`)">Azalan Marjinal Fayda Yasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> Devlet tarafından bir malın fiyatı üzerine konulan minimum sınıra ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Taban Fiyat`)">Tavan Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Taban Fiyat`)">Denge Fiyatı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Taban Fiyat`)">Taban Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Taban Fiyat`)">Maksimum Fiyat</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> Piyasa dengede iken, tüketicilerin gelirlerinin artması dengeyi nasıl etkiler?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Miktar ve malın fiyatı artar.`)">Miktar artar, fiyat azalır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Miktar ve malın fiyatı artar.`)">Miktar değişmez, fiyat artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Miktar ve malın fiyatı artar.`)">Malın fiyatı azalır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Miktar ve malın fiyatı artar.`)">Miktar ve malın fiyatı artar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Para arzının artmasının sonuçları arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdam hacmi azalır.`)">İstihdam hacmi azalır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdam hacmi azalır.`)">Gelir düzeyi artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdam hacmi azalır.`)">Faiz oranları düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdam hacmi azalır.`)">Kredi faiz oranları düşer.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> Aşağıdakilerden hangisi bir malın değerinin belirlenmesinde etkili değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malın fiyatı`)">Malın sağladığı fayda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malın fiyatı`)">Malın bol veya kıt olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malın fiyatı`)">Malın kalitesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malın fiyatı`)">Malın fiyatı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Ekonomiyi genel olarak inceleyen ekonomik analiz aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Makro ekonomi`)">Makro ekonomi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Makro ekonomi`)">Teknik analiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Makro ekonomi`)">Stok analiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Makro ekonomi`)">Mikro ekonomi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Firmanın kendi kararlarının bir sonucu olan maliyet azalışına ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İçsel ekonomiler`)">Faktörel maliyet azalışı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İçsel ekonomiler`)">Endüstriyel maliyet azalışı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İçsel ekonomiler`)">Dışsal ekonomiler</div>
+    <div class="secenek" onclick="kontrolEt(this, `İçsel ekonomiler`)">İçsel ekonomiler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> Fiyatlar genel seviyesindeki düzenli ve sürekli azalma veya düşüşe ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Deflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Devalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflasyon`)">Revalüasyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Para arzının artması durumunda arz ve talep dengesindeki değişim nasıl olur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi artar.`)">Talep edilen para miktarı azalır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi artar.`)">Talep edilen para miktarı artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi artar.`)">Fiyatlar genel düzeyi artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi artar.`)">Arz edilen para miktarı azalır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Döviz ve döviz kurları ile ilgili olarak aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon ülkenin ihraç mallarının yabancı para cinsinden fiyatlarını artırır.`)">Döviz kuru yabancı paraların ulusal para cinsinden ifadesidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon ülkenin ihraç mallarının yabancı para cinsinden fiyatlarını artırır.`)">Merkez Bankası piyasaya döviz sürme veya çekme şeklinde müdahaleler yapabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon ülkenin ihraç mallarının yabancı para cinsinden fiyatlarını artırır.`)">Ulusal paranın değerinin, diğer ülkelerin paraları karşısında düşürülmesine devalüasyon denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon ülkenin ihraç mallarının yabancı para cinsinden fiyatlarını artırır.`)">Devalüasyon ülkenin ihraç mallarının yabancı para cinsinden fiyatlarını artırır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Konsolide bütçe dengesi açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme ve enflasyon hedeflerinden sapmanın büyük olması bütçe dengesini etkilemez.`)">Enflasyonun beklenen düzeyi aşması durumunda, harcama disiplinini korumak zorlaşır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme ve enflasyon hedeflerinden sapmanın büyük olması bütçe dengesini etkilemez.`)">Büyümenin hedeflenen düzeyi aşması durumunda, bütçe gelirlerindeki gerçekleşme hedeflenen seviyenin üzerine çıkabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme ve enflasyon hedeflerinden sapmanın büyük olması bütçe dengesini etkilemez.`)">Büyüme ve enflasyon hedeflerinden sapmanın büyük olması bütçe dengesini etkilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme ve enflasyon hedeflerinden sapmanın büyük olması bütçe dengesini etkilemez.`)">Kayıt dışı eğilimlerin artış eğilimine girmesi bütçe performansını etkiler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Para politikası araçlarıyla ilgili aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu karşılık oranını bankalar belirler.`)">Reeskont oranını düşürmek paranın arzını arttırır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu karşılık oranını bankalar belirler.`)">Enflasyonla mücadelede merkez bankaları tahvil piyasalarına satıcı olarak girer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu karşılık oranını bankalar belirler.`)">Açık piyasa işlemlerini merkez bankası yürütür.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu karşılık oranını bankalar belirler.`)">Zorunlu karşılık oranını bankalar belirler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> Aşağıdakilerden hangisi malın malla takas edildiği bir mübadele şeklidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Trampa ekonomisi`)">Kavim ekonomisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Trampa ekonomisi`)">Piyasa ekonomisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Trampa ekonomisi`)">Trampa ekonomisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Trampa ekonomisi`)">Fiyat mekanizması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> Talep enflasyonunun nedenleri arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi oranlarındaki artış`)">Para arzındaki artış</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi oranlarındaki artış`)">Faiz oranlarındaki düşüş</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi oranlarındaki artış`)">Vergi oranlarındaki artış</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi oranlarındaki artış`)">Gelir düzeyindeki artış</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Aşağıdakilerden hangisi yatırım ortamının iyileşmesinin sebeplerindendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel sektörü güçlendirecek teşviklerin ve tedbirlerin uygulanması`)">Reel sektörü güçlendirecek teşviklerin ve tedbirlerin uygulanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel sektörü güçlendirecek teşviklerin ve tedbirlerin uygulanması`)">Enflasyonun artış göstermesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel sektörü güçlendirecek teşviklerin ve tedbirlerin uygulanması`)">Büyümenin gerilemesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel sektörü güçlendirecek teşviklerin ve tedbirlerin uygulanması`)">Faizlerin yükselmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Aşağıdakilerden hangisi tüketim harcamalarını direkt etkileyen faktördür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Servet`)">Faiz oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Servet`)">Sermaye mallarının maliyeti</div>
+    <div class="secenek" onclick="kontrolEt(this, `Servet`)">Servet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Servet`)">Teknolojik değişme</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Daima hazır satın alma gücü aşağıdaki kavramlardan hangisinin tanımıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nakit para`)">Kredi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nakit para`)">Nakit para</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nakit para`)">Trampa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nakit para`)">Döviz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Makro ekonomik denge açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf-yatırım dengesine ilişkin gelişmeler makroekonomik dengeyi etkilemez.`)">Tasarruf-yatırım dengesine ilişkin gelişmeler makroekonomik dengeyi etkilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf-yatırım dengesine ilişkin gelişmeler makroekonomik dengeyi etkilemez.`)">Makro denge bozuk olduğu, tesis edilmediği sürece fiyat istikrarı hedefi yakalanamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf-yatırım dengesine ilişkin gelişmeler makroekonomik dengeyi etkilemez.`)">Bütçe açığının kontrolsüz bir şekilde büyümesi makroekonomik dengeyi bozar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf-yatırım dengesine ilişkin gelişmeler makroekonomik dengeyi etkilemez.`)">Döviz kuru ve faiz gibi temel fiyatlardaki aşırı dalgalanma dengesizliğin sonucu olarak ortaya çıkar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> Aşağıdakilerden hangisi arz eğrisinin sağa doğru kaymasına neden olur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik ilerlemeler`)">Fiyatların azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik ilerlemeler`)">Vergilerin artması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik ilerlemeler`)">Teknolojik ilerlemeler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik ilerlemeler`)">Kaynak maliyeti artışı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> Aşağıdakilerden hangisi bir malın değerini fiyata dönüştüren unsurdur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortak değer ölçüsü`)">Ortak değer ölçüsü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortak değer ölçüsü`)">Kağıt para</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortak değer ölçüsü`)">Altın para</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortak değer ölçüsü`)">Gümüş para</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Aşağıdakilerden hangisi talebi doğrudan etkileyen bir faktör değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik gelişme`)">Tüketicilerin gelir durumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik gelişme`)">Teknolojik gelişme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik gelişme`)">Rakip malların fiyatları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Teknolojik gelişme`)">Tamamlayıcı malın fiyatı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> Aşağıdakilerden hangisi tam rekabet piyasasının şartlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasada konu olan malın yakın ikamesinin bulunmaması`)">Pazarda alıcı ve satıcının çok fazla sayıda olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasada konu olan malın yakın ikamesinin bulunmaması`)">Alıcı ve satıcıların pazarda çıkarlarını gözetecek biçimde rasyonel davranmaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasada konu olan malın yakın ikamesinin bulunmaması`)">Piyasada konu olan malın yakın ikamesinin bulunmaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasada konu olan malın yakın ikamesinin bulunmaması`)">Piyasaya giriş çıkışın herkese açık olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> Aşağıdakilerden hangisi ekonomik büyüme ile ilgili gösterge değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemeler Dengesi Verileri`)">Kapasite Kullanım Oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemeler Dengesi Verileri`)">Ödemeler Dengesi Verileri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemeler Dengesi Verileri`)">Sanayi Üretimi Verileri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemeler Dengesi Verileri`)">İstihdam Verileri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> Aşağıdakilerden hangisi kamu kesiminin gelir kaynaklarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Transfer gelirleri`)">Özel gelir ve fonlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Transfer gelirleri`)">Vergi gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Transfer gelirleri`)">Transfer gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Transfer gelirleri`)">Vergi dışı normal gelirler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> Aşağıdakilerden hangisi arzı direkt etkileyen faktörlerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Teknolojik gelişme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Tüketici tercihleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Devlet politikaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici tercihleri`)">Üretim faktörlerinin maliyeti</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> Aşağıdakilerden hangisi talep kavramını tam olarak ifade etmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep, belli bir fiyat seviyesinde tüketicilerin satın almaya hazır olduğu mal miktarını gösterir.`)">Talep, belli bir fiyat seviyesinde tüketicilerin satın almaya hazır olduğu mal miktarını gösterir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep, belli bir fiyat seviyesinde tüketicilerin satın almaya hazır olduğu mal miktarını gösterir.`)">Talep fiyat ile miktar arasındaki ilişkidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep, belli bir fiyat seviyesinde tüketicilerin satın almaya hazır olduğu mal miktarını gösterir.`)">Talep tüketicinin tercihidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Talep, belli bir fiyat seviyesinde tüketicilerin satın almaya hazır olduğu mal miktarını gösterir.`)">Tüketilen mal miktarıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> İki-üç yılı aşan büyük boyutlu ekonomik daralmalar nasıl tanımlanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Depresyon`)">Resesyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Depresyon`)">Deflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Depresyon`)">Depresyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Depresyon`)">Dezenflasyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Kamu borçlanması açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme oranı ve faiz dışı fazla düzeyi borç yüküne ilişkin beklentiler açısından önemli değildir.`)">Öngörülen konsolide kamu sektörü faiz dışı fazla hedefinin yakalanması kamu borç yükünün daha fazla ağırlaşmaması açısından önemlidir, fakat yeterli değildir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme oranı ve faiz dışı fazla düzeyi borç yüküne ilişkin beklentiler açısından önemli değildir.`)">Kamu borçlanma ihtiyacı karşılanırken ödenen ortalama reel faiz düzeyi kamu borç yükünün ağırlaşmaması açısından önemlidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme oranı ve faiz dışı fazla düzeyi borç yüküne ilişkin beklentiler açısından önemli değildir.`)">Büyüme oranı ve faiz dışı fazla düzeyi borç yüküne ilişkin beklentiler açısından önemli değildir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Büyüme oranı ve faiz dışı fazla düzeyi borç yüküne ilişkin beklentiler açısından önemli değildir.`)">Kamu borcunun iç ve dış borç olarak dağılımı yanı sıra vade yapısı da borçlanmaya ilişkin beklentiler açısından önemlidir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Ödemeler dengesi açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin net giriş ya da çıkış yönünde olması makro dengeyi etkilemez.`)">Cari denge, dış alemle yapılan mal ve kıymet ticaretinin net bakiyesidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin net giriş ya da çıkış yönünde olması makro dengeyi etkilemez.`)">Makro denge açısından cari denge, büyüme açısından ise dış alemle yapılan mal ve hizmet ticaretindeki hacim önemlidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin net giriş ya da çıkış yönünde olması makro dengeyi etkilemez.`)">Net sermaye hareketi ve net hata ve noksan büyüklüklerinin sıfıra eşit olduğu durumda olası cari açık uluslararası döviz rezervlerini azaltır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin net giriş ya da çıkış yönünde olması makro dengeyi etkilemez.`)">Sermaye hareketlerinin net giriş ya da çıkış yönünde olması makro dengeyi etkilemez.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Gizli işsizliğin en yaygın olduğu sektör aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım sektörü`)">Tarım sektörü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım sektörü`)">Özel sektör</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım sektörü`)">İnşaat sektörü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım sektörü`)">Hizmet sektörü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> Hangisi “iktisadi durgunluk içinde enflasyon” anlamına gelmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Hiperenflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Gizli enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Stagflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stagflasyon`)">Maliyet enflasyonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> İkame ve tamamlayıcı mallara ilişkin olarak hangisi doğru değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkame mallar, fayda sağlandığında yok olan mallardır.`)">İkame mallar, ihtiyaçların tatmininde birbirinin yerine geçen mallardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkame mallar, fayda sağlandığında yok olan mallardır.`)">İkame mallar, fayda sağlandığında yok olan mallardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkame mallar, fayda sağlandığında yok olan mallardır.`)">Eğer iki mal birbirine bağlı olarak tüketiliyorsa, bunlara tamamlayıcı mal denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkame mallar, fayda sağlandığında yok olan mallardır.`)">Çay ve kahve ikame mallar, çay ve şeker tamamlayıcı mallardır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Para politikası açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin döviz kuru ve faiz gibi temel fiyatlara herhangi bir hassasiyeti yoktur.`)">Makro dengenin tesisi açısından sermaye hareketleri özel bir öneme sahiptir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin döviz kuru ve faiz gibi temel fiyatlara herhangi bir hassasiyeti yoktur.`)">Sermaye hareketlerinin döviz kuru ve faiz gibi temel fiyatlara herhangi bir hassasiyeti yoktur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin döviz kuru ve faiz gibi temel fiyatlara herhangi bir hassasiyeti yoktur.`)">Pazar ekonomisi anlayışının benimsendiği ülkelerde döviz kuru ve faiz gibi temel fiyatlardan biri özerk Merkez Bankası tarafından belirlenir, diğeri ise piyasaya bırakılır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye hareketlerinin döviz kuru ve faiz gibi temel fiyatlara herhangi bir hassasiyeti yoktur.`)">Piyasada oluşması beklenen döviz kuru veya faiz bir erken uyarı sistemi işlevi görür, makro dengedeki bozulmanın sorun büyümeden açığa çıkmasını sağlar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> Aşağıdakilerden hangisi para politikalarının amaçlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firma maliyetlerinin azaltılması`)">Tam istihdamın sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firma maliyetlerinin azaltılması`)">Fiyat istikrarının sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firma maliyetlerinin azaltılması`)">Ekonomik büyümenin gerçekleştirilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Firma maliyetlerinin azaltılması`)">Firma maliyetlerinin azaltılması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> Aşağıdakilerden hangisi monopolü yaratan sebeplerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Herkesin piyasa ve fiyatlar hakkında tam bilgiye sahip olması`)">Patent hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Herkesin piyasa ve fiyatlar hakkında tam bilgiye sahip olması`)">Herkesin piyasa ve fiyatlar hakkında tam bilgiye sahip olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Herkesin piyasa ve fiyatlar hakkında tam bilgiye sahip olması`)">Bir malın üretiminin belli bir firmaya verilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Herkesin piyasa ve fiyatlar hakkında tam bilgiye sahip olması`)">Hammadde kaynaklarının tek firmanın elinde olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Aşağıdakilerin hangisi Dünya Bankasının amaçları arasında değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üye ülkelere tüketim malı sunmak`)">Üye ülkelerin ekonomik yapılarını düzeltmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üye ülkelere tüketim malı sunmak`)">Üye ülkelere tüketim malı sunmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üye ülkelere tüketim malı sunmak`)">Üye ülkelere yabancı özel kaynaklardan gelecek sermaye yatırımlarını teşvik etmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üye ülkelere tüketim malı sunmak`)">Mahalli işletmelerin kalkınmasını sağlamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Üreticilere yeni vergiler gelirse piyasa dengesi nasıl etkilenir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Denge fiyatı artar, denge miktarı düşer.`)">Denge fiyatı ve miktarı artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Denge fiyatı artar, denge miktarı düşer.`)">Denge fiyatı artar, denge miktarı düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Denge fiyatı artar, denge miktarı düşer.`)">Denge fiyatı düşer, denge miktarı artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Denge fiyatı artar, denge miktarı düşer.`)">Denge fiyatı ve miktarı değişmez.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Talebin fiyat esnekliği aşağıdakilerden hangisine bağlı değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim miktarındaki değişim`)">İkame imkanının bulunması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim miktarındaki değişim`)">Malın tüketici bütçesindeki önemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim miktarındaki değişim`)">Talep süresinin uzun veya kısa oluşu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim miktarındaki değişim`)">Üretim miktarındaki değişim</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Aşağıdaki mallardan hangisi için esneklik değeri 1'den küçüktür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu tüketim malı`)">Esnek mal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu tüketim malı`)">Normal mal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu tüketim malı`)">İkame mal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu tüketim malı`)">Zorunlu tüketim malı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Mal ve hizmetlerin fiyatlarından oluşan topluluğa ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi`)">Ortak değer ölçüsü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi`)">Fiyatlar genel düzeyi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi`)">Piyasa denge fiyatı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyatlar genel düzeyi`)">Fiyat endeksi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> Aşağıdakilerden hangisi enflasyonun ana nedenlerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf oranının düşüklüğü`)">Toplam Talep/Toplam Arz dengesizliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf oranının düşüklüğü`)">Üretim maliyetlerini artırıcı etkiler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf oranının düşüklüğü`)">Kamu açığı sorunu ve kamu açığının finansman yöntemleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasarruf oranının düşüklüğü`)">Tasarruf oranının düşüklüğü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> Aşağıdakilerden hangisi talep esneklikleri arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasa esnekliği`)">Fiyat esnekliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasa esnekliği`)">Çapraz esneklik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasa esnekliği`)">Gelir esnekliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasa esnekliği`)">Piyasa esnekliği</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> Düşük verimli istihdamdan kaynaklanan işsizliğe ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gizli işsizlik`)">Konjonktürel işsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gizli işsizlik`)">Yapısal işsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gizli işsizlik`)">Gizli işsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gizli işsizlik`)">Mevsimsel işsizlik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> Net dış alem faktör gelirlerinin negatif olduğu bir ekonomide,</div>
+    <div class="secenek" onclick="kontrolEt(this, `GSYİH > GSMH`)">GSMH > GSYİH</div>
+    <div class="secenek" onclick="kontrolEt(this, `GSYİH > GSMH`)">Net Yurt İçi Hasıla > GSYİH</div>
+    <div class="secenek" onclick="kontrolEt(this, `GSYİH > GSMH`)">GSYİH > GSMH</div>
+    <div class="secenek" onclick="kontrolEt(this, `GSYİH > GSMH`)">Net Milli Hasıla > Milli Hasıla</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Aşağıdaki mallardan hangisi serbest mallar arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Oksijen`)">Ulaşım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Oksijen`)">Oksijen</div>
+    <div class="secenek" onclick="kontrolEt(this, `Oksijen`)">Gazete</div>
+    <div class="secenek" onclick="kontrolEt(this, `Oksijen`)">Ekmek</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> Enflasyon açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyon beklentilerinin değişmesi tüketim ve tasarruf tercihlerini etkilemez.`)">Talep kökenli enflasyonist baskının artması durumunda tüketici fiyatlarındaki artış eğilimi üretici fiyatlarındakini aşar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyon beklentilerinin değişmesi tüketim ve tasarruf tercihlerini etkilemez.`)">Üretici fiyatlarındaki artışın tüketici fiyatlarındakine göre daha yüksek olması durumunda maliyet kökenli bir enflasyonist baskıdan söz edilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyon beklentilerinin değişmesi tüketim ve tasarruf tercihlerini etkilemez.`)">Enflasyon beklentilerinin değişmesi tüketim ve tasarruf tercihlerini etkilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyon beklentilerinin değişmesi tüketim ve tasarruf tercihlerini etkilemez.`)">Enflasyon beklentilerinin değişmesi piyasalardaki belirsizlik algılamasını farklılaştırabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Aşağıdakilerden hangisi bir mali sistem alt sektörü değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul Sektörü`)">Bankacılık Sektörü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul Sektörü`)">Gayrimenkul Sektörü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul Sektörü`)">Sigortacılık Sektörü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul Sektörü`)">Finansal Kiralama Sektörü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> Aşağıdakilerden hangisi mikro ekonominin ilgi alanına girer?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Ekonomik büyüme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Tüketici dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Ödemeler dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici dengesi`)">Kamu dengesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> Aşağıdakilerden hangisi çekirdek enflasyon için söylenemez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sektöründeki fiyat artışlarının bir göstergesidir.`)">Döviz kurlarından etkilenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sektöründeki fiyat artışlarının bir göstergesidir.`)">Kamu sektöründeki fiyat artışlarının bir göstergesidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sektöründeki fiyat artışlarının bir göstergesidir.`)">Enflasyondaki uzun dönemli trendi gösterir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu sektöründeki fiyat artışlarının bir göstergesidir.`)">ÜFE'nin bir alt kategorisidir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> Deflatöre ilişkin aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflatör büyüme oranının hesaplanmasında kullanılan bir gösterge değildir.`)">Son on iki aya ilişkin yıllık enflasyon rakamlarının ortalamasına deflatör denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflatör büyüme oranının hesaplanmasında kullanılan bir gösterge değildir.`)">Deflatör büyüme oranının hesaplanmasında kullanılır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflatör büyüme oranının hesaplanmasında kullanılan bir gösterge değildir.`)">Enflasyonun orta vadeli bir gerileme eğilimine girmesi durumunda deflatör de buna paralel bir eğilim sergiler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Deflatör büyüme oranının hesaplanmasında kullanılan bir gösterge değildir.`)">Deflatör büyüme oranının hesaplanmasında kullanılan bir gösterge değildir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> Aşağıdakilerden hangisi bir bütçe harcama kalemi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe ve yardımlar`)">Personel</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe ve yardımlar`)">KİT'lere transferler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe ve yardımlar`)">Faiz ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe ve yardımlar`)">Hibe ve yardımlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> Aşağıdakilerden hangisi dalgalı kur rejimi için yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz kuru doğrudan bir politika aracı niteliği taşımakta olup, ileriye yönelik kurun seviyesine ilişkin bir hedef söz konusudur.`)">Döviz kurundaki hareketler, ekonominin temelleri, uygulanan istikrar programı ve bekleyişlerin bir sonucu olarak ortaya çıkmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz kuru doğrudan bir politika aracı niteliği taşımakta olup, ileriye yönelik kurun seviyesine ilişkin bir hedef söz konusudur.`)">Döviz kuru doğrudan bir politika aracı niteliği taşımakta olup, ileriye yönelik kurun seviyesine ilişkin bir hedef söz konusudur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz kuru doğrudan bir politika aracı niteliği taşımakta olup, ileriye yönelik kurun seviyesine ilişkin bir hedef söz konusudur.`)">Merkez Bankası aşırı dalgalanmaları engellemek dışında, kurların düzeyini veya yönünü belirleme amaçlı döviz alım veya satım işlemleri yapmamaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz kuru doğrudan bir politika aracı niteliği taşımakta olup, ileriye yönelik kurun seviyesine ilişkin bir hedef söz konusudur.`)">Döviz kurunun düzeyine ilişkin herhangi bir hedef bulunmamaktadır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çoktan Seçmeli Sorular - 6</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Çoktan Seçmeli Sorular - Dosya 6</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> Açık piyasa işlemlerinin en önemli özelliği aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç borçlanma politikasının yürütülmesine katkı sağlanır.`)">Uzun vadeli sermaye piyasasına etki yapar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç borçlanma politikasının yürütülmesine katkı sağlanır.`)">Tüm menkul kıymetler alım satıma konu edilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç borçlanma politikasının yürütülmesine katkı sağlanır.`)">Menkul kıymetler için ikincil bir pazar oluşumu sağlanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç borçlanma politikasının yürütülmesine katkı sağlanır.`)">İç borçlanma politikasının yürütülmesine katkı sağlanır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> Aşağıdakilerden hangisi döviz piyasalarının fonksiyonlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ucuz döviz temini`)">Satınalma gücünün transferi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ucuz döviz temini`)">Kur değişim riskine karşı koruma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ucuz döviz temini`)">Ucuz döviz temini</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ucuz döviz temini`)">Finansman sağlama</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> Aşağıdaki kurumlardan hangisi piyasa düzenleyici işleve sahip değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Takasbank`)">SPK</div>
+    <div class="secenek" onclick="kontrolEt(this, `Takasbank`)">TCMB</div>
+    <div class="secenek" onclick="kontrolEt(this, `Takasbank`)">Takasbank</div>
+    <div class="secenek" onclick="kontrolEt(this, `Takasbank`)">BDDK</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Enflasyonun olmadığı bir dünyada paranın zaman değerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel faiz`)">Reel faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel faiz`)">Nominal faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel faiz`)">Risksiz faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Reel faiz`)">Risk primi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> Aşağıdakilerden hangisi menkul kıymetlerin özelliklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortaklık sağlar, alacak hakkı sağlamaz.`)">Dönemsel gelir getirir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortaklık sağlar, alacak hakkı sağlamaz.`)">Misli niteliktedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortaklık sağlar, alacak hakkı sağlamaz.`)">Ortaklık sağlar, alacak hakkı sağlamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ortaklık sağlar, alacak hakkı sağlamaz.`)">Nama ya da hamiline düzenlenebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Aşağıdakilerden hangisi Sermaye Piyasası’nın yararlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli işletme sermayesi ihtiyacını karşılamak`)">Ekonomiye kaynak sağlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli işletme sermayesi ihtiyacını karşılamak`)">Mülkiyeti tabana yayma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli işletme sermayesi ihtiyacını karşılamak`)">Kısa vadeli işletme sermayesi ihtiyacını karşılamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kısa vadeli işletme sermayesi ihtiyacını karşılamak`)">Öncü gösterge olmak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> Paranın zaman değerini en iyi ölçen araç aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bileşik faiz`)">Enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bileşik faiz`)">Basit faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bileşik faiz`)">Nominal faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bileşik faiz`)">Bileşik faiz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> Hazine Bonoları açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verimin piyasadaki alternatif bileşik getiri ile arasındaki farka bakarak, ucuz veya pahalı değerlendirmesi yapılamaz.`)">İç verimi piyasadaki alternatif bileşik getiriden yüksek olan kısa vadeli bonolar ucuzluk yönünden bir fırsat sunar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verimin piyasadaki alternatif bileşik getiri ile arasındaki farka bakarak, ucuz veya pahalı değerlendirmesi yapılamaz.`)">İç verimin piyasadaki alternatif bileşik getiri ile arasındaki farka bakarak, ucuz veya pahalı değerlendirmesi yapılamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verimin piyasadaki alternatif bileşik getiri ile arasındaki farka bakarak, ucuz veya pahalı değerlendirmesi yapılamaz.`)">İç verim piyasadaki alternatif bileşik getiriye eşit ise, risksiz bir fırsat yoktur, piyasa denge değerindedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verimin piyasadaki alternatif bileşik getiri ile arasındaki farka bakarak, ucuz veya pahalı değerlendirmesi yapılamaz.`)">İç verim piyasadaki alternatif bileşik getiriden oldukça düşük ise, söz konusu bononun pahalı olduğu söylenebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Aşağıdakilerden hangisi merkez bankalarının görevlerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticari bankalardaki tasarruf mevduatlarını değerlendirmek`)">Para politikasını yönetmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticari bankalardaki tasarruf mevduatlarını değerlendirmek`)">Bankalara kredi sağlamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticari bankalardaki tasarruf mevduatlarını değerlendirmek`)">Döviz ve altın rezervlerini kontrol etmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticari bankalardaki tasarruf mevduatlarını değerlendirmek`)">Ticari bankalardaki tasarruf mevduatlarını değerlendirmek</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> Aşağıdakilerden hangisi hazine bonosunun özelliklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu olarak çıkarılırlar.`)">Devletin kısa vadeli nakit ihtiyacını karşılar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu olarak çıkarılırlar.`)">En fazla 1 yıl vadeli olabilirler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu olarak çıkarılırlar.`)">Kuponlu olarak çıkarılırlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu olarak çıkarılırlar.`)">İskontolu olarak ihraç edilirler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> Portföy çeşitlendirmesi yoluyla azaltılabilen riske ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spesifik risk (finansal varlığın türüne özgü risk)`)">İş riski</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spesifik risk (finansal varlığın türüne özgü risk)`)">Finansal risk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spesifik risk (finansal varlığın türüne özgü risk)`)">Spesifik risk (finansal varlığın türüne özgü risk)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spesifik risk (finansal varlığın türüne özgü risk)`)">Pazar riski (sistemik risk)</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> Aşağıdakilerden hangisi bononun şekil şartları arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemenin yapılacağı bankanın imzası`)">Vade</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemenin yapılacağı bankanın imzası`)">Ödeme Yeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemenin yapılacağı bankanın imzası`)">Ödemenin yapılacağı bankanın imzası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ödemenin yapılacağı bankanın imzası`)">Keşide tarihi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> BIST Pay Piyasasında takas işlemleri hangi sürede sonuçlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `T+2`)">T+0</div>
+    <div class="secenek" onclick="kontrolEt(this, `T+2`)">T+2</div>
+    <div class="secenek" onclick="kontrolEt(this, `T+2`)">T+7</div>
+    <div class="secenek" onclick="kontrolEt(this, `T+2`)">T+1</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> Aşağıdakilerden hangisi yatırım fonlarının temel ilkelerindendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malvarlığının korunması`)">Riskin toplanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malvarlığının korunması`)">Ortaklaşa yönetim</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malvarlığının korunması`)">Malvarlığının korunması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Malvarlığının korunması`)">Katılma payı alanların fon yönetimine katılması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Hisse senedi sahibi aşağıdaki haklardan hangisine sahip değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetim Kurulu karar ve uygulamalarını denetleme hakkı`)">Kârdan pay alma hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetim Kurulu karar ve uygulamalarını denetleme hakkı`)">Genel kurulda oy hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetim Kurulu karar ve uygulamalarını denetleme hakkı`)">Rüçhan hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetim Kurulu karar ve uygulamalarını denetleme hakkı`)">Yönetim Kurulu karar ve uygulamalarını denetleme hakkı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Yatırım fonlarının portföyünde aşağıdakilerden hangisi bulunmaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul`)">Hisse Senetleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul`)">Finansman Bonosu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul`)">Gayrimenkul</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul`)">Tahvil</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Aşağıdakilerden hangisi sermaye piyasasının özelliklerindendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Orta ve uzun vadeli fonlardan oluşması`)">Kısa vadeli fonlardan oluşması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Orta ve uzun vadeli fonlardan oluşması`)">Sağlanan fonların kredi olarak işletmelerinin dönen varlıklarının finansmanında kullanılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Orta ve uzun vadeli fonlardan oluşması`)">Ticari senetler ve mevduatlardan oluşması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Orta ve uzun vadeli fonlardan oluşması`)">Orta ve uzun vadeli fonlardan oluşması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Aşağıdakilerden hangisi şimdiki değer kavramını en iyi açıklar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekte ödenecek bir parasal değerin belirli bir iskonto değeri üzerinden bugünkü değeridir.`)">Eldeki bir parasal değerin enflasyondan arındırıldıktan sonra bulunan değeridir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekte ödenecek bir parasal değerin belirli bir iskonto değeri üzerinden bugünkü değeridir.`)">Bugün belirli bir değerde olan finansal varlığın belirli bir süre sonra, banka faizi ile iskonto edildiğinde bulunacak değeridir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekte ödenecek bir parasal değerin belirli bir iskonto değeri üzerinden bugünkü değeridir.`)">Gelecekte ödenecek bir parasal değerin belirli bir iskonto değeri üzerinden bugünkü değeridir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekte ödenecek bir parasal değerin belirli bir iskonto değeri üzerinden bugünkü değeridir.`)">Gelecekte ödenecek 1 liranın bugünkü alım gücüdür.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Aşağıdakilerden hangisi sadece 'B tipi fon' olarak kurulabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likit fon`)">Hisse senedi fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likit fon`)">Likit fon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likit fon`)">Endeks fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likit fon`)">Karma Fon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> Hisse senetleri hangi tür ortaklıklar tarafından ihraç edilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim ortaklık`)">Limited ortaklık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim ortaklık`)">Adi ortaklık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim ortaklık`)">Anonim ortaklık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim ortaklık`)">Hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> TCMB ters repo ihalesi düzenleyince piyasalar nasıl etkilenir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar, döviz düşer.`)">Piyasadaki TL artar, altın düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar, döviz düşer.`)">Tahvil fiyatları artar, repo faizi düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar, döviz düşer.`)">Döviz artar, TL faizi düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar, döviz düşer.`)">Repo faizi artar, döviz düşer.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> Aşağıdakilerden hangisi organize ( birincil ) piyasa değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahtakale Serbest Döviz Piyasası`)">TCMB Bankalararası Para Piyasası ( İnterbank )</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahtakale Serbest Döviz Piyasası`)">TCMB Repo/Ters Repo Piyasası ( APİ )</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahtakale Serbest Döviz Piyasası`)">BIST Borçlanma Araçları Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahtakale Serbest Döviz Piyasası`)">Tahtakale Serbest Döviz Piyasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> BIST Pay Piyasasında bir lot kaç adet hisseye karşılık gelir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `1`)">1</div>
+    <div class="secenek" onclick="kontrolEt(this, `1`)">500</div>
+    <div class="secenek" onclick="kontrolEt(this, `1`)">1000</div>
+    <div class="secenek" onclick="kontrolEt(this, `1`)">50</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Hangisi hisse senedi ihraç edebilecek kurumlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dernekler`)">Dernekler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dernekler`)">Anonim şirketler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dernekler`)">Sermayesi paylara bölünmüş komandit şirketler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dernekler`)">Özel kanunla kurulmuş kurumlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> TCMB döviz satışı yaparak piyasaları nasıl etkilemektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi çıkar, döviz düşer.`)">Tahvil fiyatı düşer, altın çıkar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi çıkar, döviz düşer.`)">TL faizi düşer, altın çıkar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi çıkar, döviz düşer.`)">TL faizi çıkar, döviz düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi çıkar, döviz düşer.`)">Tahvil fiyatı çıkar, döviz düşer.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> Enflasyon verileri hangi kurum tarafından açıklanmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İstatistik Kurumu`)">Türkiye Cumhuriyet Merkez Bankası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İstatistik Kurumu`)">Türkiye İstatistik Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İstatistik Kurumu`)">Borsa İstanbul</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İstatistik Kurumu`)">Sermaye Piyasası Kurulu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Hangisi menkul kıymetlere ait ortak bir özellik değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bir saklamacı kuruluşta bulunma`)">Dönemsel gelir getirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bir saklamacı kuruluşta bulunma`)">Seri halinde çıkarılabilme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bir saklamacı kuruluşta bulunma`)">Bir saklamacı kuruluşta bulunma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bir saklamacı kuruluşta bulunma`)">Ortaklık veya alacaklılık sağlama</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Serbest döviz piyasası hangi piyasa türüne girmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgahüstü piyasa`)">Organize piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgahüstü piyasa`)">Tezgahüstü piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgahüstü piyasa`)">Opsiyon Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgahüstü piyasa`)">Future Piyasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Aşağıdakilerden hangisi yatırım fonları için yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun sahip olduğu hisse senetlerinin fiyatı artabilir, ancak tahvil fiyatları değişmez.`)">Fon sahip olduğu menkul kıymetlerden kâr payı, faiz olarak gelir elde edebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun sahip olduğu hisse senetlerinin fiyatı artabilir, ancak tahvil fiyatları değişmez.`)">Fonun sahip olduğu hisse senetlerinin fiyatı artabilir, ancak tahvil fiyatları değişmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun sahip olduğu hisse senetlerinin fiyatı artabilir, ancak tahvil fiyatları değişmez.`)">Eğer fon, fiyatı yükselen bir menkul kıymeti satarsa sermaye kazancı elde eder.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonun sahip olduğu hisse senetlerinin fiyatı artabilir, ancak tahvil fiyatları değişmez.`)">Eğer yatırım fonu fiyatı yükselen menkul kıymeti satmıyor, elinde tutuyorsa katılma paylarının fiyatı artar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> TCMB repo ihalesi ile piyasaları nasıl etkilemektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, altın çıkar.`)">Tahvil fiyatı düşer, altın çıkar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, altın çıkar.`)">TL faizi düşer, altın çıkar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, altın çıkar.`)">TL faizi çıkar, döviz düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL faizi düşer, altın çıkar.`)">Tahvil fiyatı çıkar, döviz düşer.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> Menkul kıymet fon türleri arasında hangisi sayılamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul fonu`)">Tahvil ve bono fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul fonu`)">Gayrimenkul fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul fonu`)">İştirak fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gayrimenkul fonu`)">Hisse senedi fonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Birincil piyasanın tanımı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetleri  ihraç edenler ile tasarruf sahiplerinin doğrudan doğruya karşılaştıkları, menkul kıymetin ilk defa piyasaya sürüldüğü piyasadır.`)">Kısa vadeli fon arz ve talebinin karşılandığı piyasalardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetleri  ihraç edenler ile tasarruf sahiplerinin doğrudan doğruya karşılaştıkları, menkul kıymetin ilk defa piyasaya sürüldüğü piyasadır.`)">Menkul kıymet borsalarıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetleri  ihraç edenler ile tasarruf sahiplerinin doğrudan doğruya karşılaştıkları, menkul kıymetin ilk defa piyasaya sürüldüğü piyasadır.`)">Borsadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetleri  ihraç edenler ile tasarruf sahiplerinin doğrudan doğruya karşılaştıkları, menkul kıymetin ilk defa piyasaya sürüldüğü piyasadır.`)">Menkul kıymetleri  ihraç edenler ile tasarruf sahiplerinin doğrudan doğruya karşılaştıkları, menkul kıymetin ilk defa piyasaya sürüldüğü piyasadır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> Aşağıdakilerden hangisi sermaye piyasası aracıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl veya daha uzun süreli irat senetleri`)">Poliçe</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl veya daha uzun süreli irat senetleri`)">Mevduat sertifikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl veya daha uzun süreli irat senetleri`)">Nakit</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl veya daha uzun süreli irat senetleri`)">2 yıl veya daha uzun süreli irat senetleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> B tipi likit fonların en belirgin özelliği nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföyünün, ağırlıklı ortalama vadesi en fazla 45 gün olan araçlardan oluşması.`)">Portföyünün, ağırlıklı ortalama vadesi en fazla 45 gün olan araçlardan oluşması.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföyünün, ağırlıklı ortalama vadesi en fazla 45 gün olan araçlardan oluşması.`)">Portföylerinin tamamının repoda değerlendirilmesi zorunluluğu.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföyünün, ağırlıklı ortalama vadesi en fazla 45 gün olan araçlardan oluşması.`)">Portföyünün, ağırlıklı ortalama vadesi en az 60 gün olan araçlardan oluşması.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföyünün, ağırlıklı ortalama vadesi en fazla 45 gün olan araçlardan oluşması.`)">Portföyünde vadesine en fazla 360 gün kalmış likiditesi yüksek sermaye piyasası araçları bulunabilmesi.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> Aşağıdakilerden hangisi menkul kıymet değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevduat sertifikası`)">Geçici ilmühaber</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevduat sertifikası`)">Mevduat sertifikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevduat sertifikası`)">Tahvil türevi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mevduat sertifikası`)">İpotekli borç senedi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Hangisi hisse senedi türleri arasında değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkramiyeli/Kâr garantili`)">Adi/imtiyazlı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkramiyeli/Kâr garantili`)">Nama/hamiline</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkramiyeli/Kâr garantili`)">Kurucu/intifa</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkramiyeli/Kâr garantili`)">İkramiyeli/Kâr garantili</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Hangisi BIST'teki piyasalardan birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz Piyasası`)">Pay Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz Piyasası`)">Borçlanma Araçları Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz Piyasası`)">Vadeli İşlem ve Opsiyon Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Döviz Piyasası`)">Döviz Piyasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Aşağıdakilerden hangisi fon kurucusu olabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Leasing şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Faktoring şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Sigorta şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Gerçek kişiler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Yatırım Ortaklıkları hangi şekilde kurulurlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim Şirket`)">Anonim Şirket</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim Şirket`)">Limited Şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim Şirket`)">Kolektif Şirket</div>
+    <div class="secenek" onclick="kontrolEt(this, `Anonim Şirket`)">Komandit Şirket</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Borsa İstanbul, hangi piyasa türüne örnektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Organize piyasa`)">Organize piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Organize piyasa`)">Tezgahüstü piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Organize piyasa`)">İhraççı piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Organize piyasa`)">Mal piyasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> Hangisi tahvil türleri arasında değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurucu/intifa`)">Devlet/özel sektör</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurucu/intifa`)">Primli/başabaş/iskontolu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurucu/intifa`)">Nama/hamiline</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurucu/intifa`)">Kurucu/intifa</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> Hisse senedinin getirisi nelerden oluşur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temettü (kâr payı) geliri –, Sermaye kazancı`)">Temettü (kâr payı) geliri –, Sermaye kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temettü (kâr payı) geliri –, Sermaye kazancı`)">Faiz getirisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temettü (kâr payı) geliri –, Sermaye kazancı`)">Faiz getirisi –, Sermaye kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temettü (kâr payı) geliri –, Sermaye kazancı`)">Temettü –, Sermaye kazancı –, Faiz getirisi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Aşağıdakilerden hangisi menkul kıymettir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Finansman bonosu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Gelir ortaklığı senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Devlet tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahviller itibari değerlerinin altında ihraç edilemezler.`)">Tahvil sahibi, tahvil çıkaran kuruluşun uzun vadeli alacaklısıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahviller itibari değerlerinin altında ihraç edilemezler.`)">Tahviller itibari değerlerinin altında ihraç edilemezler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahviller itibari değerlerinin altında ihraç edilemezler.`)">Hisse senedi sahibi kuruluşun ortağıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahviller itibari değerlerinin altında ihraç edilemezler.`)">Şirketlerin çıkarabilecekleri tahvil miktarı sınırlıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Hangisi sermaye piyasası aracı değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçe`)">Hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçe`)">Poliçe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçe`)">Tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçe`)">Vadeli işlem sözleşmeleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Hangisi sistematik olmayan risktir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Grevler`)">Faiz oranlarındaki değişimler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Grevler`)">Yatırımcının ekonominin gidişatına göre beklentilerinin değişmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Grevler`)">Grevler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Grevler`)">Devletin maliye politikasını değiştirmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senetlerinde geri ödeme planı vardır.`)">Hisse senetleri tahvile göre daha riskli bir yatırım aracıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senetlerinde geri ödeme planı vardır.`)">Hisse senetleri bir mülkiyet senedidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senetlerinde geri ödeme planı vardır.`)">Hisse senetlerinde geri ödeme planı vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senetlerinde geri ödeme planı vardır.`)">Hisse senedi sahibi şirkete belli bir oranda sahiptir. Kullandırdığı sermaye özsermayedir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım ortaklıklarının ayrı bir tüzel kişiliği vardır.`)">A tipi fonların ayrı bir tüzel kişiliği vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım ortaklıklarının ayrı bir tüzel kişiliği vardır.`)">B tipi fonların ayrı bir tüzel kişiliği vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım ortaklıklarının ayrı bir tüzel kişiliği vardır.`)">Emeklilik yatırım fonlarının ayrı bir tüzel kişiliği vardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım ortaklıklarının ayrı bir tüzel kişiliği vardır.`)">Yatırım ortaklıklarının ayrı bir tüzel kişiliği vardır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> Net Varlık Değeri nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değerine, nakit ile fon alacaklarının eklenmesi ve fon borçlarının düşülmesi suretiyle bulunan toplam değer`)">Portföy değerine, fon alacaklarının eklenmesi suretiyle bulunan toplam değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değerine, nakit ile fon alacaklarının eklenmesi ve fon borçlarının düşülmesi suretiyle bulunan toplam değer`)">Portföy değerinden, fon borçlarının düşülmesi suretiyle bulunan toplam değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değerine, nakit ile fon alacaklarının eklenmesi ve fon borçlarının düşülmesi suretiyle bulunan toplam değer`)">Portföy değerine, fon alacaklarının yarısının eklenmesi suretiyle bulunan toplam değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy değerine, nakit ile fon alacaklarının eklenmesi ve fon borçlarının düşülmesi suretiyle bulunan toplam değer`)">Portföy değerine, nakit ile fon alacaklarının eklenmesi ve fon borçlarının düşülmesi suretiyle bulunan toplam değer</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> ‘İtfa‘ ne demektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu/Devlet tahvillerinin vade sonu' ( ödeme günü ) dur.`)">Hisse senetlerinin halka arz edildiği tarihtir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu/Devlet tahvillerinin vade sonu' ( ödeme günü ) dur.`)">Yatırım fonlarının satıldığı güne verilen addır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu/Devlet tahvillerinin vade sonu' ( ödeme günü ) dur.`)">Hazine bonosu/Devlet tahvillerinin vade sonu' ( ödeme günü ) dur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu/Devlet tahvillerinin vade sonu' ( ödeme günü ) dur.`)">Enflasyonun hızla artmasıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Nominal faiz nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık basit faiz`)">Yıllık kümülatif faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık basit faiz`)">İskonto faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık basit faiz`)">Yıllık basit faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık basit faiz`)">Reeskont faizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> Tüketicinin ilgi düzeyi yüksektir. Markalar arasında önemli farklar vardır. Özellikle pahalı, riskli, sık satın alınmayan mallar için satın alma davranışıdır. Tüketici mamulle ilgili ayrıntılı bilgi toplar, çoğu kez mamulün teknik özellikleri konusunda bilgi alır, deneyimlerden yararlanarak satın alır. açıklaması aşağıdakilerden hangisi için yapılmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karmaşık Satınalma Davranışı`)">Karmaşık Satınalma Davranışı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karmaşık Satınalma Davranışı`)">Uyumsuzluğu Azaltıcı Yönde Satınalma Davranışı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karmaşık Satınalma Davranışı`)">Alışılmış Satınalma Davranışı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Karmaşık Satınalma Davranışı`)">Farklılık Araştırıcı Satınalma Davranışı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Aşağıdakilerden hangisi Pazar Kavramının işletmenin stratejik yaklaşımında belirlediği önemli elemanlardandır?  I. Hizmet verilecek müşteriler II. Geçilecek rakipler III. Kar maksimizasyonu IV.Müşterileri elde edebilmek için gerekli yetenekler</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-II</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-II-III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-II-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">II-III-IV</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Mevcut ürünlerde değişiklik yapılması, yeni ürünlerin dizayn edilmesi, üretilecek malın kalitesi, çeşitleri, marka, ambalaj, garanti konuları ile ek hizmetler sağlanması pazarlamanın hangi fonksiyonun faaliyetleridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün geliştirme ve planlama`)">Dağıtım kanalları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün geliştirme ve planlama`)">Fiyatlandırma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün geliştirme ve planlama`)">Ürün geliştirme ve planlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün geliştirme ve planlama`)">Satış arttırıcı çabalar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> Yeni ürün geliştirmek için aşağıdaki çalışmaların doğru sıralaması nasıl olmalıdır?  I. Ürünün geliştirilmesi II. Ticari Analiz III. Ön Eleme IV. Yeni ürün fikirlerinin toplanması V. Pazara Sunuş VI. Pazar Testleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `IV-III-II-I-VI-V`)">III-I-II-VI-V-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `IV-III-II-I-VI-V`)">IV-III-II-I-VI-V</div>
+    <div class="secenek" onclick="kontrolEt(this, `IV-III-II-I-VI-V`)">II-IV-III-I-VI-V</div>
+    <div class="secenek" onclick="kontrolEt(this, `IV-III-II-I-VI-V`)">II-IV-III-I-V-VI</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Her türlü mal ve hizmetin alınıp satıldığı, alıcılar ile satıcıların serbest biçimde karşılaştıkları arz ile talebin kesiştiği yer ya da fiyatı belirleyen koşullar dizisine ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar`)">Pazarlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar`)">Promosyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar`)">Dağıtım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar`)">Pazar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Genellikle küçük ölçeklilerdir, büyük ölçekli işletmelerle rekabete girmezler ve başarıları uzmanlaşmaya bağlıdır. ifadesi hangi rekabet stratejisindeki bir işletmeyi tanımlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Köşe tutucu`)">İzleyici</div>
+    <div class="secenek" onclick="kontrolEt(this, `Köşe tutucu`)">Köşe tutucu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Köşe tutucu`)">Pazar lideri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Köşe tutucu`)">Meydan okuyucu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Aşağıdakilerden hangileri kişisel satışın genel amaçlarındandır?  I.Müşteriyi ikna etmek II.Müşteri tatmini sağlamak III.Rakipleri olumsuz göstermek IV.Olası müşterileri bulmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-II</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-II-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `I-II-IV`)">I-III-IV</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Ürün ve hizmetlerin üreticiden tüketiciye geçişi veya satışı ile ilgili tüm bilgilerin toplanması, kaydedilmesi ve analiz ile ilgili faaliyetlere ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama araştırmaları`)">Fizibilite çalışması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama araştırmaları`)">Yeni ürün geliştirme faaliyetleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama araştırmaları`)">Pazarlama araştırmaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama araştırmaları`)">SWOT analizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> Aşağıdakilerden hangileri fiyatlama yöntemidir?  I-Arza göre fiyatlama II- Maliyete göre fiyatlama III-Talebe göre fiyatlama IV-Rekabete göre fiyatlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `II-III-IV`)">I-II</div>
+    <div class="secenek" onclick="kontrolEt(this, `II-III-IV`)">II-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `II-III-IV`)">II-III-IV</div>
+    <div class="secenek" onclick="kontrolEt(this, `II-III-IV`)">I-II-III-IV</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> İlk defa pazara sunulan yeni bir ürün veya hizmet fikrini veya bir ürün grubunu tanıtma ve benimsetmeye yönelik yapılan reklamlara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Öncü reklam`)">Öncü reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Öncü reklam`)">Rekabet edici reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Öncü reklam`)">Hatırlatıcı reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Öncü reklam`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Mensup olduğu grubun amaçlarını belirleyen ve bu amaçların gerçekleşmesinde gruba en etkili biçimde yön verebilen kişiye………….. denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lider`)">Lider</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lider`)">Yönetici</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lider`)">Amir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Lider`)">İdareci</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Aşağıdakilerden hangisi şirketlerin pazarlama faaliyetlerini yönlendirmesi ve yönetmesine yardımcı olan anlayışlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Pazarlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Toplumsal Pazarlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Tutundurma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Satış</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Müşterinin, restoranda yemeği önce yiyerek sonra sipariş vermesi mümkün değildir.Bu durum hizmetin hangi özelliğine örnektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmetler denenemezler.`)">Hizmetler dokunulmazdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmetler denenemezler.`)">Hizmetler değişkendir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmetler denenemezler.`)">Hizmetler denenemezler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmetler denenemezler.`)">Üretim ve tüketim hemen hemen aynı anda oluşur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Bir ürün veya hizmetin üreticiden tüketiciye veya endüstriyel kullanıcıya akışında izlenen süreç aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım kanalı`)">Bayi ağı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım kanalı`)">Dağıtım kanalı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım kanalı`)">Perakendeci zinciri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım kanalı`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> Aşağıdakilerden hangisi, işletmenin gireceği pazarı belirlerken gözönünde bulundurması gereken faktörler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazardaki mevcut iletişim kanalları`)">Pazardaki mevcut iletişim kanalları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazardaki mevcut iletişim kanalları`)">Pazarın büyüklüğü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazardaki mevcut iletişim kanalları`)">Pazarın ekonomik yapısı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazardaki mevcut iletişim kanalları`)">Tüketicilerin satın alma alışkanlıkları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> Müşterilerin satın almadan önce gözden geçirdiği 4 farklı karar vardır. Aşağıdakilerden hangisi bunlardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal karar`)">Finansal karar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal karar`)">Teknik karar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal karar`)">Duygusal karar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal karar`)">Sosyal karar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Tüketicilerin malı satın alacaklarını umarak, malı kitle halinde üretip, kitle halinde dağıtmaya ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm pazar yöntemi`)">Makro pazarlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm pazar yöntemi`)">Tüm pazar yöntemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm pazar yöntemi`)">Pazar bölümleme yöntemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm pazar yöntemi`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> İş hayatında protokol kuralları (biçimsel görgü kuralları) ile ilgili olarak aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Protokol kuralları işletmelerde ve iş yaşamında herkesin uyması gereken nezaket ve görgü ağırlıklı kurallardır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Protokol kuralları, iş yaşamında çalışanların ast, üst ve eşitleriyle olan ilişkilerinde nasıl davranacaklarını gösterir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Her düzeydeki yöneticinin protokol kurallarını yakından tanıması ve uygulaması önem taşımaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> Reklam ile ilgili görüşler 3 kısıma ayrılarak ele alınabilir. Aşağıdakilerden hangisi bu kısımlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yaratıcı görüşler`)">Ekonomik görüşler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yaratıcı görüşler`)">Sosyal görüşler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yaratıcı görüşler`)">Hukuki görüşler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yaratıcı görüşler`)">Yaratıcı görüşler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> Bir bütünün değerinin, onu oluşturan her bir parçanın tek tek toplamından daha değerli olmasına ……….. denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sinerji`)">Empati</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sinerji`)">Entropi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sinerji`)">Sinerji</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sinerji`)">Görecelik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> Aşağıdakilerden hangisi Maslow’a göre sıralanan ihtiyaçlar içerisinde diğerlerine göre daha önceliklidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik açıdan güvende olma`)">Kendini kanıtlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik açıdan güvende olma`)">Prestij</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik açıdan güvende olma`)">Ekonomik açıdan güvende olma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik açıdan güvende olma`)">Sevme, sevilme</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> Maslow’un İhtiyaçlar Hiyerarşisi'nde birinci sırada yeralan, en temel ihtiyaç aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fizyolojik ihtiyaçlar`)">Fizyolojik ihtiyaçlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fizyolojik ihtiyaçlar`)">Güvenlik ihtiyaçları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fizyolojik ihtiyaçlar`)">Sosyal ihtiyaçlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fizyolojik ihtiyaçlar`)">Öz gerçekleştirme ihtiyacı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> Kişisel ihtiyaçları için mal ya da hizmet satın alan, kişilerden ve ailelerden oluşan pazar hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici Pazarı`)">Üretici Pazarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici Pazarı`)">Tüketici Pazarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici Pazarı`)">Ürün Pazarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketici Pazarı`)">Satıcılar Pazarı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Bir pazarın aynı özellikleri taşıyan alıcı alt gruplarına göre ayrılması faaliyetlerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar bölümlendirme`)">Pazar bölümlendirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar bölümlendirme`)">Stratejik pazarlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar bölümlendirme`)">Pazarlama planı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazar bölümlendirme`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Aşağıdakilerden hangisi bir işletmenin mal çeşidinde değişiklik yapmasını gerektiren faktör olabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rekabet`)">Rekabet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rekabet`)">Satış becerileri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rekabet`)">Kültür</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rekabet`)">Tüketici hakları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Müşterilerle iletişim ve bilgilendirme sürecini gerçekleştiren fonksiyon aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Tutundurma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Dağıtım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Fiyatlandırma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tutundurma`)">Lojistik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> Yalnızca üretime ağırlık veren işletmeler aşağıdaki satış arttırıcı çabalardan hangisine önem verir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerden hiçbiri`)">Ambalaj</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerden hiçbiri`)">Reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerden hiçbiri`)">Halkla İlişkiler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerden hiçbiri`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> Pazara derinliğine girme stratejisi pazarlama literatüründe hangi tür fiyatlandırma stratejisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Düşük fiyat stratejisi`)">Maliyet stratejisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Düşük fiyat stratejisi`)">Tutundurma stratejisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Düşük fiyat stratejisi`)">Yüksek fiyat stratejisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Düşük fiyat stratejisi`)">Düşük fiyat stratejisi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Pazarlama hedeflerinin belirlenmesi, aşağıdakilerden hangisiyle ilgili eylemlerin kapsamına girer?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama yönetimi`)">Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama yönetimi`)">Mal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama yönetimi`)">Satış</div>
+    <div class="secenek" onclick="kontrolEt(this, `Pazarlama yönetimi`)">Pazarlama yönetimi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> Aşağıdakilerden hangisi tüketicilerin satın alma davranışlarını etkileyen kişisel etken değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik çevre`)">Gelir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik çevre`)">Aile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik çevre`)">Ekonomik çevre</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik çevre`)">Yaş</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> 2000'li yıllarda pazarlamanın gelişen yüzüne yön veren gelişme aşağıdakilerden hangisi olamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Müşterinin azalan değeri`)">İnternetin hızla ticarileşmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Müşterinin azalan değeri`)">Değişen dünya ekonomisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Müşterinin azalan değeri`)">İş hayatının hızla globalleşmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Müşterinin azalan değeri`)">Müşterinin azalan değeri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Pazarlama yönetiminin gelişmesindeki aşamalar aşağıdakilerden hangisinde doğru sıralanmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretime Yönelik-Mala Yönelik- Satışa Yönelik-Pazara Yönelik-Topluma Yönelik`)">Topluma Yönelik-Pazara Yönelik-Satışa Yönelik-Mala Yönelik-Üretime Yönelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretime Yönelik-Mala Yönelik- Satışa Yönelik-Pazara Yönelik-Topluma Yönelik`)">Üretime Yönelik-Mala Yönelik- Satışa Yönelik-Pazara Yönelik-Topluma Yönelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretime Yönelik-Mala Yönelik- Satışa Yönelik-Pazara Yönelik-Topluma Yönelik`)">Mala Yönelik-Üretime Yönelik-Satışa Yönelik-Pazar Yönelik-Topluma Yönelik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretime Yönelik-Mala Yönelik- Satışa Yönelik-Pazara Yönelik-Topluma Yönelik`)">Pazara Yönelik-Mala Yönelik-Topluma Yönelik-Satışa Yönelik-Üretime Yönelik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Ürünü, bir arkadaşı satın aldığı için alacağını söyleyen müşterinin satın alma nedeni nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aidiyet`)">Ekonomik olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aidiyet`)">Özelliklerini beğenmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aidiyet`)">Aidiyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aidiyet`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Tüketici pazarlarını bölümlendirmede temel alınan bir değişken aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Davranışsal bölümlendirme`)">Davranışsal bölümlendirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Davranışsal bölümlendirme`)">Reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Davranışsal bölümlendirme`)">Dağıtım kanalları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Davranışsal bölümlendirme`)">Müşteri memnuniyeti</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Aşağıdakilerden hangisi firmaların pazarlama konusundaki büyüme stratejilerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedef Pazar Seçimi`)">Hedef Pazar Seçimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedef Pazar Seçimi`)">Pazara nüfuz etme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedef Pazar Seçimi`)">Çeşitlendirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedef Pazar Seçimi`)">Ürün Geliştirme</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Pazarları 3 grupta sınıflandırabiliriz. Aşağıdakilerden hangisi bu gruptan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot pazarlar`)">Nihai tüketici pazarları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot pazarlar`)">Endüstriyel alıcı pazarları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot pazarlar`)">Uluslararası pazarlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot pazarlar`)">Spot pazarlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> Aşağıdakilerden hangisinde ürünün hayat eğrisindeki dönemler doğru olarak sıralanmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sunuş-Büyüme-Olgunluk-Gerileme`)">Büyüme-Sunuş-Olgunluk-Gerileme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sunuş-Büyüme-Olgunluk-Gerileme`)">Sunuş-Olgunluk-Büyüme-Gerileme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sunuş-Büyüme-Olgunluk-Gerileme`)">Sunuş-Büyüme-Olgunluk-Gerileme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sunuş-Büyüme-Olgunluk-Gerileme`)">Büyüme-Olgunluk-Sunuş-Gerileme</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> Birincil hedefi satış olan pazarlama iletişimi öğeleri hangi şıkta doğru belirtilmiştir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğrudan pazarlama- Satış tutundurma`)">Reklam-Kişisel satış</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğrudan pazarlama- Satış tutundurma`)">Doğrudan pazarlama- Satış tutundurma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğrudan pazarlama- Satış tutundurma`)">Satış tutundurma- Reklam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Doğrudan pazarlama- Satış tutundurma`)">Halkla ilişkiler- Kişisel satış</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> Bireyin davranışlarını ve kendini değerlendirmede, örnek aldığı gruplara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Referans grup`)">İkincil grup</div>
+    <div class="secenek" onclick="kontrolEt(this, `Referans grup`)">Referans grup</div>
+    <div class="secenek" onclick="kontrolEt(this, `Referans grup`)">Dış grup</div>
+    <div class="secenek" onclick="kontrolEt(this, `Referans grup`)">Birincil grup</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> Aşağıdakilerden hangisi hizmet pazarlamasının mal pazarlamasından farklarından biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faydaya ve değere dayalı fiyatlama`)">Ekipman, teknoloji ve kapasite önemli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faydaya ve değere dayalı fiyatlama`)">Faydaya ve değere dayalı fiyatlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faydaya ve değere dayalı fiyatlama`)">Teknolojiye dayalı ve üretici ile tüketicinin yüz yüze gelmesini gerektirmeyen bir üretim ve dağıtım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faydaya ve değere dayalı fiyatlama`)">Üretim için ekonomik ve siyasi durum önemli ve maliyet yüksek</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Kişi ve ailelerin kullanım amaçlarını esas alarak pazara sunulan mallara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim malları`)">Endüstriyel mallar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim malları`)">Perakende mallar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim malları`)">Tüketim malları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketim malları`)">Serbest malları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> Aşağıdakilerden hangisi tüketici davranışını etkileyen psikolojik etkenlerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Roller ve Statüler`)">Roller ve Statüler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Roller ve Statüler`)">Algılamalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Roller ve Statüler`)">Tutum ve inançlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Roller ve Statüler`)">İhtiyaçlar ve güdüler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Pazarlama anlayışının gelişim süreci aşağıdaki yaklaşımlardan hangisiyle başlamıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim Yaklaşımı`)">Üretim Yaklaşımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim Yaklaşımı`)">Satış Yaklaşımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim Yaklaşımı`)">Pazarlama Yaklaşımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üretim Yaklaşımı`)">Sosyal Pazarlama</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> Aşağıdakilerden hangisi markanın tüketiciler açısından başlıca faydaları arasındadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi.`)">Malın tanınmasını sağlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi.`)">Mal hakkında bilgi verir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi.`)">Kalite açısından güven unsuru olur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi.`)">Seçeneklerin hepsi.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> Aşağıdakilerden hangisi fiyatlandırmada göz önünde tutulması gereken kriterlerdir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Talebin alım gücü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Rakiplerin uyguladığı fiyat politikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Maliyet ve karlılık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> Kişiselleştirilmiş bir ürün veya hizmet teklifi oluşturup sunmak ne anlama gelir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm teklifin (Ürün özellikleri ,ödeme koşulları,garanti süresi vb)kendisi için artı değerini müşteriye göstermek`)">Müşteriye satış süreci sırasında konuşulanların bir özetini sunmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm teklifin (Ürün özellikleri ,ödeme koşulları,garanti süresi vb)kendisi için artı değerini müşteriye göstermek`)">Tüm teklifin (Ürün özellikleri ,ödeme koşulları,garanti süresi vb)kendisi için artı değerini müşteriye göstermek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm teklifin (Ürün özellikleri ,ödeme koşulları,garanti süresi vb)kendisi için artı değerini müşteriye göstermek`)">Fiyat ve indirim dışındaki unsurlarında maliyet tahminine dahil edildiğini göstererek müşteriyi şaşırtmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm teklifin (Ürün özellikleri ,ödeme koşulları,garanti süresi vb)kendisi için artı değerini müşteriye göstermek`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> Pazarlama gelişim sürecinde satış yaklaşımının hedefi aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Satış hacmini arttırmak`)">Üretimi arttırmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Satış hacmini arttırmak`)">Reklam yapmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Satış hacmini arttırmak`)">Müşteri memnuniyetini sağlamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Satış hacmini arttırmak`)">Satış hacmini arttırmak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> Aşağıdakilerden hangisi, pazarlamayı etkileyen işletme dışı faktörlerden biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal ve kültürel çevre`)">Üretim</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal ve kültürel çevre`)">Araştırma-Geliştirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal ve kültürel çevre`)">Sosyal ve kültürel çevre</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal ve kültürel çevre`)">Finans</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>

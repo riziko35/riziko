@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çoktan Seçmeli Sorular - 5</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Çoktan Seçmeli Sorular - Dosya 5</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> Yıllık vade ile bankaya yatırılan 100.000 TL ikinci yılın sonunda 144.000 TL'ye ulaşmıştır. Yıllık faiz oranı ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `20%`)">20%</div>
+    <div class="secenek" onclick="kontrolEt(this, `20%`)">25%</div>
+    <div class="secenek" onclick="kontrolEt(this, `20%`)">30%</div>
+    <div class="secenek" onclick="kontrolEt(this, `20%`)">15%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> Yatırımınız bir dönem boyunca 150 TL'den 250 TL'ye çıkarsa, bu dönem için elde etmiş olduğunuz getiri oranı kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `67%`)">100%</div>
+    <div class="secenek" onclick="kontrolEt(this, `67%`)">80%</div>
+    <div class="secenek" onclick="kontrolEt(this, `67%`)">150%</div>
+    <div class="secenek" onclick="kontrolEt(this, `67%`)">67%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> 30.000 TL'yi %25 brüt faiz ile 1 haftalık repo yaptırırsanız ne kadar net faiz elde edersiniz? (Stopaj Oranı: %15)</div>
+    <div class="secenek" onclick="kontrolEt(this, `122,26 TL`)">122,26 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `122,26 TL`)">171,16 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `122,26 TL`)">285,27 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `122,26 TL`)">181,30 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Yatırımınız bir dönem boyunca 100 TL'den 96 TL'ye inerse, bu dönem için elde etmiş olduğunuz getiri oranı kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `-4%`)">-15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `-4%`)">-4%</div>
+    <div class="secenek" onclick="kontrolEt(this, `-4%`)">-7%</div>
+    <div class="secenek" onclick="kontrolEt(this, `-4%`)">-10%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> GSMH bir yıl reel %10 küçülüp, ertesi yıl reel %10 büyümesi durumunda aşağıdaki yorumlardan hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonominin büyüklüğü iki sene öncekine göre reel 1 % küçülmüştür.`)">İlgili ülkenin ekonomisi iki yıl önceki büyüklüktedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonominin büyüklüğü iki sene öncekine göre reel 1 % küçülmüştür.`)">Ekonomideki böyle bir hareketlilik (volatilite), piyasaya canlılık sağlayacağından makro bazda yararlıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonominin büyüklüğü iki sene öncekine göre reel 1 % küçülmüştür.`)">Ekonominin büyüklüğü iki sene öncekine göre reel 1 % küçülmüştür.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonominin büyüklüğü iki sene öncekine göre reel 1 % küçülmüştür.`)">Ekonominin büyüklüğü iki sene öncekine göre reel 1 % büyümüştür.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Bankaya yatırdığı 900 TL, 100 gün sonra 1.100 TL olan bir yatırımcının yıllık bazda bileşik getirisi nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `108,02%`)">75,75%</div>
+    <div class="secenek" onclick="kontrolEt(this, `108,02%`)">86,86%</div>
+    <div class="secenek" onclick="kontrolEt(this, `108,02%`)">108,02%</div>
+    <div class="secenek" onclick="kontrolEt(this, `108,02%`)">75,30%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> 3 yıl sonra 4.000 TL elde etmek için yıllık %15 faiz oranı ile bankaya bugün ne kadar para yatırılmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.630,06 TL`)">2.525,30 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.630,06 TL`)">2.630,06 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.630,06 TL`)">1.425,75 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.630,06 TL`)">1.350,00 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> 415,25 TL'yi bankaya yatırıp, 30 gün sonra 425,25 TL alan bir kişinin yıllık bileşik getirisi ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `33,58%`)">24,85%</div>
+    <div class="secenek" onclick="kontrolEt(this, `33,58%`)">25,30%</div>
+    <div class="secenek" onclick="kontrolEt(this, `33,58%`)">42,35%</div>
+    <div class="secenek" onclick="kontrolEt(this, `33,58%`)">33,58%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Bir televizyonun fiyatını 500 TL'den 200 TL'ye indirmiş bir satıcı yüzde kaç iskonto yapmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `60`)">40</div>
+    <div class="secenek" onclick="kontrolEt(this, `60`)">20</div>
+    <div class="secenek" onclick="kontrolEt(this, `60`)">80</div>
+    <div class="secenek" onclick="kontrolEt(this, `60`)">60</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> Aşağıdaki bono ve tahvillerden hangisinin bileşik getirisi diğerlerinden daha yüksektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `90 gün vadeli %54 basit getirili bono`)">90 gün vadeli %54 basit getirili bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `90 gün vadeli %54 basit getirili bono`)">390 gün vadeli %50 basit getirili tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `90 gün vadeli %54 basit getirili bono`)">310 gün vadeli %49 basit getirili bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `90 gün vadeli %54 basit getirili bono`)">180 gün vadeli %48 basit getirili bono</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> 3 ay vadeli değerlendirilen tasarrufun bileşik getirisi %25'dir. Nominal faizi kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `23%`)">27%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23%`)">23%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23%`)">18%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> 20 gün kırık vadeli mevduatın yıllık basit faizi %90 ise yıllık bileşik faizi kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `140,70%`)">110,20%</div>
+    <div class="secenek" onclick="kontrolEt(this, `140,70%`)">125,00%</div>
+    <div class="secenek" onclick="kontrolEt(this, `140,70%`)">130,50%</div>
+    <div class="secenek" onclick="kontrolEt(this, `140,70%`)">140,70%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> Reponun brüt faizi %6 ise, reponun net faizi kaç olacaktır? (Stopaj oranı: %15)</div>
+    <div class="secenek" onclick="kontrolEt(this, `5,10%`)">4,50%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5,10%`)">5,10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5,10%`)">3,65%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5,10%`)">4,25%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> 6 aylık mevduatın yıllık basit faizi net %20 ise, bileşik getirisi kaçtır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `21%`)">35%</div>
+    <div class="secenek" onclick="kontrolEt(this, `21%`)">28%</div>
+    <div class="secenek" onclick="kontrolEt(this, `21%`)">21%</div>
+    <div class="secenek" onclick="kontrolEt(this, `21%`)">38%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Aşağıdaki tahvillerden hangisinin yıllık bileşik getirisi daha yüksektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `On yıl vadeli, üç ayda bir, yüzde 5 kupon ödemeli`)">Beş yıl vadeli, yılda bir kez, yüzde 5 kupon ödemeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `On yıl vadeli, üç ayda bir, yüzde 5 kupon ödemeli`)">On yıl vadeli, üç ayda bir, yüzde 5 kupon ödemeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `On yıl vadeli, üç ayda bir, yüzde 5 kupon ödemeli`)">Üç yıl vadeli, altı ayda bir yüzde 5 kupon ödemeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `On yıl vadeli, üç ayda bir, yüzde 5 kupon ödemeli`)">On yıl vadeli, yılda bir kez yüzde 5 faiz ödemeli</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Reponun net faizi %12 ise, brüt faiz oranı kaçtır? (Stopaj oranı: %15)</div>
+    <div class="secenek" onclick="kontrolEt(this, `14,12%`)">14,12%</div>
+    <div class="secenek" onclick="kontrolEt(this, `14,12%`)">15,75%</div>
+    <div class="secenek" onclick="kontrolEt(this, `14,12%`)">29,41%</div>
+    <div class="secenek" onclick="kontrolEt(this, `14,12%`)">21,25%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Aylık % 1,75 faizli bireysel kredinin yıllık bileşik maliyeti nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `23,14%`)">36,25%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23,14%`)">27,48%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23,14%`)">23,14%</div>
+    <div class="secenek" onclick="kontrolEt(this, `23,14%`)">35,48%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Aylık %1,35 faizli tüketici kredisinin bileşik faizi nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `17,50%`)">15,20%</div>
+    <div class="secenek" onclick="kontrolEt(this, `17,50%`)">17,50%</div>
+    <div class="secenek" onclick="kontrolEt(this, `17,50%`)">26,10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `17,50%`)">12,50%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Üzerinde yazılı değerle satışa çıkarılan tahvil .................., nominal değerinden yüksek bedelle satışa çıkarılan tahvile .................., nominal değerden daha düşük bedelle satışa çıkarılan tahvil ise ......denir. Yukarıdaki cümledeki boşluklara aşağıdaki seçeneklerden hangisinin gelmesi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Başabaş/Primli/İskontolu (tahvil)`)">İskontolu/Primli/Başabaş (tahvil)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Başabaş/Primli/İskontolu (tahvil)`)">İkramiyeli/İskontolu/Başabaş (tahvil)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Başabaş/Primli/İskontolu (tahvil)`)">Primli/İndeksli/İskontolu (tahvil)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Başabaş/Primli/İskontolu (tahvil)`)">Başabaş/Primli/İskontolu (tahvil)</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> Uzun ve kısa pozisyonlar alarak ve çok çeşitli finansal enstrümanlar kullanarak, seçilmiş strateji çerçevesinde riski düşürmeyi veya getiri maksimize etmeyi amaçlayan, sadece nitelikli yatırımcıların işlem yapabildiği, portföy yapısı herhangi bir yatırım kısıtlamasına tabi olmayan fonlar hangi fonlardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedge (Serbest) Fonlar`)">Yatırım Ortaklığı Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedge (Serbest) Fonlar`)">Hedge (Serbest) Fonlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedge (Serbest) Fonlar`)">Gayrimenkul Yatırım Ortaklığı Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hedge (Serbest) Fonlar`)">Esnek Fon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> Kısa dönemli mali kaynak ihtiyaçlarının sağlandığı mali piyasalara ........................... denir. Orta ve uzun dönemli yatırım amacına yönelik fonların sağlandığı mali piyasalara da ........................... denir. ifadesini aşağıdaki seçeneklerden uygun olanı ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para piyasası-Sermaye piyasası`)">Para piyasası-Sermaye piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para piyasası-Sermaye piyasası`)">Sermaye piyasası-Mal piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para piyasası-Sermaye piyasası`)">Reel piyasa-Para piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para piyasası-Sermaye piyasası`)">Sermaye piyasası-Para piyasası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> ..............(I)................. satın alan/yapan kişi anonim ortaklığın sermayesine (kârına/zararına) ortak olmuş sayılır, ..............(II)............ satın alan kişi borç vermiş olur.Yukarıdaki cümledeki boşlukları aşağıdaki seçeneklerden uygun olanı ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `(I) hisse senedi, (II) devlet tahvili`)">(I) hazine bonosu, (II) devlet tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `(I) hisse senedi, (II) devlet tahvili`)">(I) repo, (II) yatırım fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `(I) hisse senedi, (II) devlet tahvili`)">(I) yatırım fonu, (II)hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `(I) hisse senedi, (II) devlet tahvili`)">(I) hisse senedi, (II) devlet tahvili</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> Hükümet ya da şirketlerin, kendi ülkeleri dışında, kaynak sağlamak amacıyla, yabancı para cinsinden ihraç ettikleri, genelde uzun vadeli ve kupon ödemeli borçlanma araçlarına …….. denir. Yukarıdaki boşluğu aşağıdaki ifadelerden en uygunu ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond`)">Repo</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond`)">Ters Repo</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond`)">Eurobond</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond`)">Devlet tahvili</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Yatırımcılardan, katılma belgeleri karşılığı toplanan paralarla belge sahipleri adına, riskin dağıtılması ilkesiyle, inançlı mülkiyet esaslarına göre hareket ederek menkul kıymetlerden oluşan portföyü işletmek amacıyla kurulan mal varlığına ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım fonu`)">Hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım fonu`)">Yatırım fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım fonu`)">Banka tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yatırım fonu`)">D.İ.B.S.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> 1 yıl vadeli, iskontolu olarak ihraç edilen ve çoklu fiyat sistemine göre ihale edilen bono için yönetici Asuman Hanım %55 teklif vermiş, fakat ihale sonucunda faiz oranı %50 olarak gerçekleşmiştir. Bu sonuca göre aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetici Asuman Hanım ihaleden alım yapamamıştır.`)">Yönetici Asuman Hanım ihaleden alım yapamamıştır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetici Asuman Hanım ihaleden alım yapamamıştır.`)">Yönetici Asuman Hanım ihaleden yıllık getirisi %50 olacak şekilde bono almıştır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetici Asuman Hanım ihaleden alım yapamamıştır.`)">Yönetici Asuman Hanım ihaleden yıllık getirisi %55 olacak şekilde alım yapmıştır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yönetici Asuman Hanım ihaleden alım yapamamıştır.`)">Yönetici Asuman Hanım'ın durumuna ilişkin net bir sonuca varılamaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> Devletin ya da özel sektörün çıkartmış olduğu menkul kıymeti alan bir kişi, elde edeceği faiz gelirini düzenli aralıklarla alıyor ve vade sonunda da borç vermiş olduğu anaparasını geri alıyor ise, bu hangi yatırım enstrümanı olabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu tahvil`)">İskontolu tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu tahvil`)">Hazine bonosu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu tahvil`)">Kuponlu tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kuponlu tahvil`)">Rüçhan haklı tahvil</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Finansal piyasalar, gerçekleştirilen alım-satım işlemi sonucunda el değiştiren kıymetlerin vadesine bağlı olarak ……ve……..piyasalar olmak üzere ikiye ayrılır. Yukarıdaki boşluğu aşağıdaki ifadelerden en uygunu ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot/Türev`)">Para/Sermaye</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot/Türev`)">Spot/Türev</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot/Türev`)">Tahvil/Bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot/Türev`)">Tahvil/Hisse Senedi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Aşağıdaki kuruluşlardan hangileri Borsa İstanbul'da doğrudan emir verme yetkisine sahiptirler?  I.Aracı Kurumlar II.Ticari Bankalar III.Sosyal Güvenlik Kurumları IV.Yatırım ve Kalkınma Bankaları V.İller Bankası</div>
+    <div class="secenek" onclick="kontrolEt(this, `I,II,IV`)">Yalnız III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I,II,IV`)">Yalnız V</div>
+    <div class="secenek" onclick="kontrolEt(this, `I,II,IV`)">III,V</div>
+    <div class="secenek" onclick="kontrolEt(this, `I,II,IV`)">I,II,IV</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Şirket ortağı olan veya şirketten daha önce hisse senedi almış olanların yeni sermaye artırımlarında ihraç edilecek yeni hisse senetlerinden almadaki öncelik hakkı aşağıdakilerden hangisi olarak tanımlanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rüçhan Hakkı`)">Şirket yönetimine katılma hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rüçhan Hakkı`)">Rüçhan Hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rüçhan Hakkı`)">Kâr payı alma hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rüçhan Hakkı`)">Oy hakkı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> İlk arzı yapıldığı sırada nominal değeri üzerinden indirim yapılarak satılan ve kuponlu faiz ödemesi bulunmayan borçlanma senetleridir. Bu ifade aşağıdaki kavramlardan hangisini tanımlamaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İskontolu tahvil ya da bono`)">Kuponlu tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `İskontolu tahvil ya da bono`)">İskontolu tahvil ya da bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `İskontolu tahvil ya da bono`)">Sabit taksit ödemeli borç</div>
+    <div class="secenek" onclick="kontrolEt(this, `İskontolu tahvil ya da bono`)">Basit ödünç verme işlemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> TCMB'nin ters repo ihalesiyle ………………………… diğer koşulların sabit kaldığı varsayımı altında döviz fiyatlarının ……………… sebep olabilmektedir. ifadesinde boşluklara hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasadan fonları geri çekmesi/düşmesine`)">piyasaya nakit vermesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasadan fonları geri çekmesi/düşmesine`)">piyasaya nakit vermesi/artmasına</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasadan fonları geri çekmesi/düşmesine`)">piyasadan fonları geri çekmesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasadan fonları geri çekmesi/düşmesine`)">piyasadan fonları geri çekmesi/artmasına</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Tahvil ve bono piyasasında işlem yapabilen kuruluş(lar) aşağıdakilerden hangisidir?  I.TCMB II. Borsada faaliyet gösteren bankalar III.Borsada faaliyet gösteren aracı kurumlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">Sadece I</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">II ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve III</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> TCMB'nin repo ihalesiyle ………………………… diğer koşulların sabit kaldığı varsayımı altında tahvil fiyatlarının ……………… sebep olabilmektedir. ifadesinde boşluklara hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasaya nakit vermesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasaya nakit vermesi/artmasına</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasadan fonları geri çekmesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasadan fonları geri çekmesi/artmasına</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> İlerideki bir tarihte teslimatı veya nakit uzlaşması yapılmak üzere herhangi bir malın veya finansal aracın, bugünden alım satımının yapıldığı piyasa ne olarak adlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türev Piyasa`)">Türev Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türev Piyasa`)">Açık Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türev Piyasa`)">Spot Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türev Piyasa`)">Birincil Piyasa</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> TCMB'nin repo ihalesiyle ………………………… diğer koşulların sabit kaldığı varsayımı altında döviz fiyatlarının ……………… sebep olabilmektedir. ifadesinde boşluklara hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasaya nakit vermesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasaya nakit vermesi/artmasına</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasadan fonları geri çekmesi/düşmesine</div>
+    <div class="secenek" onclick="kontrolEt(this, `piyasaya nakit vermesi/artmasına`)">piyasadan fonları geri çekmesi/artmasına</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Aşağıdakilerden hangisi bir hisse senedinin seans içinde işlem görebileceği üst ve alt fiyat limitlerinin ve fiyat adımlarının belirlenmesine esas teşkil eden fiyattır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Baz Fiyat`)">Baz Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Baz Fiyat`)">Referans Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Baz Fiyat`)">Ağırlıklı Ortalama Fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Baz Fiyat`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Bir Hazine Bonosu/Devlet Tahvilinin piyasada işlem gören fiyatı yükseliyorsa, faizi ________________ ifadesini aşağıdaki seçeneklerden uygun olanı ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `düşer.`)">aynı kalır, değişmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `düşer.`)">önce artar sonra aynı noktaya düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `düşer.`)">düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `düşer.`)">artar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Menkul değerler yatırımlarında çeşitli riskler sözkonusudur. Bunlardan biri de piyasa riskidir. Aşağıdakilerden hangisi piyasa riskine en iyi örnektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranları ile para ve sermaye piyasalarının koşulları değişirken ilgili menkul değerin değerinde ortaya çıkan dalgalanmalar`)">Menkul kıymetin istenilen sürede elden çıkarılamaması durumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranları ile para ve sermaye piyasalarının koşulları değişirken ilgili menkul değerin değerinde ortaya çıkan dalgalanmalar`)">Vadesi gelen menkul kıymet ödemesinin, menkul kıymeti çıkaran kurum tarafından yapılmaması veya yapılamaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranları ile para ve sermaye piyasalarının koşulları değişirken ilgili menkul değerin değerinde ortaya çıkan dalgalanmalar`)">Faiz oranları ile para ve sermaye piyasalarının koşulları değişirken ilgili menkul değerin değerinde ortaya çıkan dalgalanmalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranları ile para ve sermaye piyasalarının koşulları değişirken ilgili menkul değerin değerinde ortaya çıkan dalgalanmalar`)">Finansal güçlüklerle karşılaşan bir firmanın, kredi anapara ve faizlerini ödemede sıkıntıya düşmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Belli miktarda bir mal veya kıymetin ve bunların karşılığı olan paranın işlemin ardından takas günü el değiştirdiği piyasa aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot Piyasa`)">Türev Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot Piyasa`)">Açık Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot Piyasa`)">Spot Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Spot Piyasa`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Herhangi bir varlık için verilen çift taraflı (alım-satım) fiyat teklifine ............ denir. ifadesindeki boşluğa aşağıdakilerden hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kotasyon`)">Pazar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kotasyon`)">Etiket</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kotasyon`)">Kotasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kotasyon`)">Kâr</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> İçinde %100 oranında devlet tahvili bulunduran bir emeklilik yatırım fonunun birim pay değerinin düşmesi aşağıdakilerden hangisiyle açıklanabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasadaki faizlerin yükselmesi`)">Toplam fon pay adedinin azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasadaki faizlerin yükselmesi`)">Toplam fon pay adedinin artması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasadaki faizlerin yükselmesi`)">Piyasadaki faizlerin yükselmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Piyasadaki faizlerin yükselmesi`)">Piyasadaki faizlerin düşmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> TCMB Bankalararası Para Piyasası'nda işlem yapabilen bankalara TCMB tarafından ………………………… tahsis edilir. ifadesindeki boşluğa hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem limiti`)">İşlem limiti</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem limiti`)">Teminat limiti</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem limiti`)">Teminat</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem limiti`)">Karşılık limiti</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Bir tahvilin ……. vade sonunda hamilinin eline geçecek olan parayı ifade eder.Yukarıdaki boşluğu aşağıdaki ifadelerden en uygunu ile doldurunuz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Nominal değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">İhraç değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Piyasa değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Borsa değeri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdakilerden hangisi menkul kıymetlerin kısa sürede nominal değerine yakın bir fiyatla paraya dönüştürülmemesi durumunda faize eklenir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likidite primi`)">Enflasyon primi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likidite primi`)">Nominal risk faiz oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likidite primi`)">Likidite primi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Likidite primi`)">Vade risk primi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Anonim şirketlerin, ödünç para bulmak için, itibari kıymetleri eşit ve ibareleri aynı olmak üzere çıkardıkları borç senetlerine ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil`)">Hisse Senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil`)">Emre muharrer senet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil`)">Tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil`)">Gelir Ortaklığı Senetleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Menkul kıymetlerin belirli bir vade sonunda üzerinde önceden anlaşılan bir fiyatla geri satın alma taahhüdü yaparak satılmasına ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo`)">Ters repo</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo`)">Repo</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo`)">Vadeli mevduat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo`)">Kâr zarar hesabı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Anonim Ortaklıklar tarafından çıkarılan ve belirli bir ortaklık sermayesine katılma payını temsil eden kıymetli evraklara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi`)">Yatırım fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi`)">Hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi`)">Varlığa dayalı menkul kıymet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi`)">Finansman bonosu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Bir iktisadi birim üzerinde …………….. ya da …………….. hakkını temsil eden araçlara mali araç denir. ifadesinde boşluklara hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alacaklılık/ortaklık`)">Sahiplik/borçluluk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alacaklılık/ortaklık`)">Ortaklık/kredi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alacaklılık/ortaklık`)">Alacaklılık/ortaklık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alacaklılık/ortaklık`)">Alacaklılık/sahiplik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> Yatırılan sermaye payının karşılığı olarak ortaklığın kârından alınan bedeller aşağıdaki kavramlardan hangisi ile ifade edilmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kâr payı/Temettü`)">Enflasyon vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kâr payı/Temettü`)">Alacak payı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kâr payı/Temettü`)">Kâr payı/Temettü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kâr payı/Temettü`)">Kâr marjı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> Bugünkü bir paranın belirli bir faiz oranı üzerinden belirli bir süre sonra ulaşacağı değer kavramı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekteki değer kavramı`)">Şimdiki değer kavramı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekteki değer kavramı`)">Gelecekteki değer kavramı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekteki değer kavramı`)">Yakın değer kavramı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelecekteki değer kavramı`)">Nominal değer kavramı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Vadeli işlem ve opsiyon piyasasında hangi finansal ürünlere dayalı sözleşmeler düzenlenmektedir?  I.Döviz II.Emtia III.BIST 30</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">Sadece I</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">Sadece II</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> TC Hazine ve Maliye Bakanlığı'nın 1 yıldan uzun vadeli olarak TL cinsinden ihraç ettiği borçlanma senetlerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devlet tahvili`)">Hazine bonosu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devlet tahvili`)">Eurobond</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devlet tahvili`)">Devlet tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devlet tahvili`)">Repo</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Aşağıdakilerden hangisi Sermaye Piyasası Kanunu tarafından belirlenmiş, Sermaye Piyasası faaliyetlerinden birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik aracılığı`)">Yatırım danışmanlığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik aracılığı`)">Portföy yöneticiliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik aracılığı`)">Daha önce ihraç edilmiş olan sermaye piyasası araçlarının aracılık amacıyla alım satımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireysel emeklilik aracılığı`)">Bireysel emeklilik aracılığı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Aşağıda belirtilen para ve sermaye piyasası araçlarından hangisi menkul kıymet yatırım fonlarının portföyünde bulunabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Tahvil ve bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Kıymetli madenler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Hisse senetleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> Aşağıdakilerden hangisi ülkemizde hazine bonolarının bankalar tarafından tercih edilmesinin sebepleri arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranlarının göreceli olarak düşük olması`)">Faiz oranlarının göreceli olarak düşük olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranlarının göreceli olarak düşük olması`)">İkincil piyasalarının işlek olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranlarının göreceli olarak düşük olması`)">İhalelerde güvence olarak kullanılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz oranlarının göreceli olarak düşük olması`)">Geri ödenmeme riskinin olmaması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Devletin bir yıldan kısa vadeli finansman ihtiyacını karşılamak için çıkarılan iç borçlanma belgelerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu`)">Devlet tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu`)">Hazine bonosu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu`)">Mevduat sertifikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hazine bonosu`)">Gelir ortaklığı senedi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Para piyasasında geçerli olan faiz oranları üzerinde etkili olan faktörler arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para arzındaki artış plase edilebilir fon arzını genişletir ve faizlerde bir yükselme oluşur.`)">Para arzındaki artış plase edilebilir fon arzını genişletir ve faizlerde bir yükselme oluşur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para arzındaki artış plase edilebilir fon arzını genişletir ve faizlerde bir yükselme oluşur.`)">Para piyasasında faiz oranları arz ve talep tarafından belirlenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para arzındaki artış plase edilebilir fon arzını genişletir ve faizlerde bir yükselme oluşur.`)">Piyasada geçerli olan faiz oranları plase edilebilir fonlar ile talep edilen kredilerin kesişme noktasında oluşur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Para arzındaki artış plase edilebilir fon arzını genişletir ve faizlerde bir yükselme oluşur.`)">Piyasadaki kredi talebinin fonlardan fazla olması durumunda faizlerde yükselme olur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Türk hukuk sisteminde …………… ………… bulunmayan hisse senedi ihracı mümkün değildir. ifadesinde boşluğa hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Nominal değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Fiyatı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Temettü hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal değeri`)">Rüçhan hakkı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Bir ülke parasının satın alma gücünün yabancı ülke paraları karşısında azaltılması durumu aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon`)">Konsolidasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon`)">Enflasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon`)">Devalüasyon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Devalüasyon`)">Stabilizasyon</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> BIST Borçlanma Araçları Piyasası Kesin Alım Satım Pazarında emirler sırası ile hangi önceliklere göre işlem görür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyat-zaman`)">Üye kodu-fiyat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyat-zaman`)">Zaman-fon</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyat-zaman`)">Fiyat-zaman</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiyat-zaman`)">Müşteri-zaman</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> Bir işletmenin özsermaye toplamının pay senedi sayısına bölünmesini ifade eden kavram aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Defter Değeri`)">Nominal Değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Defter Değeri`)">Gerçek Değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Defter Değeri`)">Defter Değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Defter Değeri`)">Net Aktif Değer</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Organize bir borsa dışında yapılan işlemleri kapsayan gayriresmî nitelikteki aracı piyasalara ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgah üstü Piyasa`)">Tahvil ve Bono Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgah üstü Piyasa`)">Vadeli İşlem ve Opsiyon Piyasası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgah üstü Piyasa`)">Tezgah üstü Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tezgah üstü Piyasa`)">Yarı Organize Piyasa</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Bir menkul kıymetin vadesinden önce elden çıkarılması durumunda sağlanan gelir aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alım satım kazancı`)">Alım satım kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alım satım kazancı`)">Menkul sermaye iradı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alım satım kazancı`)">Sermaye kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Alım satım kazancı`)">Değer artış kazancı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Portföy değerinin aylık ortalama en az % 25’i hisse senetlerinden oluşan yatırım fonları ne tip fonlardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi`)">A Tipi</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi`)">B Tipi</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi`)">Hisse Tipi</div>
+    <div class="secenek" onclick="kontrolEt(this, `A Tipi`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Menkul kıymetler yatırım fonlarının yönetim ilkeleri ile ilgili olarak aşağıdakilerden hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon mal varlığı üçüncü sahıslar tarafından haczedilemez.`)">Yatırım fonunun mal varlığı yöneticinin yükümlülükleri yerine getirmesi amacı ile kullanılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon mal varlığı üçüncü sahıslar tarafından haczedilemez.`)">Fon başka fonların katılma belgelerini satın alamaz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon mal varlığı üçüncü sahıslar tarafından haczedilemez.`)">Fon mal varlığı teminat olarak gösterilebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fon mal varlığı üçüncü sahıslar tarafından haczedilemez.`)">Fon mal varlığı üçüncü sahıslar tarafından haczedilemez.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> Aşağıdakilerden hangisi Sermaye Piyasası Kanunu'na göre faaliyette bulunabilecek kurumlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Komisyoncular`)">Aracı kurumlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Komisyoncular`)">Komisyoncular</div>
+    <div class="secenek" onclick="kontrolEt(this, `Komisyoncular`)">Yatırım ortaklıkları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Komisyoncular`)">Yatırım fonları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> Tüm piyasalarda tarafların yükümlülüklerini yerine getirmemesi anlamına gelen hukuki ifade hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temerrüt`)">Edimsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temerrüt`)">Temettü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temerrüt`)">Temerrüt</div>
+    <div class="secenek" onclick="kontrolEt(this, `Temerrüt`)">Ödememe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Bir piyasada bir seansta ya da belli bir dönemde alınıp satılan menkul kıymet adedine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem Miktarı`)">İşlem Miktarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem Miktarı`)">İşlem Birimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem Miktarı`)">İşlem Hacmi</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşlem Miktarı`)">Lot</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> Tahvilin faiz ve anapara ödemelerinde………….. esas alınır ifadesinde boşluğa en uygun şık hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal Değer`)">Nominal Değer</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal Değer`)">İhraç Değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal Değer`)">Piyasa Değeri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal Değer`)">Net Aktif Değeri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> İşletmenin ihtiyaç duyduğu varlıkları satın almak yerine, kiralaması işlemine ne ad verilmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Leasing`)">Sermaye artırımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Leasing`)">Hisse senedi ihracı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Leasing`)">Leasing</div>
+    <div class="secenek" onclick="kontrolEt(this, `Leasing`)">Finansman bonosu ihracı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> TCMB piyasadaki geçici likidite sıkıntısını gidermek istediğinde Açık Piyasada hangi işlemi yapar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri satım vaadiyle alım`)">Doğrudan satım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri satım vaadiyle alım`)">Geri alım vaadiyle satım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri satım vaadiyle alım`)">Doğrudan alım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri satım vaadiyle alım`)">Geri satım vaadiyle alım</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> TCMB piyasadaki geçici likidite fazlasını gidermek istediğinde Açık Piyasada hangi işlemi yapar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri alım vaadiyle satım`)">Doğrudan satım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri alım vaadiyle satım`)">Geri alım vaadiyle satım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri alım vaadiyle satım`)">Doğrudan alım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geri alım vaadiyle satım`)">Geri satım vaadiyle alım</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> Yatırımcıların katlanmak zorunda oldukları risk için talep ettikleri ek getiriye ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Risk primi`)">Reel faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Risk primi`)">Nominal faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Risk primi`)">Risksiz faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Risk primi`)">Risk primi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> Aşağıdaki koşullardan hangisinin gerçekleşmesi sonucu yatırım fonunun sona ermesi gerçekleşmez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılma belgelerinin değerinin % 50'den fazla düşmesi`)">Kurucunun fon kurma koşullarını yitirmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılma belgelerinin değerinin % 50'den fazla düşmesi`)">Katılma belgelerinin değerinin % 50'den fazla düşmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılma belgelerinin değerinin % 50'den fazla düşmesi`)">Kurucunun mali durumunun zayıflaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılma belgelerinin değerinin % 50'den fazla düşmesi`)">Fon içtüzüğünde süre öngörülmesi ve bu sürenin sona ermesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Hisse senedi ihraç edebilecek şirket ve kuruluşlar arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu İktisadi Teşekkülleri`)">Anonim şirketler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu İktisadi Teşekkülleri`)">Bankalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu İktisadi Teşekkülleri`)">Kamu İktisadi Teşekkülleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu İktisadi Teşekkülleri`)">Sigorta şirketleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Hisse Senetleri üzerinde yazan fiyat _________fiyattır.ifadesindeki boşluğa hangisi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal`)">Nominal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal`)">Piyasa</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal`)">Bileşik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Nominal`)">Efektif</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Aşağıdaki menkul kıymetlerden hangisi BIST Borçlanma Araçları Piyasasında işlem görebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Devlet Tahvili</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Gelir Ortaklığı Senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Varlığa Dayalı Menkul Kıymetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> Düzenli piyasalarımızdan olan Takasbank Borsa Para Piyasasındaki işlemciler hangileridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka/Aracı Kurumlar`)">Bankalar/Katılım Bankaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka/Aracı Kurumlar`)">Döviz büroları/Kıymetli maden aracı kurumları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka/Aracı Kurumlar`)">Banka/Aracı Kurumlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka/Aracı Kurumlar`)">Aracı kurumlar/Katılım Bankaları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> Aşağıdakilerden hangisi hisse senedinin yatırımcılara sağladığı haklardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasfiye durumunda, birinci sıradan alacaklı olma hakkı`)">Tasfiye durumunda, birinci sıradan alacaklı olma hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasfiye durumunda, birinci sıradan alacaklı olma hakkı`)">Genel kurulda oy kullanma hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasfiye durumunda, birinci sıradan alacaklı olma hakkı`)">Şirket faaliyetleri hakkında bilgi edinme hakkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tasfiye durumunda, birinci sıradan alacaklı olma hakkı`)">Genel Kurulun kar dağıtımına karar vermesi durumunda temettü hakkı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Aşağıdakilerden hangisi tahvil ve bonolar için likitide riskini en iyi şekilde tanımlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil ya da bononun ikincil piyasada satılmak istenmesi durumunda, yeteri miktarda veya hiç alıcısının bulunmaması riskidir.`)">Tahvil ya da bononun vadesinden önce itfa olması nedeniyle ortaya çıkacak getiri kaybıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil ya da bononun ikincil piyasada satılmak istenmesi durumunda, yeteri miktarda veya hiç alıcısının bulunmaması riskidir.`)">Tahvil ya da bonoyu elde tutma süresi içinde dövizdeki artış nedeniyle getirisinin döviz getirisinin altında kalması riskidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil ya da bononun ikincil piyasada satılmak istenmesi durumunda, yeteri miktarda veya hiç alıcısının bulunmaması riskidir.`)">Tahvil ya da bononun ikincil piyasada satılmak istenmesi durumunda, yeteri miktarda veya hiç alıcısının bulunmaması riskidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvil ya da bononun ikincil piyasada satılmak istenmesi durumunda, yeteri miktarda veya hiç alıcısının bulunmaması riskidir.`)">Tahvil ya da bononun enflasyonun altında getiri sağlaması durumudur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> Piyasada hazine bonosu faiz oranlarının yükselmesinin nedeni aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesimi borçlanma ihtiyacının artması`)">Menkul kıymet fiyatlarının azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesimi borçlanma ihtiyacının artması`)">Döviz kurlarının düşmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesimi borçlanma ihtiyacının artması`)">Rezerv rakamlarının yüksek açıklanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesimi borçlanma ihtiyacının artması`)">Kamu kesimi borçlanma ihtiyacının artması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> Aşağıdaki beklentilerden hangisi menkul kıymetlerin değer kaybetmesi sonucunu yaratmaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyonun düşme eğilimine girmesi`)">Enflasyonun düşme eğilimine girmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyonun düşme eğilimine girmesi`)">Belirsizliğin artması sonucunda faizlerin yükselmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyonun düşme eğilimine girmesi`)">Siyasi belirsizliğin önemli ölçüde artması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Enflasyonun düşme eğilimine girmesi`)">Söz konusu ülkenin kredi notunun düşmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Aşağıdakilerden hangisi devlet iç borçlanma senedi ihraç yöntemlerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Açık Artırma Yöntemi`)">İhaleler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Açık Artırma Yöntemi`)">Doğrudan Satış Yöntemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Açık Artırma Yöntemi`)">TAP Sistemiyle İhraç</div>
+    <div class="secenek" onclick="kontrolEt(this, `Açık Artırma Yöntemi`)">Açık Artırma Yöntemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Aşağıdakilerden hangisi tahvil ile hisse senedi arasındaki farklılıklardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi bir borç senedi iken, tahvil bir mülkiyet senedidir.`)">Tahvilde bir vade vardır, hisse senedinde vade yoktur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi bir borç senedi iken, tahvil bir mülkiyet senedidir.`)">Hisse senedi bir borç senedi iken, tahvil bir mülkiyet senedidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi bir borç senedi iken, tahvil bir mülkiyet senedidir.`)">Tahvilin getirisi bellidir, hisse senedinin belli değildir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hisse senedi bir borç senedi iken, tahvil bir mülkiyet senedidir.`)">Tahviller, mevzuatta itibari değerinin altında bir değerle (iskontolu olarak) ihraç edilebilirler. Hisse senetleri ise itibari değerinin altında bir fiyatla satılamazlar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Döviz fiyatlarında bir hızlı artış meydana geldiği zaman piyasalar nasıl şekillenir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar.`)">Tahvil fiyatları artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar.`)">Repo faizi artar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar.`)">Altın düşer.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Repo faizi artar.`)">Hisse senedi piyasası tavan yapar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Hisse senetlerinin ekonomik işlevleri arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesiminin finansmanının sağlanması`)">Kamu kesiminin finansmanının sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesiminin finansmanının sağlanması`)">Kalkınma için gerekli sermaye birikiminin sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesiminin finansmanının sağlanması`)">Üretim araçlarının ve iktisadi işletmelerin mülkiyetinin geniş halk topluluklarına yayılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kamu kesiminin finansmanının sağlanması`)">İktisadi refahın tabana yayılmasının sağlanması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Aşağıdakilerden hangisi Eurobond’un faizini etkileyen unsurlardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond’un işlem tutarının yüksek olması`)">Ülke riskinin artması ya da azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond’un işlem tutarının yüksek olması`)">Eurobond’un işlem tutarının yüksek olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond’un işlem tutarının yüksek olması`)">Baz alınan ülkedeki faiz oranının artması ya da azalması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Eurobond’un işlem tutarının yüksek olması`)">Aynı piyasadaki bir diğer ülkenin aşırı kötüleşen ekonomik koşulları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> Aşağıdakilerden hangisi finansal sistemi oluşturan unsurlar arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketiciler`)">Tasarruf sahipleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketiciler`)">Finansman araçları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketiciler`)">Yatırımcılar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüketiciler`)">Tüketiciler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> Bono faizlerinin yükselmesi durumunda katılımcıya ait bononun değeri ne olur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değer kaybeder.`)">Değer kazanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değer kaybeder.`)">Değer kaybeder.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değer kaybeder.`)">Değeri değişmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Değer kaybeder.`)">Bononun vadesine göre değer kazanabilir ya da kaybedebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> Bono ve Tahvil aritmetiği açısından aşağıdaki önermelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verim veya alternatif getiri ile menkul kıymet fiyatı arasında herhangi bir ilişki yoktur.`)">İkinci piyasada alım yapmayı düşünen yatırımcılar açısından, fiyatın yükselmesi finansal getirinin azalması anlamına gelir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verim veya alternatif getiri ile menkul kıymet fiyatı arasında herhangi bir ilişki yoktur.`)">Potansiyel yatırımcılar açısından bir hafta öncesine göre iç verimin azalmış olması fiyatların yükselmiş olduğu anlamına gelir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verim veya alternatif getiri ile menkul kıymet fiyatı arasında herhangi bir ilişki yoktur.`)">Daha önce bono almış ve itfaya kadar elinde tutmayı düşünen yatırımcılar açısından iç verim sabittir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İç verim veya alternatif getiri ile menkul kıymet fiyatı arasında herhangi bir ilişki yoktur.`)">İç verim veya alternatif getiri ile menkul kıymet fiyatı arasında herhangi bir ilişki yoktur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> Organize piyasaların özellikleri arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi avantajı sağlarlar.`)">Organize piyasalarda işlem saatleri düzenlidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi avantajı sağlarlar.`)">Organize piyasalarda işlem miktarları belirlidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi avantajı sağlarlar.`)">Organize piyasalarda TCMB de görev almaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi avantajı sağlarlar.`)">Vergi avantajı sağlarlar.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Yatırım fonlarının katılma belgeleri için aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon katılma belgeleri borsada işlem görebilirler.`)">Katılma belgesi sahipleri belgelerini fon iç tüzüklerinde belirlenen esaslara göre fona iade etmek suretiyle her an paraya çevirebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon katılma belgeleri borsada işlem görebilirler.`)">Katılma belgesi, temsil ettiği değerin tam olarak nakden ödenmesi şartıyla satılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon katılma belgeleri borsada işlem görebilirler.`)">Katılma belgelerinin itibari değeri yoktur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Özel fon katılma belgeleri borsada işlem görebilirler.`)">Özel fon katılma belgeleri borsada işlem görebilirler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> Aşağıdakilerden hangisi sermaye piyasasının özelliklerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye piyasasından sağlanan fonlar dönen varlıkları finanse etmek için kullanılmaktadır.`)">Sermaye piyasasından sağlanan fonlar dönen varlıkları finanse etmek için kullanılmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye piyasasından sağlanan fonlar dönen varlıkları finanse etmek için kullanılmaktadır.`)">Sermaye piyasasında menkul kıymet alım satımı yapılmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye piyasasından sağlanan fonlar dönen varlıkları finanse etmek için kullanılmaktadır.`)">Sermaye piyasasında yapılan yatırımlar orta ve uzun vadeli işlemlerden oluşmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sermaye piyasasından sağlanan fonlar dönen varlıkları finanse etmek için kullanılmaktadır.`)">Sermaye piyasaları birincil ve ikincil piyasalar olarak ikiye ayrılabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Özel sektör tahvilleri hakkındaki aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kupon ödemesi yapamazlar.`)">Anonim şirketler tarafından çıkarılır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kupon ödemesi yapamazlar.`)">Kupon ödemesi yapamazlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kupon ödemesi yapamazlar.`)">Vadeleri en az 1 yıl olmak üzere serbestçe belirlenebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kupon ödemesi yapamazlar.`)">Sabit veya değişken faizli olarak ihraç edilebilirler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> Aşağıdakilerden hangisi kuponlu tahvilin özelliklerinden birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvile sahip olan kişinin adının belirtilmesi`)">Tahvili çıkaran kurumun adının belirtilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvile sahip olan kişinin adının belirtilmesi`)">Tahvilin vadesi veya geri ödeme tarihinin belirtilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvile sahip olan kişinin adının belirtilmesi`)">Tahvilin kupon faizinin belirtilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tahvile sahip olan kişinin adının belirtilmesi`)">Tahvile sahip olan kişinin adının belirtilmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> Hangi tip yatırım fonlarının katılma belgeleri menkul kıymet hükmündedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `A tipi`)">B tipi</div>
+    <div class="secenek" onclick="kontrolEt(this, `A tipi`)">A tipi</div>
+    <div class="secenek" onclick="kontrolEt(this, `A tipi`)">Likit</div>
+    <div class="secenek" onclick="kontrolEt(this, `A tipi`)">Karma</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> Aşağıdakilerden hangisi Mali Piyasa nın ana unsurlarından biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşçi ve işveren temsilcileri`)">Tasarruf sahipleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşçi ve işveren temsilcileri`)">Yatırım ve finansman araçları</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşçi ve işveren temsilcileri`)">İşçi ve işveren temsilcileri</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşçi ve işveren temsilcileri`)">Hukuki ve idari düzen</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> Ülkemizde finansal piyasalarla ilgili aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetler büyük ölçüde kamu kesimi menkul kıymetlerinden oluşmaktadır.`)">Menkul kıymetler büyük ölçüde kamu kesimi menkul kıymetlerinden oluşmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetler büyük ölçüde kamu kesimi menkul kıymetlerinden oluşmaktadır.`)">Özel kesim menkul kıymetlerinin tamamına yakını hisse senetleridir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetler büyük ölçüde kamu kesimi menkul kıymetlerinden oluşmaktadır.`)">Vadeli piyasalar hala etkin biçimde çalışmaya başlamamıştır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul kıymetler büyük ölçüde kamu kesimi menkul kıymetlerinden oluşmaktadır.`)">Yatırım fonlarına son yıllarda daha fazla yönelinmeye başlanmıştır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> Bankalararası döviz piyasasında aşağıdaki aktörlerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aracı kuruluşlar`)">Ticari bankalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aracı kuruluşlar`)">Katılım bankaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aracı kuruluşlar`)">TCMB</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aracı kuruluşlar`)">Aracı kuruluşlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>

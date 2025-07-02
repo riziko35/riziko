@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çoktan Seçmeli Sorular - 3</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Çoktan Seçmeli Sorular - Dosya 3</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> II. Dünya Savaşını takip eden yıllarda batılı ülkelerde doğum oranları bir süre ciddi şekilde yüksek seyretmiştir. Hangisi bu ülkelerin sosyal güvenlik sistemlerinde alınması gerekecek tedbirlerden biri olamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yeni sosyal sigorta kuruluşlarının oluşturulması`)">Prim tutarlarının artırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yeni sosyal sigorta kuruluşlarının oluşturulması`)">Emeklilik yaşının artırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yeni sosyal sigorta kuruluşlarının oluşturulması`)">Emeklilik maaşlarında indirim yapılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yeni sosyal sigorta kuruluşlarının oluşturulması`)">Yeni sosyal sigorta kuruluşlarının oluşturulması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> Gelirleri ne olursa olsun, ülkede yaşayan herkesin, bazı sosyal tehlikelerin verdiği zararlardan, primli ve/veya primsiz rejimlerin kullanılması suretiyle etkilenmemelerini amaçlayan sisteme ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Sistemi`)">Sosyal Güvenlik Sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Sistemi`)">Bireysel Emeklilik Sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Sistemi`)">Hayat sigortası sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Sistemi`)">Özel Sağlık Sigortası Sistemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> Bir işverene tabi olarak tehlikeli, yıpratıcı vb. bazı alanlarda çalışan sigortalıların çalışılan işin güçlüğü göz önüne alınarak işlerinde geçen toplam çalışma sürelerine eklenen sürelere ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili hizmet süresi zammı`)">Fiili hizmet süresi zammı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili hizmet süresi zammı`)">İstisnai emeklilik haddi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili hizmet süresi zammı`)">Erken emeklilik uygulaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili hizmet süresi zammı`)">Yaş haddinden emeklilik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Sigortalının çalıştırıldığı işin niteliğine göre, tekrarlanan bir sebeple veya işin yürütüm şartları yüzünden uğradığı, geçici veya sürekli hastalık, sakatlık ya da ruhi arıza hallerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Meslek hastalığı`)">İş kazası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Meslek hastalığı`)">Meslek hastalığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Meslek hastalığı`)">Sakatlık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Meslek hastalığı`)">Sigorta</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> Ne zaman gerçekleşeceği bilinmemekle beraber ileride gerçekleşmesi muhtemel veya muhakkak olan ve buna maruz kalan kişinin malvarlığında eksilmeye neden olan tehlikeye ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal risk`)">Kaza riski</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal risk`)">Doğal afet riski</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal risk`)">Sosyal risk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal risk`)">Soygun riski</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Sosyal Güvenlik Kurumuna prim ödeyen, gelecekte karşılaşması olası risklerin ekonomik sonuçlarını gidermek için önlem alan ve yaşamına güvenle devam eden kimseye ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalı`)">Sosyal sigortalı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalı`)">Sosyal emekli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalı`)">Munzam sandık emeklisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalı`)">Bireysel emeklilik katılımcısı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> Belirli bir dönem içeriside toplanan gelirlerin, aynı dönem içindeki harcamalarda kullanılması esasına dayanan sosyal güvenlik finansman modeline ne ad verilmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli`)">Dağıtım Modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli`)">Toplama Modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli`)">Fonlama Modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli`)">Sosyal Yardım Modeli</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> Sigortalayan kurum tarafından, hak sahibine yapılacak ödemelerin önceden belirlenen bir formüle göre hesaplanacağı yolunda bir garanti sağlayan sisteme ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tanımlanmış fayda`)">Tanımlanmış fayda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tanımlanmış fayda`)">Kısmi fonlama</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tanımlanmış fayda`)">Tanımlanmış katkı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tanımlanmış fayda`)">Tam fonlama</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Muhtaç vatandaşların bir kısım ihtiyaçlarının Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonundan karşılanması sosyal güvenliğin hangi fonksiyonu ile açıklanabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardım`)">Sosyal hizmet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardım`)">Sosyal yardım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardım`)">Sosyal sigorta</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardım`)">Sosyal birlik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> İlgilinin katkısı olmadan devlet bütçesinden veya gönüllü özel kuruluşlardan sağlanan kaynaklarla yerine getirilen sosyal güvenlik hizmetlerine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardımlar ve sosyal hizmetler`)">Sosyal sigortalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardımlar ve sosyal hizmetler`)">Sosyal katkılar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardımlar ve sosyal hizmetler`)">Sosyal yardımlar ve sosyal hizmetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal yardımlar ve sosyal hizmetler`)">Sivil toplum hizmetleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> Sigortalının işyerinde bulunduğu sırada meydana gelen ve sigortalıyı hemen veya sonradan bedence veya ruhça arızaya uğratan olaya ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş kazası`)">Meslek hastalığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş kazası`)">İş kazası</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş kazası`)">Maluliyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `İş kazası`)">Sürekli işgöremez</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> Dağıtım modelinde bozulan finansal dengeyi tekrar kazandırmayı amaçlayan rehabilitasyon tedbirleri arasında yer almayan hususu işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistemin kapsadığı risklerin artırılması ve çeşitlendirilmesi`)">Ayrıcalıklı uygulamaların kaldırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistemin kapsadığı risklerin artırılması ve çeşitlendirilmesi`)">Sistemin kapsadığı risklerin artırılması ve çeşitlendirilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistemin kapsadığı risklerin artırılması ve çeşitlendirilmesi`)">Erken ve malulen emekli olma koşullarının zorlaştırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistemin kapsadığı risklerin artırılması ve çeşitlendirilmesi`)">Ücretlerden kesilen primlerin artırılması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> Ordu Yardımlaşma Kurumu emeklilik programı yapısı itibariyle sosyal güvenlik basamakları içinde hangi basamakta değerlendirilebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkinci basamak mesleki emeklilik fonu`)">Birinci basamak kamu emeklilik uygulaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkinci basamak mesleki emeklilik fonu`)">İkinci basamak mesleki emeklilik fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkinci basamak mesleki emeklilik fonu`)">Üçüncü basamak özel emeklilik fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `İkinci basamak mesleki emeklilik fonu`)">Üçüncü basamak hayat sigortası sistemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> Aktif çalışma döneminde elde edilen ücretin düzeyine bağlı olarak hesaplanan emeklilik aylığı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ücretle orantılı aylık`)">Yatırılan primlere bağlı aylık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ücretle orantılı aylık`)">Ücretle orantılı aylık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ücretle orantılı aylık`)">Maktu aylık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ücretle orantılı aylık`)">Asgari gelir aylığı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Sosyal güvenlik sistemlerinin finansman krizinden çıkması için alınan tedbirler genelde hangi sonucu doğurmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlar ve emeklilerin katlanmak durumunda oldukları yükler daha da ağırlaşmaktadır.`)">Çalışanlar ve emeklilerin katlanmak durumunda oldukları yükler daha da ağırlaşmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlar ve emeklilerin katlanmak durumunda oldukları yükler daha da ağırlaşmaktadır.`)">Sistem derhal krizden çıkmaktadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlar ve emeklilerin katlanmak durumunda oldukları yükler daha da ağırlaşmaktadır.`)">Prim tahsilat oranları derhal artmakta, emeklilere hemen ek imkanlar yaratılmaktadır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlar ve emeklilerin katlanmak durumunda oldukları yükler daha da ağırlaşmaktadır.`)">Alınan tedbirlerin hiçbir ülkede başarılı olduğu görülmemiştir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Ücret garanti fonunun finansman kaynağı,......... İlgili boşluğa aşağıdaki ifadelerden hangisinin gelmesi uygundur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik sigortası fonu işveren payıdır.`)">SGK İşçi payıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik sigortası fonu işveren payıdır.`)">Tasarrufu teşvik fonu kesintisidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik sigortası fonu işveren payıdır.`)">Kıdem tazminatı fonudur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik sigortası fonu işveren payıdır.`)">İşsizlik sigortası fonu işveren payıdır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Hangisi dağıtım esaslı sosyal sigortalarda yapılan, sistemi rehabilite edici parametrik düzenlemelerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesapların tam fonlu hale getirilmesi`)">Emeklilik yaşının artırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesapların tam fonlu hale getirilmesi`)">Emekli maaşlarının azaltılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesapların tam fonlu hale getirilmesi`)">Prim ödeme süresinin artırılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hesapların tam fonlu hale getirilmesi`)">Hesapların tam fonlu hale getirilmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Dağıtım modelinde ödenen primlerin miktarı artarsa aşağıdaki sonuçlardan hangisinin gerçekleşme olasılığı artar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emekli aylıklarında artış yapılabilir.`)">Emekli aylıklarında indirim yapılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emekli aylıklarında artış yapılabilir.`)">Emekli aylıklarında artış yapılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emekli aylıklarında artış yapılabilir.`)">Sağlanan hizmet ve yardımların miktarı azaltılabilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emekli aylıklarında artış yapılabilir.`)">Kapsanan riskler daraltılabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Reel gelirin yeniden paylaştırılması esasına göre işleyen sosyal güvenlik sistemi aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım sistemi`)">Dağıtım sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım sistemi`)">Meslek grupları temelinde örgütlenmiş sosyal güvenlik sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım sistemi`)">Bireysel tasarruf hesaplarına dayalı sosyal güvenlik sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım sistemi`)">Toplama sistemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> A ülkesinde aktif pasif oranı 1970'te 2,1 iken 2003 yılında 3,1'e çıkmıştır. Buradan hangi sonuca varılamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ülke gelişmiş ülkeler kategorisindedir.`)">Ülkenin nüfus artış hızı yükselmiştir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ülke gelişmiş ülkeler kategorisindedir.`)">Ülke gelişmiş ülkeler kategorisindedir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ülke gelişmiş ülkeler kategorisindedir.`)">Ülkede sosyal sigortaların aktüeryal dengesinde düzelme olmuştur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ülke gelişmiş ülkeler kategorisindedir.`)">Emeklilerin durumlarında bir miktar iyileşme sağlanabilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> Dağıtım modelini finansal krize sürükleyen evrensel faktörler arasında yer almayan hususu işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin kötü performans göstermeleri`)">Demografik yapıdaki değişikliler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin kötü performans göstermeleri`)">Aktueryal dengeyi bozan uygulamalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin kötü performans göstermeleri`)">Portföy yöneticilerinin kötü performans göstermeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Portföy yöneticilerinin kötü performans göstermeleri`)">Sağlık hizmetlerinin maliyetindeki artışlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> Aşağıdakilerden hangisi ikinci basamak sosyal güvenlik sistemi uygulamalarının özellikleri arasındadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşyeri bazlı emeklilik kurumlarıdır.`)">İşyeri bazlı emeklilik kurumlarıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşyeri bazlı emeklilik kurumlarıdır.`)">Dağıtım esaslıdır, fonlama esası seçilemez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşyeri bazlı emeklilik kurumlarıdır.`)">Devlet mutlaka katkıda bulunur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşyeri bazlı emeklilik kurumlarıdır.`)">Maaş düzeyinin emeklilik aylığıyla ilgisi yoktur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> Sosyal güvenlik sisteminin bir parçası olan Sosyal Sigorta Modeli’nin finansmanı nasıl yapılmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Prim gelirleri aracılığı ile`)">Prim gelirleri aracılığı ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Prim gelirleri aracılığı ile`)">Vergi gelirleri aracılığı ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Prim gelirleri aracılığı ile`)">Bireysel tasarruflar ile</div>
+    <div class="secenek" onclick="kontrolEt(this, `Prim gelirleri aracılığı ile`)">Devlet yardımı ile</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Hangisi ülkemizde sosyal güvenlik açıklarının ekonomi üzerindeki olumsuz etkilerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cari açık oranları artar`)">Kamu borçlanma gereği artar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cari açık oranları artar`)">Enflasyonu artırıcı yönde baskı yapar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cari açık oranları artar`)">Sürdürülebilir büyüme hedeflerini sıkıntıya sokar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cari açık oranları artar`)">Cari açık oranları artar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> Aşağıdakilerden hangisi sosyal güvenlikte sosyo-ekonomik riskler kapsamında sınıflandırılmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik`)">Ölüm</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik`)">İş Kazası</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik`)">İşsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `İşsizlik`)">Analık</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> İşsizlik sigortasından yararlanabilmek için en az ne kadar süre prim ödemiş olmak gerekmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 gün`)">600 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 gün`)">360 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 gün`)">720 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 gün`)">980 gün</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Sosyal güvenliğin yerine getirmeye çalıştığı görevler arasında yer almayan hususu işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlara gelir yardımında bulunur.`)">Muhtaç duruma düşenlere asgari bir hayat sürmeleri için gerekli geliri sağlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlara gelir yardımında bulunur.`)">Hastalık veya sakatlanma nedeniyle iş göremeyenlere sağlık yardımı yapar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlara gelir yardımında bulunur.`)">İşsiz kalanlara gelir yardımı yapar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çalışanlara gelir yardımında bulunur.`)">Çalışanlara gelir yardımında bulunur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Sosyal güvenlik sistemlerinin finansman sorunları arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Finansman açığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Erken emeklilik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Emeklilik yaşının yükseltilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Gelirlerin giderleri karşılayamaması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Sosyal güvenlikte aktif/pasif dengesi, dağıtım modelinde hangi ilişkiyi sağlıklı kılmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelirler-Giderler`)">Giderler-Sigortalılar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelirler-Giderler`)">Gelirler-Giderler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelirler-Giderler`)">Yardımlar-Hizmetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gelirler-Giderler`)">Sigortalılar-Gelirler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> Aşağıdakilerden hangisi mesleki emeklilik programlarının dezavantajlarından birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Demografik değişimlere dirençli olması`)">Yatırımların risklerinin katılımcı ve işverenin üzerinde olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Demografik değişimlere dirençli olması`)">Başarısız fon yönetiminin maaşlara olumsuz etkisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Demografik değişimlere dirençli olması`)">İşverenin iflası durumunda fonların piyasa dalgalanmalarının etkisine açık olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Demografik değişimlere dirençli olması`)">Demografik değişimlere dirençli olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> Aşağıdakilerden hangisi Türkiye'de primsiz sosyal güvenlik uygulamalarından biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Amele Birliği`)">Sosyal Yardımlaşma ve Dayanışma Fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Amele Birliği`)">Çocuk Esirgeme Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Amele Birliği`)">65 yaşını doldurmuş muhtaç, güçsüz ve kimsesiz Türk vatandaşlara aylık bağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Amele Birliği`)">Amele Birliği</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Aşağıdakilerden hangisi dünyada uygulanan sosyal güvenlik sistemlerinden birisi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplama sistemi`)">Meslek grupları temelinde örgütlenmiş sosyal güvenlik sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplama sistemi`)">Dağıtım sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplama sistemi`)">Bireysel tasarruf hesaplarına dayalı sosyal güvenlik sistemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Toplama sistemi`)">Toplama sistemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> Sosyal güvenlik sistemlerinin finansman modeli arasında yer almayan hususu işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sağlık Esaslı Emeklilik Programları`)">Prime Dayalı Dağıtım Modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sağlık Esaslı Emeklilik Programları`)">Fonlama Modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sağlık Esaslı Emeklilik Programları`)">Maaş Esaslı Emeklilik Programları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sağlık Esaslı Emeklilik Programları`)">Sağlık Esaslı Emeklilik Programları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> Ücret garanti fonu kapsamında işçilere yapılan ücret ödemeleri son kaç ayı kapsamaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">1</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">3</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">6</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">12</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> Aşağıdakilerden hangisi sosyal güvenliğin birinci basamağının avantajlarından birisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Jenerasyonlar arası dayanışma içermesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Evrensel koruma sağlaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Satış maliyeti içermemesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Seçeneklerin hepsi`)">Seçeneklerin hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Hangisi ülkemizde sosyal sigortaların giderlerini artırıcı uygulamalardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kayıtdışı istihdamın fazla oluşu`)">Erken emeklilik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kayıtdışı istihdamın fazla oluşu`)">Kayıtdışı istihdamın fazla oluşu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kayıtdışı istihdamın fazla oluşu`)">Uzayan ömür nedeniyle artan emeklilik ödemeleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kayıtdışı istihdamın fazla oluşu`)">Primi alınmadan yapılan sigorta ödemeleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Birinci basamak sosyal güvenlik sistemi uygulamalarının temel özelliğini işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli esaslıdır.`)">Dağıtım Modeli esaslıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli esaslıdır.`)">Fonlama Modeli esaslıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli esaslıdır.`)">Gönüllü katılıma dayanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım Modeli esaslıdır.`)">Devlet katkıda bulunmaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Hangisi dünya sosyal güvenlik sistemlerinde yaşanan sorunların nedenlerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdamın artması`)">Kaynakların verimsiz kullanımı ve finansman sıkıntısı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdamın artması`)">Erken emeklilik</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdamın artması`)">Ortalama ömrün uzaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `İstihdamın artması`)">İstihdamın artması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Aşağıdakilerden hangisi sosyal güvenlik kapsamındaki riskler arasında yer almaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hastalık`)">Hastalık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hastalık`)">Yangın</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hastalık`)">Hırsızlık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hastalık`)">Deprem</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Aşağıdakilerden hangisi dünyada ve ülkemizde yaşanan ortak sosyal güvenlik sorunudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktüeryal dengenin bozulması`)">Kayıt dışı ekonomi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktüeryal dengenin bozulması`)">Aktüeryal dengenin bozulması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktüeryal dengenin bozulması`)">Uzun vadeli verimsiz politikalar uygulanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktüeryal dengenin bozulması`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> Hangisi ülkemizde sosyal sigortaların gelirini azaltıcı uygulamalardan biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Prim tahsilat oranının düşüklüğü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Gecikme cezalarına uygulanan aflar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Prime esas kazanç sınırlarının düşüklüğü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yaşının yükseltilmesi`)">Emeklilik yaşının yükseltilmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> Birinci basamak sosyal güvenlik sistemi uygulamalarının temel amacını işaretleyiniz.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vatandaşların çalışamadıkları dönemde ekonomik güvenliklerinin sağlanması`)">Bütün çalışanların tasarruflarına yön vermek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vatandaşların çalışamadıkları dönemde ekonomik güvenliklerinin sağlanması`)">İşveren sorumluluğunun devlet tarafından paylaşılması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vatandaşların çalışamadıkları dönemde ekonomik güvenliklerinin sağlanması`)">Vatandaşların çalışamadıkları dönemde ekonomik güvenliklerinin sağlanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vatandaşların çalışamadıkları dönemde ekonomik güvenliklerinin sağlanması`)">Devletin vatandaşlarından vergi almasının bir başka yöntemi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Sosyal sigortaların temel ilkeleri arasında yer alan Dayanışma İlkesi neyi amaçlar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çok prim ödeyenlerin herkese sağlanan eşit hizmet nedeniyle az prim ödeyenlere destek olması`)">Bireylerin sosyal haklarını korumayı ve geliştirmeyi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çok prim ödeyenlerin herkese sağlanan eşit hizmet nedeniyle az prim ödeyenlere destek olması`)">Katılımın zorunlu olması nedeniyle sigortalıların sayısının artırılmasını</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çok prim ödeyenlerin herkese sağlanan eşit hizmet nedeniyle az prim ödeyenlere destek olması`)">Çok prim ödeyenlerin herkese sağlanan eşit hizmet nedeniyle az prim ödeyenlere destek olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Çok prim ödeyenlerin herkese sağlanan eşit hizmet nedeniyle az prim ödeyenlere destek olması`)">Sosyal sigorta hizmetlerinin kanunla çizilmiş sınırlarının olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdakilerden hangisi sosyal güvenlik sisteminin gelir kaynaklarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kredi gelirleri`)">Gayrimenkul gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kredi gelirleri`)">Kredi gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kredi gelirleri`)">Ceza ve faiz gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kredi gelirleri`)">Prim gelirleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Aşağıdakilerden hangisi kayıt dışı istihdamı teşvik eden uygulamalardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalarda emeklilik yaşının yüksek oluşu nedeniyle özel emekliliğin tercih edilmesi`)">Genç yaşta emeklilik ve genç emeklilerin emek piyasasında kalmaya devam etmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalarda emeklilik yaşının yüksek oluşu nedeniyle özel emekliliğin tercih edilmesi`)">Sosyal sigorta prim yükünün fazla oluşu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalarda emeklilik yaşının yüksek oluşu nedeniyle özel emekliliğin tercih edilmesi`)">Sosyal sigortalarda emeklilik yaşının yüksek oluşu nedeniyle özel emekliliğin tercih edilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal sigortalarda emeklilik yaşının yüksek oluşu nedeniyle özel emekliliğin tercih edilmesi`)">Sosyal sigorta sisteminde denetim eksikliği</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Aşağıdakilerden hangisi dağıtım sisteminin genel özelliklerinden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireylerinin ödediği primlerin, bireysel fon hesaplarında toplanması`)">Katılımın zorunlu olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireylerinin ödediği primlerin, bireysel fon hesaplarında toplanması`)">Bireylerinin ödediği primlerin, bireysel fon hesaplarında toplanması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireylerinin ödediği primlerin, bireysel fon hesaplarında toplanması`)">Kamu sosyal güvenlik mekanizmaları tarafından kullanılıyor olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bireylerinin ödediği primlerin, bireysel fon hesaplarında toplanması`)">Maaş esaslı veya prim esaslı emeklilik programları ile çalışması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Dağıtım modelinin iyi işlemesi hangi dengenin iyi kurulmuş olmasına bağlıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktif / Pasif Dengesi`)">Dayanışma Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktif / Pasif Dengesi`)">Risk Getiri Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktif / Pasif Dengesi`)">Aktif / Pasif Dengesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Aktif / Pasif Dengesi`)">Primlere Katılım Dengesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Aşağıdakilerden hangisi sosyal güvenliğin temel amaçları arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik gelişmeyi sağlamak`)">Sosyal sigortalar oluşturmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik gelişmeyi sağlamak`)">Sosyal yardımlar sunmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik gelişmeyi sağlamak`)">Sosyal hizmetler oluşturmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ekonomik gelişmeyi sağlamak`)">Ekonomik gelişmeyi sağlamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> Aşağıdakilerden hangisi sosyal güvenlik sistemimizin sorunlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geç yaşta emeklilik ve yüksek prim ödeme gün sayısı`)">Yüksek finansman açığı ve bunun yatırım ve büyümeyi dışlayıcı etkisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geç yaşta emeklilik ve yüksek prim ödeme gün sayısı`)">Geç yaşta emeklilik ve yüksek prim ödeme gün sayısı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geç yaşta emeklilik ve yüksek prim ödeme gün sayısı`)">Politik müdahaleler, borçlanma ve af yasaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Geç yaşta emeklilik ve yüksek prim ödeme gün sayısı`)">Düşük ücret beyanı ve düşük prim tahsilatı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> Aşağıdakilerden hangisi sosyal güvenlik kapsamındaki risklerden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Beklenen gelir kaybı`)">Yaşlılık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Beklenen gelir kaybı`)">Hastalık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Beklenen gelir kaybı`)">İşsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Beklenen gelir kaybı`)">Beklenen gelir kaybı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Sosyal güvenlikte tüm dünyada benimsenen yenilikçi yaklaşım hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tek kademeli sistemlerden çok kademeli sistemlere geçiş`)">Tek kademeli sistemlerden çok kademeli sistemlere geçiş</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tek kademeli sistemlerden çok kademeli sistemlere geçiş`)">Prim tavan ve oranlarının yükseltilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tek kademeli sistemlerden çok kademeli sistemlere geçiş`)">Özelleştirme</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tek kademeli sistemlerden çok kademeli sistemlere geçiş`)">Pasif politikalardan aktif politikalara geçiş</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> Sosyal güvenlik hizmetleri arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hayat sigortaları`)">Hayat sigortaları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hayat sigortaları`)">Maluliyet ve emeklilik sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hayat sigortaları`)">Sosyal yardımlar ve sosyal hizmetler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hayat sigortaları`)">Sosyal sigortalar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Sosyal Güvenlik Kurumu hangi tür sosyal güvenlik rejiminin örneğidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primli (Katılmalı) sosyal güvenlik rejimi`)">Maktu yardımlara dayalı sosyal güvenlik rejimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primli (Katılmalı) sosyal güvenlik rejimi`)">Primli (Katılmalı) sosyal güvenlik rejimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primli (Katılmalı) sosyal güvenlik rejimi`)">Primsiz (Katılmasız) sosyal güvenlik rejimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primli (Katılmalı) sosyal güvenlik rejimi`)">Maktu yardımlarla kazançlara göre katılmalı sistem</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Aşağıdakilerden hangisi mesleki emeklilik programları için doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonlama veya dağıtım sistemi ile çalışır.`)">Enflasyona karşı güvence altındadır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonlama veya dağıtım sistemi ile çalışır.`)">Fonlama veya dağıtım sistemi ile çalışır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonlama veya dağıtım sistemi ile çalışır.`)">Sadece kamu sosyal sigortaları kapsamında sunulur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fonlama veya dağıtım sistemi ile çalışır.`)">Devlet güvencesi altındadır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> Hangi gruptaki çalışanlar İşsizlik sigortasından faydalanabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet akdi ile bir veya birden fazla işveren tarafından çalıştırılanlar`)">Hizmet akdi ile bir veya birden fazla işveren tarafından çalıştırılanlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet akdi ile bir veya birden fazla işveren tarafından çalıştırılanlar`)">657 sayılı Devlet Memurları Kanununa göre geçici personel statüsünde çalıştırılanlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet akdi ile bir veya birden fazla işveren tarafından çalıştırılanlar`)">Köy ve mahalle muhtarları ile hizmet akdine bağlı olmaksızın kendi adına ve hesabına bağımsız çalışanlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet akdi ile bir veya birden fazla işveren tarafından çalıştırılanlar`)">657 sayılı Devlet Memurları Kanununa tabi kamu kurum ve kuruluşlarının teşkilat kanunlarındaki hükümlere göre sözleşmeli personel statüsünde çalışanlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Sosyal güvenliğin finansmanında geleneksel yaklaşım hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım yöntemi`)">Dağıtım yöntemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım yöntemi`)">Fonlama yöntemi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım yöntemi`)">İşveren katılımı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dağıtım yöntemi`)">Devlet katılımı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Aşağıdakilerden hangisi sosyal sigortalar kapsamında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ferdi Kaza sigortası`)">Hastalık sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ferdi Kaza sigortası`)">Malullük sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ferdi Kaza sigortası`)">Ferdi Kaza sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ferdi Kaza sigortası`)">Meslek Hastalıkları sigortası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Aşağıdakilerden hangisi sosyal hizmet kurumlarından değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Kurumu`)">Çocuk Esirgeme Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Kurumu`)">Özürlüler İdaresi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Kurumu`)">Aile Araştırma Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sosyal Güvenlik Kurumu`)">Sosyal Güvenlik Kurumu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Aşağıdakilerden hangisi sosyal güvenlik tanımında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muhtaç bireylere yardım programları içermez.`)">Bir toplumda yaşayan bireyler arasında ayrım gözetmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muhtaç bireylere yardım programları içermez.`)">Bireylerin ekonomik ve sosyal ihtiyaçlarını karşılayacak şekilde bugünlerini ve yarınlarını garanti altına alır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muhtaç bireylere yardım programları içermez.`)">Muhtaç bireylere yardım programları içermez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muhtaç bireylere yardım programları içermez.`)">Devlet tarafından uygulanan sosyal politikalar ile sağlanır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> İşsizlik sigortası ödeneği azami ne kadar süre ile verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `300 gün`)">180 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `300 gün`)">240 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `300 gün`)">300 gün</div>
+    <div class="secenek" onclick="kontrolEt(this, `300 gün`)">480 gün</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> Aşağıdakilerden hangisi sosyal riskler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistematik riskler`)">Sistematik riskler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistematik riskler`)">Mesleki riskler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistematik riskler`)">Fizyolojik riskler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sistematik riskler`)">Sosyo-ekonomik riskler</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Hangisi sosyal güvenlikte zorunlu sigortalardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu trafik sigortası`)">Analık sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu trafik sigortası`)">Maluliyet sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu trafik sigortası`)">Zorunlu trafik sigortası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zorunlu trafik sigortası`)">Ölüm sigortası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Hangisi sosyal sigortaların niteliklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kârlılık amacı güder.`)">Çalışan herkes için zorunludur.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kârlılık amacı güder.`)">Kamu hukukunda düzenlenmiştir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kârlılık amacı güder.`)">Kârlılık amacı güder.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kârlılık amacı güder.`)">Nesiller arası dayanışma içerir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Hangisi sosyal sigortaların niteliklerindendir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fayda ve katkı oranı çalışanın rızası dışında değiştirilebilir.`)">Ekonomik riskleri de kapsar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fayda ve katkı oranı çalışanın rızası dışında değiştirilebilir.`)">Sadece prim ödeyenlere hizmet verir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fayda ve katkı oranı çalışanın rızası dışında değiştirilebilir.`)">Riskleri değerlendirmeye tabi tuttuktan sonra kabul veya reddebilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fayda ve katkı oranı çalışanın rızası dışında değiştirilebilir.`)">Fayda ve katkı oranı çalışanın rızası dışında değiştirilebilir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Prime esas ücret tavanı neyi ifade eder?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primin hesaplanması için baz alınan azami ücret tutarı`)">Primin hesaplanmasında baz alınacak aylık brüt ücret tutarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primin hesaplanması için baz alınan azami ücret tutarı`)">Primin hesaplanmasında baz alınacak on iki aylık ücret tutarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primin hesaplanması için baz alınan azami ücret tutarı`)">Primin hesaplanması için baz alınan azami ücret tutarı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Primin hesaplanması için baz alınan azami ücret tutarı`)">Primin hesaplanması için baz alınan en yüksek devlet memuru maaşı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> İşsizlik ödeneği nasıl hesaplanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının % 40'ı. (Aylık brüt asgari ücretin % 80'inini geçmemek kaydıyla)`)">Günlük, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının % 40'ı. (Aylık brüt asgari ücretin % 80'inini geçmemek kaydıyla)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının % 40'ı. (Aylık brüt asgari ücretin % 80'inini geçmemek kaydıyla)`)">Kişinin ücretine, çalışma süresine bağlı olarak giderek artan oranlar uygulanır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının % 40'ı. (Aylık brüt asgari ücretin % 80'inini geçmemek kaydıyla)`)">Aylık asgari ücretin netini geçmemek şartıyla kişinin son dört aylık maaşının ortalamasının %50'si</div>
+    <div class="secenek" onclick="kontrolEt(this, `Günlük, sigortalının son dört aylık prime esas kazançları dikkate alınarak hesaplanan günlük ortalama brüt kazancının % 40'ı. (Aylık brüt asgari ücretin % 80'inini geçmemek kaydıyla)`)">Kişiye emekliliğinde ödenecek maaş, işsizlik ödeneği olarak bağlanır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> İŞKUR'un açık yazılışı nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İş Kurumu`)">İşçi Sigortaları Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İş Kurumu`)">İş ve İşçi Bulma Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İş Kurumu`)">Türkiye İş Kurumu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Türkiye İş Kurumu`)">İşveren Sigortaları Kurumu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Aşağıdakilerden hangisi Gelir Vergisi Kanunun Geçiçi 67. maddesinde yer alan oranları her bir kazanç ve irat türü ile bunları elde edenler itibarıyla, yatırım fonlarının katılma belgelerinin fona iade edilmesinden elde edilen kazançlar için fonun portföy yapısına göre, ayrı ayrı sıfıra kadar indirmeye veya %15'e kadar artırmaya yetkilidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cumhurbaşkanı`)">Ticaret Bakanlığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cumhurbaşkanı`)">Bakanlar Kurulu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cumhurbaşkanı`)">Hazine ve Maliye Bakanlığı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cumhurbaşkanı`)">Cumhurbaşkanı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> 01.02.2007 tarihinde Türkiye'ye gelen ve Türk vatandaşı olmayan bir kişi, 27.06.2007 tarihinde Türkiye'den ayrılmış ve bu süre içinde Türkiye'de menkul sermaye iradı elde etmiştir. Elde edilen gelirin Gelir Vergisi Kanunu karşısındaki durumu aşağıdakilerden hangisinde doğru olarak belirtilmiştir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar Mükellefiyet`)">Muafiyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar Mükellefiyet`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar Mükellefiyet`)">Dar Mükellefiyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar Mükellefiyet`)">Tam Mükellefiyet</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> Bir hesap dönemi içinde, serbest meslek faaliyeti karşılığı olarak tahsil edilen para ve ayınlar ile diğer suretlerle sağlanan ve para ile temsil edilebilen menfaatlerden, bu faaliyetler dolayısıyla yapılan giderler indirildikten sonra kalan fark ne olarak adlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Serbest Meslek Kazancı`)">Ücret</div>
+    <div class="secenek" onclick="kontrolEt(this, `Serbest Meslek Kazancı`)">İndirime konu tutar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Serbest Meslek Kazancı`)">Tahakkuk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Serbest Meslek Kazancı`)">Serbest Meslek Kazancı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> (X) anonim şirketi iştiraki olduğu (Z) anonim şirketinden 1.000 TL kâr payı almış, (Z) şirketinin ortağı-hissedarı olan Bay Ahmet de 500 TL temettü almıştır. (X) anonim şirketi ve Bay Ahmet'in elde ettiği gelirler nasıl adlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İştirak kazancı-kâr payı`)">İştirak kazancı-kâr payı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İştirak kazancı-kâr payı`)">Kâr payı-kâr payı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İştirak kazancı-kâr payı`)">Kâr payı-kâr kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İştirak kazancı-kâr payı`)">Seçeneklerden hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> Kurumlar vergisine tabi kurumlardan kanunî ve iş merkezlerinin her ikisi de Türkiye'de bulunmayanlar ve sadece Türkiye'de elde ettikleri kazançları üzerinden vergilendirilenler aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar mükellef`)">Tam mükellef</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar mükellef`)">Dar mükellef</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar mükellef`)">Kısmi mükellef</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dar mükellef`)">Seçeneklerin hiçbiri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> Muhtelif kaynaklardan bir takvim yılı içinde elde edilen kazanç ve iratların bir araya getirilip toplanmasına ve bu suretle hesaplanan gelirin vergi dairesine bildirilmesine mahsus belgeye ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık Beyanname`)">Muhtasar Beyanname</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık Beyanname`)">Münferit Beyanname</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık Beyanname`)">Matrah Cetveli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yıllık Beyanname`)">Yıllık Beyanname</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> Sürekli olarak portföyünün en az %51'i Borsa İstanbul'da işlem gören hisse senetlerinden oluşan yatırım fonlarının bir yıldan fazla süreyle elde tutulan katılma belgelerine hangi oranda stopaj uygulanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaj uygulanmaz.`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaj uygulanmaz.`)">1%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaj uygulanmaz.`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaj uygulanmaz.`)">Stopaj uygulanmaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Ferdi kaza kapsamında bulunan sigortalının kaza sonucu ölümü halinde kanuni mirasçılarına yapılacak tazminat ödemesinin Veraset ve İntikal Vergisi Kanunu karşısındaki durumu ile ilgili hangisi doğrudur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilendirilmez.`)">İvazsız iktisap olarak gelir vergisine tabidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilendirilmez.`)">Veraset ve intikal vergisine tabidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilendirilmez.`)">Vergilendirilmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergilendirilmez.`)">Önce ivazsız iktisap olarak vergiye tabi tutulur, kalan tutar üzerinden veraset ve intikal vergisi alınır.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Mükellefin veya vergi sorumlusunun vergilendirme ile ilgili ödevlerini zamanında yerine getirmemesi sebebiyle verginin zamanında tahakkuk ettirilmemesi veya eksik tahakkuk ettirilmesine ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi Ziyaı`)">Vergi Ziyaı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi Ziyaı`)">Muafiyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi Ziyaı`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi Ziyaı`)">Verginin Tarhı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Tevkifat matrahı hazırlanırken dövize, altına veya başka bir değere endeksli menkul kıymet veya diğer sermaye piyasası aracının alış satış bedeli arasındak fark hangi para cinsi üzerinden hesaplanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL`)">Kendi değeriyle</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL`)">Belirlenen Endeks</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL`)">TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `TL`)">USD</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> Tam mükellef gerçek kişi ve kurumlar için aşağıdaki menkul kıymet gelirlerinden hangisi veya hangileri stopaja tabidir?  I)Özel sektör tahvili faiz geliri, II)Repo geliri, III)Mevduat faizleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I ve II</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">II ve III</div>
+    <div class="secenek" onclick="kontrolEt(this, `I, II ve III`)">I, II ve III</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> Aşağıdakilerden hangisi vergi alacağının kanunlarda gösterilen matrah ve nispetler üzerinden vergi dairesi tarafından hesaplanarak bu alacağı miktar üzerinden tespit eden idari muameledir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarh`)">Terkin</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarh`)">Tahakkuk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarh`)">Tahsil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarh`)">Tarh</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Aşağıdakilerden hangisi Gelir Vergisi Kanunu'na göre ücretlinin ödediği şahıs sigorta primlerinin vergi matrahında indirime konu edilebilmesi için gerekli şartlardan değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortanın kredi kullanımı sırasında krediye bağlı olarak yapılmış olması`)">Sigortanın Türkiye'de kain ve merkezi Türkiye'de bulunan bir emeklilik veya sigorta şirketi nezdinde akdedilmiş olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortanın kredi kullanımı sırasında krediye bağlı olarak yapılmış olması`)">İndirim konusu yapılacak prim toplamı, ödendiği ayda elde edilen ücretin %15'ini aşmaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortanın kredi kullanımı sırasında krediye bağlı olarak yapılmış olması`)">İndirim konusu yapılacak prim toplamının yıllık olarak asgari ücretin yıllık tutarını aşmaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortanın kredi kullanımı sırasında krediye bağlı olarak yapılmış olması`)">Sigortanın kredi kullanımı sırasında krediye bağlı olarak yapılmış olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> Vergilendirmeyi ilgilendiren ve hüküm ifade eden hususların yetkili makamlar tarafından yükümlüye veya ceza sorumlusuna yazı ile bildirilmesi işlemine ne denilmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Verginin tebliği`)">İhtar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Verginin tebliği`)">Verginin tebliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Verginin tebliği`)">Verginin tahakkuku</div>
+    <div class="secenek" onclick="kontrolEt(this, `Verginin tebliği`)">Vergi alacağı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> Nakdi sermayenin doğrudan veya belirli bir menkul kıymete bağlanarak üçüncü kişilerin kullanımına sunulmasından kaynaklanan gelire ne ad verilmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Kurum kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">İstisna kazancı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Menkul sermaye iradı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Menkul sermaye iradı`)">Gayrımenkul kazancı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Bir hayat sigorta poliçesi sahibi, 07.10.2001 tarihinden önce satın aldığı poliçeyi 5. yılında sona erdirmesi durumunda stopaj oranı ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaja tabi değildir.`)">5%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaja tabi değildir.`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaja tabi değildir.`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `Stopaja tabi değildir.`)">Stopaja tabi değildir.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Banka, banker ve sigorta şirketlerinin yapmış oldukları tüm işlemler nedeniyle nakden veya hesaben aldıkları paralardan hangi vergi alınır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka ve Sigorta Muameleleri Vergisi`)">Banka ve Sigorta Muameleleri Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka ve Sigorta Muameleleri Vergisi`)">Katma Değer Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka ve Sigorta Muameleleri Vergisi`)">Gelir Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Banka ve Sigorta Muameleleri Vergisi`)">Kurumlar Vergisi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Kişilerin Türkiye içinde ve Türkiye dışında elde ettikleri gelirin tamamı üzerinden Türkiye’de vergiye tabi tutulmalarına ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tam yükümlülük`)">Tam yükümlülük</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tam yükümlülük`)">Vergi yükümlülüğü</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tam yükümlülük`)">Vergi sorumlusu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tam yükümlülük`)">Dar yükümlülük</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Repo geliri gibi gelirlerde vergilendirilecek matrah tespit edilirken enflasyondan arındırılmak amacıyla kullanılan orana ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İndirim oranı`)">İndirim oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İndirim oranı`)">Eleme oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İndirim oranı`)">Enflasyon oranı</div>
+    <div class="secenek" onclick="kontrolEt(this, `İndirim oranı`)">Arındırma oranı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Kişinin ya da kişi gruplarının vergi yasaları ile herhangi bir tür vergiden kısmen ya da tamamen sorumlu tutulmaması nasıl adlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muafiyet`)">Mükellef</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muafiyet`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muafiyet`)">Matrah</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muafiyet`)">Muafiyet</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> Vergi yasalarına göre verginin üzerinden alındığı, doğrudan ya da dolaylı olarak vergi kaynağını oluşturan iktisadi unsura ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi konusu`)">Matrah</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi konusu`)">Tahakkuk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi konusu`)">Vergi konusu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi konusu`)">Vergi tarifesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> Vergi mevzuatına göre bir takvim yılı içinde elde ettiği kazanç ve iratlar kurumlar vergisine tabi olan kişilere ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği haiz şirket`)">Gerçek kişi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği haiz şirket`)">Memur</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği haiz şirket`)">İşçi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüzel kişiliği haiz şirket`)">Tüzel kişiliği haiz şirket</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> Kurumlar vergisine tabi olan ve matematik karşılıkları kurum kazancından indirebilen şirketler aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Sigorta şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Portföy yönetim şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Bankalar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigorta şirketleri`)">Leasing şirketleri</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> Vergi kanunlarına göre vergilendirilmesi gereken bir konunun vergi kanunlarınca vergi dışında bırakılmasına ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi istisnası`)">Vergi muafiyeti</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi istisnası`)">Vergi istisnası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi istisnası`)">Vergi tarhı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi istisnası`)">Vergi tahakkuku</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Verginin doğal afetler veya tahsil imkansızlığı gibi çeşitli nedenlerle kayıtlardan çıkartılmasına ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Terkin`)">Terkin</div>
+    <div class="secenek" onclick="kontrolEt(this, `Terkin`)">Muafiyet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Terkin`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Terkin`)">Tahakkuk</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> Vergi yasalarına göre, verginin hesaplanabilmesi için vergi matrahına uygulanan oran ve ölçülere ne ad verilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi tarifesi`)">Vergi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi tarifesi`)">Matrah</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi tarifesi`)">Vergi tarifesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vergi tarifesi`)">Tahakkuk</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Aşağıdakilerden hangisi vergi hukukunun kaynağı olarak ‘Genel Tebliğ’ in üzerinde bir hukuki kuvvete sahiptir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kanun`)">Özelgeler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kanun`)">Genelgeler</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kanun`)">Genel Yazılar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kanun`)">Kanun</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> B tipi menkul kıymet yatırım fonu alım satım kazancı sağlayan bir yatırımcının ödeyeceği stopaj oranı nedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">0%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">20%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> Aşağıdakilerden hangisi Gelir Vergisi Kanunu geçici 67. madde kapsamında vergi tevkifatına tabi değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonlarının elde ettiği kazançlar`)">Repo gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonlarının elde ettiği kazançlar`)">Emeklilik yatırım fonlarının elde ettiği kazançlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonlarının elde ettiği kazançlar`)">Mevduat faizi gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik yatırım fonlarının elde ettiği kazançlar`)">Hisse senedi alım satım kazançları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> Vergiyi doğuran olayın meydana geldiği anda tahakkuk ettirilemeyen vergiler ne olarak adlandırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dolaysız Vergi`)">Veraset ve İntikal Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dolaysız Vergi`)">Dolaylı Vergi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dolaysız Vergi`)">Motorlu Taşıtlar Vergisi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dolaysız Vergi`)">Dolaysız Vergi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> Aşağıda belirtilenlerden hangisi Gelir Vergisi'nin konusunu oluşturan unsurlar arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurum Kazançları`)">Menkul ve Gayrimenkul Sermaye Gelirleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurum Kazançları`)">Ücretler ve Serbest Meslek Kazançları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurum Kazançları`)">Kurum Kazançları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kurum Kazançları`)">Ticari ve Zirai Kazançlar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> B tipi menkul kıymet yatırım fonlarının portföy kazançları üzerinden hangi oranda stopaj yapılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `0%`)">0%</div>
+    <div class="secenek" onclick="kontrolEt(this, `0%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `0%`)">3%</div>
+    <div class="secenek" onclick="kontrolEt(this, `0%`)">10%</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>

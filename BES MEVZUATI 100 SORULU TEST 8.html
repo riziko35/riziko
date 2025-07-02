@@ -1,0 +1,926 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Çoktan Seçmeli Sorular - 8</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #f9f9f9; }
+    .soru-kapsam { background: #fff; padding: 15px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .soru { font-size: 18px; margin-bottom: 10px; }
+    .secenek { margin: 5px 0; cursor: pointer; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+    .secenek:hover { background-color: #eef; }
+    .dogru { color: green; font-weight: bold; }
+    .yanlis { color: red; }
+  </style>
+</head>
+<body>
+  <h1>Çoktan Seçmeli Sorular - Dosya 8</h1>
+
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 1:</strong> Aşağıdakilerden hangisi rasyonellik oranı değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dayanıklılık`)">Verimlilik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dayanıklılık`)">Kârlılık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dayanıklılık`)">Dayanıklılık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Dayanıklılık`)">Etkinlik</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 2:</strong> Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurumu tarafından görevlendirilmiş özel hukuk hükümlerine göre kurulmuş, görevleri arasında bireysel emeklilik aracılarının faaliyetlerinin gözetim ve denetimine yönelik altyapı oluşturulması, istatistik üretimi, kamunun ve katılımcıların bilgilendirilmesi gibi konuların bulunduğu tüzel kişi aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Gözetim Merkezi`)">Sermaye Piyasası Kurulu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Gözetim Merkezi`)">Takasbank</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Gözetim Merkezi`)">Emeklilik Gözetim Merkezi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik Gözetim Merkezi`)">Kamuyu Aydınlatma Platformu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 3:</strong> Ayrılma amacı ile kendisine yapılan başvuru üzerine, emeklilik şirketi, ayrılma bilgi ve talep formu ile hesap bildirim cetvelini elektronik iletişim araçları ile katılımcıya kaç gün içinde iletmekle yükümlüdür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü`)">2 iş günü</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü`)">5 iş günü</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü`)">7 iş günü</div>
+    <div class="secenek" onclick="kontrolEt(this, `5 iş günü`)">10 iş günü</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 4:</strong> Bireysel emeklilik hesabındaki birikimin ve ödenen katkı paylarının fonlar arasındaki dağılım oranları veya tutarları, bir yılda en fazla kaç kez değiştirilebilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `12`)">4</div>
+    <div class="secenek" onclick="kontrolEt(this, `12`)">6</div>
+    <div class="secenek" onclick="kontrolEt(this, `12`)">8</div>
+    <div class="secenek" onclick="kontrolEt(this, `12`)">12</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 5:</strong> Sermaye Piyasası Kurulunun uygun görüşünü alarak fona ilişkin zorunlu giderlerin karşılanmasına yönelik kesintilere üst sınır getirmeye yetkili kurum hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurulu`)">Emeklilik şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurulu`)">Emeklilik Gözetim Merkezi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurulu`)">Portföy yönetim şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurulu`)">Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurulu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 6:</strong> Şirket, bireysel emeklilik sistemine giren katılımcının emeklilik sözleşmesini veya sertifikasını kaç gün içinde katılımcıya göndermek veya katılımcının erişimine sunmakla yükümlüdür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin veya sertifikanın yürürlüğe girdiği tarihten itibaren 10 iş günü içinde`)">Sözleşmenin veya sertifikanın yürürlüğe girdiği tarihten itibaren 10 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin veya sertifikanın yürürlüğe girdiği tarihten itibaren 10 iş günü içinde`)">Teklif formu imza tarihinden itibaren 7 iş günü içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin veya sertifikanın yürürlüğe girdiği tarihten itibaren 10 iş günü içinde`)">Teklif formu imza tarihinden itibaren 30 gün içinde</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşmenin veya sertifikanın yürürlüğe girdiği tarihten itibaren 10 iş günü içinde`)">Katılımcının talep tarihinde</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 7:</strong> Giriş bilgi formuna ilişkin aşağıdaki ifadelerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sadece bireysel ve gruba bağlı bireysel sözleşmeler için teklif aşamasında sunulur.`)">Giriş bilgi formu en az 12 punto ve kolay okunabilir yazı fontu kullanılarak hazırlanmalıdır.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sadece bireysel ve gruba bağlı bireysel sözleşmeler için teklif aşamasında sunulur.`)">Arkalı-önlü ya da ayrı sayfalar halinde toplamda iki sayfayı geçmemelidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sadece bireysel ve gruba bağlı bireysel sözleşmeler için teklif aşamasında sunulur.`)">İçeriği Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurumu tarafından belirlenir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sadece bireysel ve gruba bağlı bireysel sözleşmeler için teklif aşamasında sunulur.`)">Sadece bireysel ve gruba bağlı bireysel sözleşmeler için teklif aşamasında sunulur.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 8:</strong> Katılımcı katkı payını ___________değerlendirebilir. Cümledeki boşluğa aşağıdaki ifadelerden hangisi gelmelidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşme kapsamında tanımlı fonlarda`)">Sözleşme kapsamında tanımlı fonlarda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşme kapsamında tanımlı fonlarda`)">Aynı şirketteki her fonda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşme kapsamında tanımlı fonlarda`)">Sadece bir fonda</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sözleşme kapsamında tanımlı fonlarda`)">Sistemdeki tüm fonlarda</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 9:</strong> Katılım emeklilik fonlarının yatırım yapabileceği şirket ortaklık payları arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli işlemlere girmemiş tekstil fabrikası`)">Domuz çiftliği</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli işlemlere girmemiş tekstil fabrikası`)">Bira fabrikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli işlemlere girmemiş tekstil fabrikası`)">Alkollü içecek fabrikası</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli işlemlere girmemiş tekstil fabrikası`)">Faizli işlemlere girmemiş tekstil fabrikası</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 10:</strong> Aşağıdakilerden hangisi katılım emeklilik fonlarında tercih edilebilecek yatırım araçları arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım esaslı vadesiz döviz hesabı`)">Tahvil</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım esaslı vadesiz döviz hesabı`)">Bono</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım esaslı vadesiz döviz hesabı`)">Vadeli mevduat hesabı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım esaslı vadesiz döviz hesabı`)">Katılım esaslı vadesiz döviz hesabı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 11:</strong> Aşağıdakilerden hangisi katılım mevzuatı ile getirilen yükümlülüklerden biri değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Destek hizmetleri alınması`)">Katılım iç denetim raporu düzenlenmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Destek hizmetleri alınması`)">Danışma komitesi hizmeti alınması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Destek hizmetleri alınması`)">Katılım uyum birimi fonksiyonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Destek hizmetleri alınması`)">Destek hizmetleri alınması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 12:</strong> Katılım mevzuatı çerçevesinde şirket veya kuruluş danışma komitesinin en az kaç üyeden oluşması gerekir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">5</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">3</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">2</div>
+    <div class="secenek" onclick="kontrolEt(this, `3`)">1</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 13:</strong> Aşağıdakilerden hangisi danışma komitesinin görevleri arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin katılım esaslarına göre faaliyetlerini kontrol etmek`)">Şirketin sermaye yeterliliğine karar vermek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin katılım esaslarına göre faaliyetlerini kontrol etmek`)">Şirketin sigorta faaliyet ruhsatlarını belirlemek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin katılım esaslarına göre faaliyetlerini kontrol etmek`)">Şirketin katılım esaslarına göre faaliyetlerini kontrol etmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirketin katılım esaslarına göre faaliyetlerini kontrol etmek`)">Şirket personeline özlük hakları hakkında danışmanlık vermek</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 14:</strong> Katılım mevzuatına göre katılım hassasiyeti bulunan müşterilere gecikme faizi ödenmesi durumunda aşağıdakilerden hangisi yapılmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme faizi ödenirken müşteriye katılım esasları hatırlatılmalıdır`)">Gecikme faizi ödenmelidir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme faizi ödenirken müşteriye katılım esasları hatırlatılmalıdır`)">Gecikme faizi ödenmemelidir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme faizi ödenirken müşteriye katılım esasları hatırlatılmalıdır`)">Gecikme faizi ödenirken müşteriye katılım esasları hatırlatılmalıdır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Gecikme faizi ödenirken müşteriye katılım esasları hatırlatılmalıdır`)">Gecikme faizi ödenmemeli ve müşteriye katılım esasları hatırlatılmalıdır</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 15:</strong> Katılım sertifikası sahibi olan şirket veya kuruluş personeli, sertifikasını aldığı yılı takip eden yıldan başlamak üzere hangi sıklıkta yenileme eğitimine katılmak zorundadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üç yılda bir kere`)">Altı ayda bir kere</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üç yılda bir kere`)">Üç yılda bir kere</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üç yılda bir kere`)">İki Yılda bir kere</div>
+    <div class="secenek" onclick="kontrolEt(this, `Üç yılda bir kere`)">Yılda üç kere</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 16:</strong> Bir emeklilik şirketinin “katılım” unvanını kullanabilmesi için aşağıdakilerden hangi şartı sağlamalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik fonlarının tamamının katılım emeklilik fonlarından oluşması`)">Katılım emeklilik fonu bulundurması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik fonlarının tamamının katılım emeklilik fonlarından oluşması`)">Katılım emeklilik planı bulundurması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik fonlarının tamamının katılım emeklilik fonlarından oluşması`)">Emeklilik fonlarının tamamının katılım emeklilik fonlarından oluşması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Emeklilik fonlarının tamamının katılım emeklilik fonlarından oluşması`)">Emeklilik fonlarının yarısından fazlasının katılım fonlarından oluşması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 17:</strong> Bireysel emeklilik aracısının, katılım hassasiyeti bulunan müşterilerine hangi fon türünü tavsiye etmesinde sakınca yoktur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu`)">Borçlanma araçları fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu`)">Para piyasası fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu`)">Katılım emeklilik fonu</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu`)">Kıymetli maden fonu</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 18:</strong> Katılım emeklilik fonları aşağıdaki yatırım araçlarından hangisine yatırım yapamaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesapları`)">Fiziki emtia hesapları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesapları`)">Katılım esaslı hisse senetleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesapları`)">Faizli mevduat hesapları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesapları`)">Katılım hesapları</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 19:</strong> Danışma komitesince sonradan uygun görülmeyen katılım emeklilik fonu olması durumunda şirket aşağıdakilerden hangisi yapmalıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket, fon unvanından “katılım ibaresini kaldırmalı ve katılım emeklilik planından da çıkarmalıdır`)">Şirket, yatırım planına devam etmelidir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket, fon unvanından “katılım ibaresini kaldırmalı ve katılım emeklilik planından da çıkarmalıdır`)">Şirket, müşterilerine danışmalıdır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket, fon unvanından “katılım ibaresini kaldırmalı ve katılım emeklilik planından da çıkarmalıdır`)">Şirket, SEDDK’ya haber vermelidir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Şirket, fon unvanından “katılım ibaresini kaldırmalı ve katılım emeklilik planından da çıkarmalıdır`)">Şirket, fon unvanından “katılım ibaresini kaldırmalı ve katılım emeklilik planından da çıkarmalıdır</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 20:</strong> Aşağıdakilerden hangisi danışma komitesi hizmeti almak zorundadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Katılım esaslı sigorta şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Sadece bir adet katılım emeklilik fonu bulunan emeklilik şirketleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Tüm fonları katılım emeklilik fonundan oluşan emeklilik şirketi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 21:</strong> Aşağıdakilerden hangisi katılım emeklilik şirketlerinin yatırım yapabileceği araçlar arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesabı`)">Katılım esaslı hisse senedi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesabı`)">Faizli mevduat hesabı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesabı`)">Katılım esaslı altın hesabı</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faizli mevduat hesabı`)">Katılım esaslı döviz hesabı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 22:</strong> Katılım emeklilik fonlarının yatırım yapabileceği hisse senedi, altın gibi yatırım araçlarının aşağıdakilerden hangisinin onayından geçmesi gerekir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Danışma komitesi`)">Danışma komitesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Danışma komitesi`)">Katılım destek birimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Danışma komitesi`)">Katılım iç denetim birimi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Danışma komitesi`)">Katılım hesap birimi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 23:</strong> Aşağıdakilerden hangisi katılım esaslı bireysel emeklilik şirketlerinin özelliklerinden değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Tüm katılım emeklilik fonları danışma komitesinin onayına tabidir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Emeklilik şirketi, katılım esaslı faaliyetlerini katılım emeklilik planı aracılığıyla yürütür</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Tüm katılım emeklilik fonları danışma komitesinin onayına tabi değildir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tüm katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Şirket ödeme yöntemlerinin seçimi konusunda katılımcıyı zorlayamaz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 24:</strong> Aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bazı katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">İslami esaslara uygun yatırım araçlarını barındıran emeklilik fonlarının unvanında katılım ibaresi yer alır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bazı katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Bir ya da daha fazla katılım emeklilik fonu bulunan şirketler danışma komitesi hizmeti alır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bazı katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Tüm katılım emeklilik fonları danışma komitesinin onayına tabidir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bazı katılım emeklilik fonları danışma komitesinin onayına tabi değildir`)">Bazı katılım emeklilik fonları danışma komitesinin onayına tabi değildir</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 25:</strong> Aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik planı en az 3 katılım emeklilik fonu içerir`)">Katkı paylarının ödenmesinde kullanılacak ödeme yöntemlerine katılımcı veya katılımcı ad ve hesabına ödeme yapan kişi, işveren ya da sponsor tarafından karar verilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik planı en az 3 katılım emeklilik fonu içerir`)">Katılım emeklilik planı en az 3 katılım emeklilik fonu içerir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik planı en az 3 katılım emeklilik fonu içerir`)">Emeklilik şirketinin sorumluluğu katkı payının şirkete intikali ile başlar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik planı en az 3 katılım emeklilik fonu içerir`)">Şirket ödeme yöntemlerinin seçimi konusunda katılımcıyı zorlayamaz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 26:</strong> Aşağıdakilerden hangisi yanlıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu, katılım esaslı olmayan plan içerisinde yer alamaz`)">Katılım emeklilik fonu, katılım esaslı olmayan plan içerisinde yer alamaz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu, katılım esaslı olmayan plan içerisinde yer alamaz`)">Danışma komitesince sonradan uygun görülmeyen katılım emeklilik fonu katılım emeklilik planından çıkarılır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu, katılım esaslı olmayan plan içerisinde yer alamaz`)">Katılım emeklilik fonu ve planına ilişkin katılımcıyı ilgilendiren tüm süreçlerde katılımcı bilgilendirilir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Katılım emeklilik fonu, katılım esaslı olmayan plan içerisinde yer alamaz`)">Katılım emeklilik fonunun içerik ve stratejisinde kurucusu tarafından yapılması planlanan değişikliklere ilişkin diğer emeklilik şirketinin bilgilendirilmesi zorunludur</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 27:</strong> Kişinin amel olarak lehine veya aleyhine olan şeyleri bilmesi neyin tanımıdır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fıkıh`)">İslam</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fıkıh`)">İslam Hukuku</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fıkıh`)">Fıkıh</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fıkıh`)">Muamelat</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 28:</strong> Faizin haramlığı ile ilgili hüküm hangi temel kaynaklardan çıkarılmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kur’an ve sünnet`)">Kur’an ve sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kur’an ve sünnet`)">Sadece sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kur’an ve sünnet`)">İcma</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kur’an ve sünnet`)">Kıyas</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 29:</strong> Peygamberimizin (s.a.v) sünneti üç çeşittir. Aşağıdakilerden hangisi bunlar arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yazılı Sünnet`)">Kavli Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yazılı Sünnet`)">Yazılı Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yazılı Sünnet`)">Fiili Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Yazılı Sünnet`)">Takriri Sünnet</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 30:</strong> Peygamberimizin (s.a.v) namazın nasıl ifa edileceğini göstermesi hangi sünnete işaret etmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili Sünnet`)">Fiili Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili Sünnet`)">Takriri Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili Sünnet`)">Kavli Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fiili Sünnet`)">Sünneti müekkede</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 31:</strong> Bir asırdaki İslam âlimlerinin bir mesele hakkında görüş birliğine varmasına ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcma`)">Kıyas</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcma`)">Vacip</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcma`)">İcma</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcma`)">Sünnet</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 32:</strong> Kur’an-ı Kerimde yer almayan bir hüküm için aşağıda yer alan kaynaklardan ilk hangisine başvurulabilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sünnet`)">İlmihal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sünnet`)">Farz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sünnet`)">Sünnet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sünnet`)">Sadece Kıyas</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 33:</strong> Ülkemizde Müslümanların çoğunluğunun takip ettiği mezhep aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hanefi`)">Maliki</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hanefi`)">Hanefi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hanefi`)">Şafi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hanefi`)">Hanbeli</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 34:</strong> Müslümanların bir kısmının yapması ile diğer Müslümanların mesuliyetinin kalktığı farza (emre) ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Farz-ı Kifaye`)">Farz-ı Kifaye</div>
+    <div class="secenek" onclick="kontrolEt(this, `Farz-ı Kifaye`)">Farz-ı Ayn</div>
+    <div class="secenek" onclick="kontrolEt(this, `Farz-ı Kifaye`)">Farz-ı Misal</div>
+    <div class="secenek" onclick="kontrolEt(this, `Farz-ı Kifaye`)">Farz-ı Muhal</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 35:</strong> İslam dininde kesin delille yasak olan fiil ve davranışlara ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Haram`)">Müstehap</div>
+    <div class="secenek" onclick="kontrolEt(this, `Haram`)">Mubah</div>
+    <div class="secenek" onclick="kontrolEt(this, `Haram`)">Haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Haram`)">Mekruh</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 36:</strong> Aslı itibariyle haram olan fiil ve davranışlara ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Liaynihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Ligayrihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Liaynihi vacip</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Ligayrihi vacip</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 37:</strong> Aslında helal olan ancak dışardan bir sebepten dolayı haram olan fiil ve davranışlara ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Liaynihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Ligayrihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Liaynihi vacip</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Ligayrihi vacip</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 38:</strong> Normalde alışveriş serbesttir, fakat Cuma namazı vaktinde alışveriş yasaklanmıştır. Cuma vaktinde yapılan alışverişin haramlığına ………. denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Liaynihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Ligayrihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Liaynihi vacip</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ligayrihi haram`)">Ligayrihi vacip</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 39:</strong> Faizin özü itibariyle yasak olmasına ……. denir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Liaynihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Ligayrihi haram</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Liaynihi vacip</div>
+    <div class="secenek" onclick="kontrolEt(this, `Liaynihi haram`)">Ligayrihi vacip</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 40:</strong> Muamelat fıkhı aşağıdakilerden hangisi ile ilgili hükümleri içermektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticaret`)">İbadet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticaret`)">İnanç</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticaret`)">Ticaret</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ticaret`)">Nikah</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 41:</strong> Muamelat fıkhında belirtilen sözleşmenin unsurları arasında aşağıdakilerden hangisi yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hüküm`)">İcap</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hüküm`)">Kabul</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hüküm`)">Sözleşmenin Tarafları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hüküm`)">Hüküm</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 42:</strong> Muamelat fıkhında sözleşmenin geçerli bir sözleşme olabilmesi için sözleşmeye konu şeyin aşağıdaki hangi özelliği taşıması gerekmez?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kaliteli olması`)">Mevcut olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kaliteli olması`)">Teslim edilebilir olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kaliteli olması`)">Kaliteli olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kaliteli olması`)">Helal olması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 43:</strong> Muamelat fıkhında, bir satış sözleşmesinde sözleşmeye konu ürün ve fiyatının sözleşmede açıkça belirtilmemesi aşağıdakilerden hangisi gerekçesiyle sözleşmeyi geçersiz kılar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Belirsizlik`)">Faiz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Belirsizlik`)">Kumar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Belirsizlik`)">Belirsizlik</div>
+    <div class="secenek" onclick="kontrolEt(this, `Belirsizlik`)">Şüphe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 44:</strong> Aşağıdakilerden hangisi aşırı belirsizliğin sözleşmeyi geçersiz kılma nedenlerinden biridir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarafları tartışmaya itme ihtimali ile haksız kazanca neden olma riski`)">Tarafları tartışmaya itme ihtimali ile haksız kazanca neden olma riski</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarafları tartışmaya itme ihtimali ile haksız kazanca neden olma riski`)">İfa zamanını uzatması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarafları tartışmaya itme ihtimali ile haksız kazanca neden olma riski`)">Maliyeti artırması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarafları tartışmaya itme ihtimali ile haksız kazanca neden olma riski`)">Operasyonel zorluk getirmesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 45:</strong> Sözleşmenin ruhu, kişilerin o sözleşmeyi yaparken asıl maksat ve niyetlerini ifade eder. Sözleşmenin şekli ise sözleşmede yazan amaç ve niyeti ifade eder. Aşağıdaki ifadelerden hangisi açık bir şekilde sözleşmenin şekli ve ruhu arasında tezatlık oluşturmaktadır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bu malı sana 10 TL karşılığında bağışladım`)">Bu malı sana karşılıksız bağışladım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bu malı sana 10 TL karşılığında bağışladım`)">Bu malı sana 10 TL karşılığında bağışladım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bu malı sana 10 TL karşılığında bağışladım`)">Bu malı sana 10 TL karşılığında sattım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Bu malı sana 10 TL karşılığında bağışladım`)">Bu malı sana 10 günlüğüne emanet ettim</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 46:</strong> Muamelat fıkhına göre aşağıdakilerden hangisi sözleşme değildir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vaad (Söz)`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vaad (Söz)`)">Kira</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vaad (Söz)`)">Vaad (Söz)</div>
+    <div class="secenek" onclick="kontrolEt(this, `Vaad (Söz)`)">Murabaha</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 47:</strong> Muamelat fıkhına göre aşağıdakilerden hangi işlem yasaklanmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla sözleşmenin tek bir sözleşmede birleştirilmesi`)">Birden fazla sözleşmenin tek bir sözleşmede birleştirilmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla sözleşmenin tek bir sözleşmede birleştirilmesi`)">Sözleşmeye konu bedelin Türk lirası cinsinden olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla sözleşmenin tek bir sözleşmede birleştirilmesi`)">Sözleşmeye konu şeyin hizmet olması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Birden fazla sözleşmenin tek bir sözleşmede birleştirilmesi`)">Sözleşmenin belirli bir süre boyunca hüküm doğuracağı hükmünü içermesi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 48:</strong> Aşağıdakilerden hangisi ivazlı (karşılıklı) sözleşmeler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Kira</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Hibe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Muşareke</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 49:</strong> İki tarafa da borç yükleyen sözleşmelerden olan alım-satım (alış-veriş) sözleşmeleri aşağıdakilerden hangisine örnektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İvazlı`)">İvazsız</div>
+    <div class="secenek" onclick="kontrolEt(this, `İvazlı`)">Hibe</div>
+    <div class="secenek" onclick="kontrolEt(this, `İvazlı`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `İvazlı`)">İvazlı</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 50:</strong> Aşağıdakilerden hangisi alışveriş temelli sözleşmeler arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Murabaha</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Teverruk</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">İstisna</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 51:</strong> Aşağıdakilerden hangisi ortaklık temelli bir sözleşmedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">İcare</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Muşareke</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Murabaha</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Hibe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 52:</strong> Maliyeti müşteri tarafından bilinen bir malın üzerine kâr eklenerek müşteriye peşin veya vadeli satılmasını konu alan sözleşmeye ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Murabaha`)">Murabaha</div>
+    <div class="secenek" onclick="kontrolEt(this, `Murabaha`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Murabaha`)">Muşarekere</div>
+    <div class="secenek" onclick="kontrolEt(this, `Murabaha`)">Hibe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 53:</strong> Bir tarafın sermaye ve diğer tarafın da emeğini ortaya koyduğu ortaklık sözleşmesine ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Murabaha</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Mudarebe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">Muşarekere</div>
+    <div class="secenek" onclick="kontrolEt(this, `Mudarebe`)">İstisna</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 54:</strong> Mudarebe sözleşmesinde kar nasıl bölüşülür?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür`)">Kar ortaklara eşit oranda bölüştürülür</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür`)">Karın çoğunu sermayedar alır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür`)">Karın çoğunu emeği koyan alır</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür`)">Kar baştan anlaşılan orana göre bölüştürülür</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 55:</strong> İki veya daha fazla kişinin sermayesini ortaya koyduğu ortaklık sözleşmesine ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Muşareke</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Murabaha</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Sarf</div>
+    <div class="secenek" onclick="kontrolEt(this, `Muşareke`)">Mudarebe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 56:</strong> Muşareke ortaklığında elde edilen kar hangi oranda paylaştırılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür.`)">Kar ortaklara eşit oranda bölüştürülür.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür.`)">Kar sermaye oranında bölüştürülür.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür.`)">Elde edilen kara göre karar verilir.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kar baştan anlaşılan orana göre bölüştürülür.`)">Kar baştan anlaşılan orana göre bölüştürülür.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 57:</strong> Muşareke ortaklığında zarar olması durumunda zarar ortaklara nasıl yansıtılır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zarar ortakların sermayesine göre üstlenilir`)">Zararı en çok sermaye koyan üstlenir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zarar ortakların sermayesine göre üstlenilir`)">Zarar ortaklar arasında eşit oranda üstlenilir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zarar ortakların sermayesine göre üstlenilir`)">Zarar ortakların sermayesine göre üstlenilir</div>
+    <div class="secenek" onclick="kontrolEt(this, `Zarar ortakların sermayesine göre üstlenilir`)">Zarar ortaklar arasındaki anlaşmaya göre üstlenilir</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 58:</strong> Karz ne demektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç`)">Borç</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç`)">Ortaklık</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç`)">Kar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç`)">Zarar</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 59:</strong> Döviz mübadele işlemleri muamelat fıkhında nasıl isimlendirilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sarf`)">Selem</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sarf`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sarf`)">Sarf</div>
+    <div class="secenek" onclick="kontrolEt(this, `Sarf`)">Karz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 60:</strong> Leasing işlemleri muamelat fıkhında hangi sözleşme türüne girmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (Kira)`)">Kefalet</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (Kira)`)">Vekalet</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (Kira)`)">İcare (Kira)</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (Kira)`)">Rehin</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 61:</strong> Sukuk tebliği ilk çıktığında kira sertifikası olarak isimlendirilmesinde hangi akit etkili olmuştur?</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (kira)`)">İcare (kira)</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (kira)`)">Kefalet</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (kira)`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `İcare (kira)`)">Muşareke</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 62:</strong> Teminat mektupları muamelat fıkhında hangi sözleşmeye tekabül etmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kefalet`)">Vekalet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kefalet`)">Kefalet</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kefalet`)">Karz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Kefalet`)">Havale</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 63:</strong> Paranın peşin malın veresiye olduğu sözleşme türü aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Selem`)">İstisna</div>
+    <div class="secenek" onclick="kontrolEt(this, `Selem`)">Selem</div>
+    <div class="secenek" onclick="kontrolEt(this, `Selem`)">İcare</div>
+    <div class="secenek" onclick="kontrolEt(this, `Selem`)">Sarf</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 64:</strong> Selem sözleşmesi hangi alanda uygulanmaya daha müsaittir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım`)">İmalat</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım`)">Nakliye</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım`)">Tarım</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tarım`)">Turizm</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 65:</strong> Bir kişinin karşılıksız olarak mülkiyetinde olan bir malı başka bir kişiye vermesi (bağışlaması) hangi sözleşme türü kapsamına girmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Havale</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Rehin</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Hibe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hibe`)">Karz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 66:</strong> Borca karşılık talep edilen teminatı konu alan sözleşmeye ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Havale</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Rehin</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Karz</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Hibe</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 67:</strong> Bankaların yaptıkları ipotek işlemleri hangi sözleşme kapsamına girmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Havale</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Hibe</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Rehin</div>
+    <div class="secenek" onclick="kontrolEt(this, `Rehin`)">Sarf</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 68:</strong> Sözleşmede şart koşularak verilen borcun fazlasıyla alınması durumunda elde edilen fazlalığa ne denir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz`)">Kar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz`)">Kira</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz`)">Ücret</div>
+    <div class="secenek" onclick="kontrolEt(this, `Faiz`)">Faiz</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 69:</strong> Bankalardan alınan krediler için ödenen faiz, muamelat fıkhında hangi faiz olarak tanımlanır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Alışveriş faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Borç faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Fazlalık faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Veresiye faizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 70:</strong> Aynı cins malların farklı miktarlarda mübadele edilmesi durumunda hangi faiz meydana gelir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fazlalık Faizi`)">Alışveriş faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fazlalık Faizi`)">Borç faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fazlalık Faizi`)">Fazlalık Faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Fazlalık Faizi`)">Veresiye Faizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 71:</strong> Aynı cins malların mübadelesinde, işlemin peşin olmaması durumunda hangi faiz türü ortaya çıkar?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Veresiye Faizi`)">Alışveriş faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Veresiye Faizi`)">Borç faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Veresiye Faizi`)">Fazlalık Faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Veresiye Faizi`)">Veresiye Faizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 72:</strong> Kredi kartlarındaki gecikme cezaları muamelat fıkhında hangi faiz olarak isimlendirilir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Alışveriş faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Borç faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Fazlalık faizi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Borç faizi`)">Veresiye faizi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 73:</strong> “Kumarın haram olmasının illeti ahlaka ve ……. sebebiyledir.” Boş bırakılan yere aşağıdakilerden hangi gelmelidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cemiyet hayatına zarar vermesi`)">Bazı durumlarda kazanç sağlaması</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cemiyet hayatına zarar vermesi`)">Cemiyet hayatına zarar vermesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cemiyet hayatına zarar vermesi`)">Tarafların birbirine karşı getirmesi</div>
+    <div class="secenek" onclick="kontrolEt(this, `Cemiyet hayatına zarar vermesi`)">Emeksiz zenginleşmeyi aşılaması</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 74:</strong> Aşağıdakilerden hangisi ticaret ahlak ilkeleri arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her şartta kar hırsı taşımak`)">Kanaatkâr olmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her şartta kar hırsı taşımak`)">Her şartta kar hırsı taşımak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her şartta kar hırsı taşımak`)">Sözleşme ilkelerine sadık olmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her şartta kar hırsı taşımak`)">Aldatmamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 75:</strong> Aşağıdakilerden hangisi ticaret ahlak ilkeleri arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet alıcılarına karşı doğru ve güvenilir olmak`)">Her şartta yüksek kar hırsı taşımak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet alıcılarına karşı doğru ve güvenilir olmak`)">Sözleşme feshetmek isteyen müşteriyi oyalamak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet alıcılarına karşı doğru ve güvenilir olmak`)">Hizmet alıcılarına karşı doğru ve güvenilir olmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hizmet alıcılarına karşı doğru ve güvenilir olmak`)">Müşteriye ürünlerin kusurlarını anlatmamak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 76:</strong> Müşteriye ürünü satabilmek için kusurlu içeriğinin tam anlatılmaması hangi ticaret ahlak ilkesi ile çelişmektedir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün ve hizmetlerin kusurlarını gizlememek`)">Kanaatkâr olmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün ve hizmetlerin kusurlarını gizlememek`)">Ürün ve hizmetlerin kusurlarını gizlememek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün ve hizmetlerin kusurlarını gizlememek`)">İhsan ve nasihat sahibi olmak</div>
+    <div class="secenek" onclick="kontrolEt(this, `Ürün ve hizmetlerin kusurlarını gizlememek`)">Borcunu zamanında ödemek</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 77:</strong> Aşağıdakilerden hangisi ticaret ahlak ilkeleri arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçeyi satmak için ürünü aşırı övmek`)">Ürün hakkında yanıltıcı bilgi vermemek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçeyi satmak için ürünü aşırı övmek`)">Müşteriye ihtiyacı olacak ürünleri tavsiye etmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçeyi satmak için ürünü aşırı övmek`)">Poliçeyi satmak için ürünü aşırı övmek</div>
+    <div class="secenek" onclick="kontrolEt(this, `Poliçeyi satmak için ürünü aşırı övmek`)">Müşteriye poliçe ile birlikte elde edeceği haklarını anlatmak</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 78:</strong> ….. nde sigorta sözleşmesinin hibe esaslı olması ve sermayedar fonu ile katılımcı risk fonlarının ayrı yönetilmesi gerekmektedir. Boş bırakılan yere hangisi gelmelidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tekâfül modeli`)">Ortaklık modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tekâfül modeli`)">Tekâfül modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tekâfül modeli`)">Sermayedar modeli</div>
+    <div class="secenek" onclick="kontrolEt(this, `Tekâfül modeli`)">Faizsiz emeklilik modeli</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 79:</strong> Aşağıdakilerden hangisi geçmişte var olan yardımlaşma ve dayanışma müesseseleri arasında yer alır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Ahi Birlikleri</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Lonca Teşkilatları</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Vakıflar</div>
+    <div class="secenek" onclick="kontrolEt(this, `Hepsi`)">Hepsi</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 80:</strong> Aşağıdakilerden hangisi katılım esaslı şirketlerin özellikleri arasında yer almaz?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her çeşit yüksek getiri sağlayan yatırım araçlarına yatırım yaparlar.`)">İslami esaslara ve uygulamalara ilişkin eğitim verdiği ve bu alanda yetişmiş personelleri aracılığıyla hizmet sunarlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her çeşit yüksek getiri sağlayan yatırım araçlarına yatırım yaparlar.`)">Her çeşit yüksek getiri sağlayan yatırım araçlarına yatırım yaparlar.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her çeşit yüksek getiri sağlayan yatırım araçlarına yatırım yaparlar.`)">Faaliyetlerini danışma komitesi nezaretinde yürütürler.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Her çeşit yüksek getiri sağlayan yatırım araçlarına yatırım yaparlar.`)">dinen uygun ürün ve hizmetleri sigorta sözleşmelerine ve poliçelere konu ederler.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 81:</strong> 2013 yılı Temmuz ayında sözleşmesi birinci yılını dolduran katılımcı, 2013 Ağustos ayında bireysel emeklilik sisteminden ayrılmıştır. Katılımcının ayrılma esnasında, devlet katkısı hesabındaki tutarın 500 TL, birikim tutarının 12.000 TL ve ödediği katkı payı tutarının 8.000 TL olması durumunda katılımcıdan ne kadar stopaj kesintisi yapılmıştır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">600 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">675 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">1.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">2.000 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 82:</strong> Bireysel emeklilik sisteminde 5 yılını doldurmuş ve birikim tutarı 25.000 TL'ye ulaşan 57 yaşındaki bir katılımcı sistemden ayrılmak istemektedir. Katılımcının yatırdığı katkı payı toplamı 12.500 TL'dir. İlgili sözleşmeye ödenen katkı payı için devlet katkısı alınmadığı varsayılırsa eline kesinti sonrası ne kadar para geçecektir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `23.125 TL`)">23.125 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `23.125 TL`)">21.250 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `23.125 TL`)">24.375 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `23.125 TL`)">24.500 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 83:</strong> Bireysel emeklilik sisteminden emekli olarak ayrılan katılımcının devlet katkısı hesabındaki tutar dahil ödemeye konu birikim tutarı 250.000 TL'dir. Ödediği katkı payı tutarı 150.000 TL ve bu katkı payına karşılık aldığı devlet katkısı tutarı 45.000 TL olan katılımcıdan yapılacak stopaj kesintisi tutarı ne kadar olacaktır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.750 TL`)">3.125 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.750 TL`)">2.750 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.750 TL`)">7.500 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `2.750 TL`)">12.500 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 84:</strong> Bireysel emeklilik sisteminde 11 yıl boyunca 90.000 TL katkı payı ödeyen 51 yaşındaki katılımcı, 12.000 TL getiri sağlamıştır. İlgili sözleşmeye ödenen katkı payı için devlet katkısı alınmadığı varsayımı ile katılımcının sistemden ayrılmak istemesi durumunda alacağı tutar ne kadar olacaktır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `100.800 TL`)">102.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `100.800 TL`)">100.800 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `100.800 TL`)">88.800 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `100.800 TL`)">90.000 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 85:</strong> Bireysel emeklilik sisteminden emekliliğe hak kazanma, vefat, maluliyet veya tasfiye gibi zorunlu nedenlerle ayrılma durumunda uygulanacak stopaj oranı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `5%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5%`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5%`)">5%</div>
+    <div class="secenek" onclick="kontrolEt(this, `5%`)">0%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 86:</strong> Bireysel emeklilik sisteminden emeklilik hakkı elde etmeden ancak 10 yıl süreyle katkı payı ödeyerek ayrılma durumunda uygulanacak stopaj oranı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">5%</div>
+    <div class="secenek" onclick="kontrolEt(this, `10%`)">0%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 87:</strong> Bireysel emeklilik sisteminden 10 yıldan az süreyle katkı payı ödeyerek ayrılma durumunda uygulanacak stopaj oranı aşağıdakilerden hangisidir?</div>
+    <div class="secenek" onclick="kontrolEt(this, `15%`)">15%</div>
+    <div class="secenek" onclick="kontrolEt(this, `15%`)">10%</div>
+    <div class="secenek" onclick="kontrolEt(this, `15%`)">5%</div>
+    <div class="secenek" onclick="kontrolEt(this, `15%`)">0%</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 88:</strong> 01.01.2004 tarihinde yürürlüğe giren bir sözleşmesi olan katılımcının 01.01.2016 tarihinde devlet katkısına hak kazanmaya esas süresine eklenen süre ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl`)">2 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl`)">1 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl`)">3 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `2 yıl`)">5 yıl</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 89:</strong> 01.01.2008 tarihinde yürürlüğe giren bir sözleşmesi olan katılımcının 01.01.2016 tarihinde devlet katkısına hak kazanmaya esas süresine eklenen süre ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `1 yıl`)">1 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `1 yıl`)">2 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `1 yıl`)">3 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `1 yıl`)">Süre eklemesi yapılmaz.</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 90:</strong> 01.01.2012 tarihinde yürürlüğe giren bir sözleşmesi olan katılımcının 01.01.2016 tarihinde devlet katkısına hak kazanmaya esas süresine eklenen süre ne kadardır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süre eklenmez.`)">Süre eklenmez.</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süre eklenmez.`)">1 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süre eklenmez.`)">2 yıl</div>
+    <div class="secenek" onclick="kontrolEt(this, `Süre eklenmez.`)">3 yıl</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 91:</strong> 2013 yılı Ocak ayı brüt ücreti 10.000 TL olan bir kişi kendi adına yaptırdığı sağlık sigortası için 200 TL, eşi adına yaptırdığı sağlık sigortası için 300 TL, çocuğu adına yaptırdığı sağlık sigortası için 150 TL ve kendi adına olan birikim priminin alındığı 2012 başlangıç tarihli hayat sigortası poliçesi için 500 TL prim ödemiştir. Çalışanın ilgili ayda vergiden indirim konusu yapabileceği toplam tutar ne kadardır? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `900 TL`)">900 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `900 TL`)">1.150 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `900 TL`)">650 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `900 TL`)">1.000 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 92:</strong> Yılbaşından itibaren işsizlik sigortası primi ödeyen bir çalışanın Aralık 2013 tarihine kadar indirim konusu yaptığı toplam tutar 5.500 TL'dir. Aralık 2013 tarihinde 500 TL işsizlik sigortası primi ve 250 TL sağlık sigortası primi ödeyen ve ilgili aydaki brüt ücreti 7.500 TL olan kişinin vergi matrahından indirim konusu yapabileceği tutar ne kadardır? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL, yıllık tutarı 12.000,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `750 TL`)">500 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `750 TL`)">750 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `750 TL`)">250 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `750 TL`)">325 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 93:</strong> 2015 yılı Mart ayında 2014 yılı gelirleri için gelir vergisi beyannamesi veren bir mükellef, 2014 yılında birikim priminin alındığı hayat sigortasına 14.000 TL, sağlık sigortasına 6.000 TL prim ödemiştir. Kişinin beyan ettiği gelirin 450.000 TL, 2014 yılında brüt asgari ücretin yıllık tutarının 12.000 TL olması durumunda kişinin beyan ettiği gelirden indirim yapamayacağı tutar ne kadar olacaktır?</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.000 TL`)">1.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.000 TL`)">10.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.000 TL`)">6.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.000 TL`)">14.000 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 94:</strong> Brüt ücreti 3.000 TL olan bir çalışanın 2013 yılı Ocak ayında, 2011 başlangıç tarihli birikim primi alınan hayat sigortası poliçesi için 200 TL ve sağlık sigortası primi için 150 TL ödemesi durumunda, Ocak ayı için vergi matrahından indirim konusu yapılacak toplam tutar ne kadar olmalıdır? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `250 TL`)">250 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `250 TL`)">350 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `250 TL`)">450 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `250 TL`)">750 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 95:</strong> 2013 yılı Ocak ayı brüt ücret tutarı 3.000 TL olan bir çalışan, eşi adına yaptırdığı 01.01.2012 başlangıç tarihli birikim primi alınan hayat sigortası poliçesine aylık 450 TL prim ödemektedir. İlgili ayda vergi matrahından indirim konusu yapabileceği tutar ne kadardır? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `225 TL`)">150 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `225 TL`)">225 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `225 TL`)">450 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `225 TL`)">300 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 96:</strong> 2013 yılı Ocak ayı brüt ücreti 5.000 TL olan bir ücretlinin vergi avantajından tam olarak faydalanması için, aynı yıl başlattığı birikim primi alınan hayat sigortası poliçesine, başka bir indirim yapılmadığı varsayıldığında, aylık ne kadar primi ödemesi gerekmektedir? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.500 TL`)">750 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.500 TL`)">1.500 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.500 TL`)">500 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `1.500 TL`)">978,6 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 97:</strong> 2013 yılı Ocak ayında aylık brüt ücreti 2.000 TL olan bir ücretlinin vergi avantajından maksimum düzeyde faydalanması için, bir önceki yıl satın aldığı ve birikim priminin alındığı hayat sigortası poliçesine aylık en az ne kadar prim ödemesi gerekmektedir? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">200 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">300 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">600 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `600 TL`)">1.200 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 98:</strong> 2013 yılında 50.000 TL gelir beyan eden bir serbest meslek sahibi aynı yıl başlattığı birikim priminin alındığı hayat sigortası poliçesine 6.000 TL ödemiştir. Kişinin vergi matrahından indirebileceği tutar ne kadardır? (2013 yılında brüt asgari ücretin yıllık tutarı 12.000,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `3.000 TL`)">7.500 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `3.000 TL`)">6.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `3.000 TL`)">5.000 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `3.000 TL`)">3.000 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+  <div class="soru-kapsam">
+    <div class="soru"><strong>Soru 99:</strong> 2013 yılı Şubat ayı brüt ücreti 2.000 TL olan bir çalışan, eşi için 400 TL sağlık sigortası ve 250 TL ferdi kaza sigortası primi ödemektedir. Vergi matrahından indirim konusu yapamayacağı tutar ne kadardır? (İlgili dönemde brüt asgari ücretin aylık tutarı 978,60 TL'dir.)</div>
+    <div class="secenek" onclick="kontrolEt(this, `350 TL`)">350 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `350 TL`)">400 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `350 TL`)">650 TL</div>
+    <div class="secenek" onclick="kontrolEt(this, `350 TL`)">300 TL</div>
+    <p class="cevap"></p>
+  </div>
+    
+<script>
+function kontrolEt(element, dogruCevap) {
+  const secilen = element.textContent.trim();
+  const cevapGoster = element.parentElement.querySelector('.cevap');
+  if (secilen === dogruCevap.trim()) {
+    element.classList.add("dogru");
+    cevapGoster.textContent = "Doğru cevap!";
+  } else {
+    element.classList.add("yanlis");
+    cevapGoster.textContent = "Yanlış cevap. Doğru cevap: " + dogruCevap;
+  }
+}
+</script>
+
+</body>
+</html>
